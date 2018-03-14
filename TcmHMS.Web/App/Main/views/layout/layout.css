@@ -1,0 +1,21 @@
+﻿.page-on-load {
+    background: #fefefe;
+}
+    .page-on-load .m-page {
+        display: none !important;
+        transition: all 2s;
+    }
+.fade-in-up {
+    -webkit-animation: fadeInUp .5s;
+    animation: fadeInUp .5s;
+}
+
+.page-spinner-bar {
+    position: fixed;
+    z-index: 10051;
+    width: 200px;
+    top: 40%;
+    left: 50%;
+    margin-left: -110px;
+    text-align: center;
+}

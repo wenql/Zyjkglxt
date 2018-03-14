@@ -10,7 +10,7 @@ namespace TcmHMS.Web.Bundling
             AddLoginFiles(bundles);
             AddMainLibCss(bundles);
             AddMainMetronicCss(bundles);
-     
+
             //bundles.Add(
             //    new StyleBundle("~/Bundles/Frontend/metronic/css")
             //        .Include("~/libs/metronic/assets/global/css/components.css", new CssRewriteUrlWithVirtualDirectoryTransform())
@@ -56,27 +56,27 @@ namespace TcmHMS.Web.Bundling
                 new StyleBundle("~/Bundles/login-vendor/css")
                     .Include("~/fonts/roboto/roboto.css", new CssRewriteUrlTransform())
                     .Include("~/fonts/material-icons/materialicons.css", new CssRewriteUrlTransform())
-                    .Include("~/lib/bootstrap/css/bootstrap.css", new CssRewriteUrlTransform())
-                    .Include("~/lib/toastr/toastr.css", new CssRewriteUrlTransform())
-                    .Include("~/lib/Waves/dist/waves.css", new CssRewriteUrlTransform())
-                    .Include("~/lib/animate.css/animate.css", new CssRewriteUrlTransform())
+                    .Include("~/libs/bootstrap/css/bootstrap.css", new CssRewriteUrlTransform())
+                    .Include("~/libs/toastr/toastr.css", new CssRewriteUrlTransform())
+                    .Include("~/libs/Waves/dist/waves.css", new CssRewriteUrlTransform())
+                    .Include("~/libs/animate.css/animate.css", new CssRewriteUrlTransform())
                     .Include("~/Content/materialize.css", new CssRewriteUrlTransform())
                     .Include("~/Views/Account/_Layout.css", new CssRewriteUrlTransform())
             );
             bundles.Add(
                 new ScriptBundle("~/Bundles/login-vendor/js/bottom")
                     .Include(
-                        "~/lib/json2/json2.js",
-                        "~/lib/jquery/jquery.min.js",
-                        "~/lib/bootstrap/js/bootstrap.js",
-                        "~/lib/moment/min/moment-with-locales.js",
-                        "~/lib/jquery-validation/dist/jquery.validate.js",
-                        "~/lib/blockUI/jquery.blockUI.js",
-                        "~/lib/toastr/toastr.min.js",
-                        "~/lib/layer/layer.js",
-                        "~/lib/spinjs/spin.js",
-                        "~/lib/spinjs/jquery.spin.js",
-                        "~/lib/Waves/dist/waves.js",
+                        "~/libs/json2/json2.js",
+                        "~/libs/jquery/jquery.js",
+                        "~/libs/bootstrap/js/bootstrap.js",
+                        "~/libs/moment/min/moment-with-locales.js",
+                        "~/libs/jquery-validation/dist/jquery.validate.js",
+                        "~/libs/blockUI/jquery.blockUI.js",
+                        "~/libs/toastr/toastr.min.js",
+                        "~/libs/layer/layer.js",
+                        "~/libs/spinjs/spin.js",
+                        "~/libs/spinjs/jquery.spin.js",
+                        "~/libs/Waves/dist/waves.js",
                         "~/Abp/Framework/scripts/abp.js",
                         "~/Abp/Framework/scripts/libs/abp.jquery.js",
                         "~/Abp/Framework/scripts/libs/abp.toastr.js",
@@ -120,57 +120,56 @@ namespace TcmHMS.Web.Bundling
         private static void AddMainLibJs(BundleCollection bundles)
         {
             bundles.Add(
-               new ScriptBundle("~/Bundles/Main/libs/js")
-                   .Include(
-                            "~/libs/json2/json2.min.js",
-                            "~/libs/jquery/jquery.min.js",
-                            "~/libs/jquery/jquery-migrate.min.js",
-                            "~/libs/bootstrap/js/bootstrap.min.js",
-                            "~/libs/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
-                            "~/libs/jquery-slimscroll/jquery.slimscroll.min.js",
-                            "~/libs/jquery-blockui/jquery.blockui.min.js",
-                            "~/libs/js-cookie/js.cookie.min.js",
-                            "~/libs/jquery-uniform/jquery.uniform.min.js",
-                            "~/libs/jquery.signalR/jquery.signalR-2.2.2.min.js",
-                            "~/libs/localforage/localforage.min.js",
-                            "~/libs/morris/morris.min.js",
-                            "~/libs/morris/raphael-min.js",
-                            "~/libs/jquery-sparkline/jquery.sparkline.min.js",
-                            "~/libs/jcrop/js/jquery.color.js",
-                            "~/libs/jcrop/js/jquery.Jcrop.min.js",
-                            "~/libs/jquery-timeago/jquery.timeago.js",
-                            "~/libs/jstree/jstree.js",
-                            "~/libs/bootstrap-switch/js/bootstrap-switch.min.js",
-                            "~/libs/spinjs/spin.js",
-                            "~/libs/spinjs/jquery.spin.js",
-                            "~/libs/layer/layer.js",
-                            "~/libs/push-js/push.min.js",
-                            "~/libs/toastr/toastr.min.js",
-                            "~/libs/moment/moment-with-locales.min.js",
-                            "~/libs/moment/moment-timezone-with-data.min.js",
-                            "~/libs/bootstrap-daterangepicker/daterangepicker.js",
-                            "~/libs/bootstrap-select/bootstrap-select.min.js",
-                            "~/Scripts/underscore.min.js",
-                            "~/Scripts/angular.js",
-                            "~/Scripts/angular-sanitize.min.js",
-                            "~/Scripts/angular-touch.min.js",
-                            "~/Scripts/angular-ui-router.min.js",
-                            "~/Scripts/angular-ui/ui-utils.min.js",
-                            "~/Scripts/angular-ui/ui-bootstrap-tpls.min.js",
-                            "~/libs/angular-ui-grid/ui-grid.min.js",
-                            "~/libs/angular-file-upload/angular-file-upload.min.js",
-                            "~/libs/angular-ocLazyLoad/ocLazyLoad.min.js",
-                            "~/libs/angular-daterangepicker/angular-daterangepicker.min.js",
-                            "~/libs/angular-moment/angular-moment.min.js",
-                            "~/libs/angular-bootstrap-switch/angular-bootstrap-switch.min.js",
-                            "~/Abp/Framework/scripts/abp.js",
-                            "~/Abp/Framework/scripts/libs/abp.jquery.js",
-                            "~/Abp/Framework/scripts/libs/abp.toastr.js",
-                            "~/Abp/Framework/scripts/libs/abp.blockUI.js",
-                            "~/Abp/Framework/scripts/libs/abp.spin.js",
-                            "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
-                            "~/Abp/Framework/scripts/libs/abp.moment.js",
-                            "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js"
+               new ScriptBundle("~/Bundles/Main/libs/js").Include(
+                    "~/libs/json2/json2.min.js",
+                    "~/libs/jquery/jquery.min.js",
+                    "~/libs/jquery/jquery-migrate.min.js",
+                    "~/libs/bootstrap/js/bootstrap.min.js",
+                    "~/libs/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
+                    "~/libs/jquery-slimscroll/jquery.slimscroll.min.js",
+                    "~/libs/jquery-blockui/jquery.blockui.min.js",
+                    "~/libs/js-cookie/js.cookie.min.js",
+                    "~/libs/jquery-uniform/jquery.uniform.min.js",
+                    "~/libs/jquery.signalR/jquery.signalR-2.2.2.min.js",
+                    "~/libs/localforage/localforage.min.js",
+                    "~/libs/morris/morris.min.js",
+                    "~/libs/morris/raphael-min.js",
+                    "~/libs/jquery-sparkline/jquery.sparkline.min.js",
+                    "~/libs/jcrop/js/jquery.color.js",
+                    "~/libs/jcrop/js/jquery.Jcrop.min.js",
+                    "~/libs/jquery-timeago/jquery.timeago.js",
+                    "~/libs/jstree/jstree.js",
+                    "~/libs/bootstrap-switch/js/bootstrap-switch.min.js",
+                    "~/libs/spinjs/spin.js",
+                    "~/libs/spinjs/jquery.spin.js",
+                    "~/libs/layer/layer.js",
+                    "~/libs/push-js/push.min.js",
+                    "~/libs/toastr/toastr.min.js",
+                    "~/libs/moment/moment-with-locales.min.js",
+                    "~/libs/moment/moment-timezone-with-data.min.js",
+                    "~/libs/bootstrap-daterangepicker/daterangepicker.js",
+                    "~/libs/bootstrap-select/bootstrap-select.min.js",
+                    "~/Scripts/underscore.min.js",
+                    "~/Scripts/angular.js",
+                    "~/Scripts/angular-sanitize.min.js",
+                    "~/Scripts/angular-touch.min.js",
+                    "~/Scripts/angular-ui-router.min.js",
+                    "~/Scripts/angular-ui/ui-utils.min.js",
+                    "~/Scripts/angular-ui/ui-bootstrap-tpls.min.js",
+                    "~/libs/angular-ui-grid/ui-grid.min.js",
+                    "~/libs/angular-file-upload/angular-file-upload.min.js",
+                    "~/libs/angular-ocLazyLoad/ocLazyLoad.min.js",
+                    "~/libs/angular-daterangepicker/angular-daterangepicker.min.js",
+                    "~/libs/angular-moment/angular-moment.min.js",
+                    "~/libs/angular-bootstrap-switch/angular-bootstrap-switch.min.js",
+                    "~/Abp/Framework/scripts/abp.js",
+                    "~/Abp/Framework/scripts/libs/abp.jquery.js",
+                    "~/Abp/Framework/scripts/libs/abp.toastr.js",
+                    "~/Abp/Framework/scripts/libs/abp.blockUI.js",
+                    "~/Abp/Framework/scripts/libs/abp.spin.js",
+                    "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
+                    "~/Abp/Framework/scripts/libs/abp.moment.js",
+                    "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js"
                    ).ForceOrdered()
                );
         }
