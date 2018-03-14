@@ -19,7 +19,7 @@ namespace TcmHMS.Web
                     new MenuItemDefinition(
                         "Home",
                         new LocalizableString("HomePage", TcmHMSConsts.LocalizationSourceName),
-                        url: "#/",
+                        url: "home",
                         icon: "fa fa-home",
                         requiresAuthentication: true
                         )
@@ -27,7 +27,7 @@ namespace TcmHMS.Web
                     new MenuItemDefinition(
                         "Tenants",
                         L("Tenants"),
-                        url: "#tenants",
+                        url: "tenants",
                         icon: "fa fa-globe",
                         requiredPermissionName: PermissionNames.Pages_Tenants
                         )
@@ -35,7 +35,7 @@ namespace TcmHMS.Web
                     new MenuItemDefinition(
                         "Users",
                         L("Users"),
-                        url: "#users",
+                        url: "users",
                         icon: "fa fa-users",
                         requiredPermissionName: PermissionNames.Pages_Users
                         )
@@ -43,7 +43,7 @@ namespace TcmHMS.Web
                     new MenuItemDefinition(
                         "Roles",
                         L("Roles"),
-                        url: "#users",
+                        url: "roles",
                         icon: "fa fa-tag",
                         requiredPermissionName: PermissionNames.Pages_Roles
                     )
@@ -52,7 +52,7 @@ namespace TcmHMS.Web
                     new MenuItemDefinition(
                         "About",
                         new LocalizableString("About", TcmHMSConsts.LocalizationSourceName),
-                        url: "#/about",
+                        url: "about",
                         icon: "fa fa-info"
                         )
                 );

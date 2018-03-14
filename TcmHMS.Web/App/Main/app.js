@@ -27,7 +27,6 @@ appModule.config([
                     templateUrl: '/App/Main/views/users/index.cshtml',
                     menu: 'Users' //Matches to name of 'Users' menu in TcmHMSNavigationProvider
                 });
-            $urlRouterProvider.otherwise('/users');
         }
 
         if (abp.auth.hasPermission('Pages.Roles')) {
@@ -37,7 +36,6 @@ appModule.config([
                     templateUrl: '/App/Main/views/roles/index.cshtml',
                     menu: 'Roles' //Matches to name of 'Tenants' menu in TcmHMSNavigationProvider
                 });
-            $urlRouterProvider.otherwise('/roles');
         }
 
         if (abp.auth.hasPermission('Pages.Tenants')) {
@@ -47,7 +45,6 @@ appModule.config([
                     templateUrl: '/App/Main/views/tenants/index.cshtml',
                     menu: 'Tenants' //Matches to name of 'Tenants' menu in TcmHMSNavigationProvider
                 });
-            $urlRouterProvider.otherwise('/tenants');
         }
 
         $stateProvider
