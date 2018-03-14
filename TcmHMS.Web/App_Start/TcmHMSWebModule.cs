@@ -10,6 +10,7 @@ using Abp.Web.SignalR;
 using Abp.Zero.Configuration;
 using TcmHMS.Api;
 using Hangfire;
+using TcmHMS.Web.Bundling;
 
 namespace TcmHMS.Web
 {

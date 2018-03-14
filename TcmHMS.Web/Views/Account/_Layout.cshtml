@@ -15,7 +15,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="~/favicon.ico">
     <title>TcmHMS</title>
-    @Styles.Render("~/Bundles/account-vendor/css")
+    @Styles.Render("~/Bundles/login-vendor/css")
     @RenderSection("styles", required: false)
     <script type="text/javascript">
         var abp = abp || {}; abp.appPath = '@ApplicationPath';
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    @Scripts.Render("~/Bundles/account-vendor/js/bottom")
+    @Scripts.Render("~/Bundles/login-vendor/js/bottom")
     <script>
         moment.locale('@Thread.CurrentThread.CurrentUICulture.Name');
     </script>
