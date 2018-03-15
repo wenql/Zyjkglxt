@@ -1,18 +1,13 @@
-﻿(function () {
-
-    $(function () {
-        var $loginForm = $('#LoginForm');
-
+﻿var CurrentPage = function () {
+    var handleLogin = function () {
+        var $loginForm = $('#loginForm');
         $loginForm.submit(function (e) {
             e.preventDefault();
-
             if (!$loginForm.valid()) {
                 return;
             }
-
             abp.ui.setBusy(
-                $('#LoginArea'),
-
+                null,
                 abp.ajax({
                     contentType: 'application/x-www-form-urlencoded',
                     url: $loginForm.attr('action'),
@@ -20,7 +15,6 @@
                 })
             );
         });
-
         $('a.social-login-link').click(function () {
             var $a = $(this);
             var $form = $a.closest('form');
@@ -28,9 +22,18 @@
             $form.submit();
         });
 
-        $('#ReturnUrlHash').val(location.hash);
+        $loginForm.find('input[name=returnUrlHash]').val(location.hash);
 
-        $('#LoginForm input:first-child').focus();
-    });
-
-})();
+        $('input[type=text]').first().focus();
+    }
+    return {
+        init: function () {
+            handleLogin();
+        }
+    };
+}();
+$(function () {
+    if (CurrentPage) {
+        CurrentPage.init();
+    }
+});

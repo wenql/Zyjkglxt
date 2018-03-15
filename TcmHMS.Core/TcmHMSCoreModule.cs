@@ -19,24 +19,11 @@ namespace TcmHMS
         {
             Configuration.Auditing.IsEnabledForAnonymousUsers = true;
 
-            //Declare entity types
             Configuration.Modules.Zero().EntityTypes.Tenant = typeof(Tenant);
             Configuration.Modules.Zero().EntityTypes.Role = typeof(Role);
             Configuration.Modules.Zero().EntityTypes.User = typeof(User);
 
-            //Remove the following line to disable multi-tenancy.
-            //Configuration.MultiTenancy.IsEnabled = TcmHMSConsts.MultiTenancyEnabled;
-
-            //Add/remove localization sources here
-            Configuration.Localization.Sources.Add(
-                new DictionaryBasedLocalizationSource(
-                    TcmHMSConsts.LocalizationSourceName,
-                    new XmlEmbeddedFileLocalizationDictionaryProvider(
-                        Assembly.GetExecutingAssembly(),
-                        "TcmHMS.Localization.Source"
-                        )
-                    )
-                );
+            Configuration.Localization.IsEnabled = false;
 
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 

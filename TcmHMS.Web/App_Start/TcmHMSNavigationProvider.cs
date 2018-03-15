@@ -15,46 +15,26 @@ namespace TcmHMS.Web
         public override void SetNavigation(INavigationProviderContext context)
         {
             context.Manager.MainMenu
-                .AddItem(
-                    new MenuItemDefinition(
-                        "Home",
-                        new LocalizableString("HomePage", TcmHMSConsts.LocalizationSourceName),
-                        url: "home",
-                        icon: "fa fa-home",
-                        requiresAuthentication: true
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        "Tenants",
-                        L("Tenants"),
-                        url: "tenants",
-                        icon: "fa fa-globe",
-                        requiredPermissionName: PermissionNames.Pages_Tenants
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        "Users",
-                        L("Users"),
-                        url: "users",
-                        icon: "fa fa-users",
-                        requiredPermissionName: PermissionNames.Pages_Users
-                        )
-                ).AddItem(
-                    new MenuItemDefinition(
+                .AddItem(new MenuItemDefinition(
+                    "Dashboard",
+                    L("工作台"),
+                    url: "dashboard",
+                    icon: "m-menu__link-icon flaticon-line-graph",
+                    requiresAuthentication: true))
+                .AddItem(new MenuItemDefinition(
+                        "Administration",
+                        L("系统管理"),
+                        icon: "m-menu__link-icon flaticon-interface-8")
+                    .AddItem(new MenuItemDefinition(
                         "Roles",
-                        L("Roles"),
+                        L("角色"),
                         url: "roles",
-                        icon: "fa fa-tag",
-                        requiredPermissionName: PermissionNames.Pages_Roles
-                    )
-                )
-                .AddItem(
-                    new MenuItemDefinition(
-                        "About",
-                        new LocalizableString("About", TcmHMSConsts.LocalizationSourceName),
-                        url: "about",
-                        icon: "fa fa-info"
-                        )
+                        icon: "m-menu__link-icon flaticon-suitcase"))
+                    .AddItem(new MenuItemDefinition(
+                        "Users",
+                        L("用户"),
+                        url: "users",
+                        icon: "m-menu__link-icon flaticon-users"))
                 );
         }
 

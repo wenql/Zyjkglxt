@@ -1,5 +1,6 @@
 ﻿@using System.Web.Optimization
 @using Abp.Timing
+@using Abp.Web.Mvc.Extensions
 @{
     SetAntiForgeryCookie();
 }
@@ -26,15 +27,12 @@
 </head>
 <body ng-controller="main.views.layout as vm" class="m-page--fluid  m--skin-light2 m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--fixed m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default page-on-load">
     <div ng-spinner-bar class="page-spinner-bar">
-        @*<div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>*@
-            <div class="m-spinner m-spinner--brand m-spinner--lg"></div>
-            <div class="m-spinner m-spinner--primary m-spinner--lg"></div>
-            <div class="m-spinner m-spinner--success m-spinner--lg"></div>
-            <div class="m-spinner m-spinner--info m-spinner--lg"></div>
-            <div class="m-spinner m-spinner--warning m-spinner--lg"></div>
-            <div class="m-spinner m-spinner--danger m-spinner--lg"></div>
+        <div class="m-spinner m-spinner--brand m-spinner--sm"></div>
+        <div class="m-spinner m-spinner--primary m-spinner--sm"></div>
+        <div class="m-spinner m-spinner--success m-spinner--sm"></div>
+        <div class="m-spinner m-spinner--info m-spinner--sm"></div>
+        <div class="m-spinner m-spinner--warning m-spinner--sm"></div>
+        <div class="m-spinner m-spinner--danger m-spinner--sm"></div>
     </div>
     <div class="m-grid m-grid--hor m-grid--root m-page">
         <header data-ng-include="'~/App/main/views/layout/header.cshtml'" data-ng-controller="main.views.layout.header as vm" class="m-grid__item m-header" data-minimize-offset="200" data-minimize-mobile-offset="200"></header>
@@ -51,6 +49,7 @@
         </div>
     </div>
     @Scripts.Render("~/Bundles/Main/libs/js")
+    @*@Html.IncludeScript("~/Scripts/i18n/angular-locale_zh-cn.js")*@
     <script src="~/api/AbpServiceProxies/GetAll?type=angular&v=@(Clock.Now.Ticks)"></script>
     <script src="~/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
     <script src="~/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>

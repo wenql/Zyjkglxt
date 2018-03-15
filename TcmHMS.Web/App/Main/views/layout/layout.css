@@ -1,10 +1,12 @@
 ﻿.page-on-load {
     background: #fefefe;
 }
+
     .page-on-load .m-page {
         display: none !important;
         transition: all 2s;
     }
+
 .fade-in-up {
     -webkit-animation: fadeInUp .5s;
     animation: fadeInUp .5s;
@@ -18,4 +20,15 @@
     left: 50%;
     margin-left: -110px;
     text-align: center;
+}
+
+.m-subheader {
+    padding: 15px 15px 0 !important;
+}
+
+    .m-subheader .m-subheader__title.m-subheader__title--separator {
+        border-right: 1px solid #e2e5ec;
+    }
+.m-content {
+    padding: 15px !important;
 }

@@ -1,0 +1,5 @@
+﻿.m-dropdown.m-dropdown--align-center.m-dropdown--large .m-dropdown__wrapper {
+    right: 0 !important;
+    margin-left:0px !important;
+    left:inherit !important;
+}

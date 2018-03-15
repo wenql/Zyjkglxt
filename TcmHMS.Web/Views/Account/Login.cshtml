@@ -10,8 +10,7 @@
 }
 <div class="card">
     <div class="body">
-        <form id="LoginForm" method="POST" action="Login">
-            <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+        <form id="loginForm" method="post" action="@Url.Action("Login")?returnUrl=@ViewBag.ReturnUrl">
             <input type="hidden" name="returnUrlHash" />
             <h4 class="text-center">登录</h4>
             <div class="input-group">
