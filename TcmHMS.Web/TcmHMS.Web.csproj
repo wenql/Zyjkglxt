@@ -451,6 +451,7 @@
     <Content Include="App\Main\directives\metronic\directives.js" />
     <Content Include="App\Main\filters\momentjs-filters.js" />
     <Content Include="App\Main\services\appSession.js" />
+    <Content Include="App\Main\views\administration\roles\createOrEditModal.js" />
     <Content Include="App\Main\views\administration\roles\index.css" />
     <Content Include="App\Main\views\administration\roles\index.js" />
     <Content Include="App\Main\views\layout\header.css" />
@@ -2026,6 +2027,7 @@
     <Content Include="App\Main\views\layout\footer.cshtml" />
     <Content Include="App\Main\views\dashboard\index.cshtml" />
     <Content Include="App\Main\views\administration\roles\index.cshtml" />
+    <Content Include="App\Main\views\administration\roles\createOrEditModal.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">

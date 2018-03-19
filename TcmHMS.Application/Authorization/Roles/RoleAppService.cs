@@ -14,11 +14,12 @@ using Abp.UI;
 using TcmHMS.Authorization;
 using TcmHMS.Authorization.Roles;
 using TcmHMS.Authorization.Users;
-using TcmHMS.Roles.Dto;
 using Microsoft.AspNet.Identity;
 using Abp.Extensions;
+using TcmHMS.Application.Authorization.Roles.Dto;
+using TcmHMS.Application.Authorization.Permissions.Dto;
 
-namespace TcmHMS.Roles
+namespace TcmHMS.Application.Authorization.Roles
 {
     [AbpAuthorize(PermissionNames.Pages_Roles)]
     public class RoleAppService : AsyncCrudAppService<Role, RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto>, IRoleAppService
@@ -58,6 +59,31 @@ namespace TcmHMS.Roles
             return new ListResultDto<RoleListDto>(roles.MapTo<List<RoleListDto>>());
         }
 
+        //[AbpAuthorize(PermissionNames.Pages_Administration_Roles_Create, PermissionNames.Pages_Administration_Roles_Edit)]
+        public async Task<GetRoleForEditOutput> GetRoleForEdit(NullableIdDto input)
+        {
+            var permissions = PermissionManager.GetAllPermissions();
+            var grantedPermissions = new Permission[0];
+            RoleEditDto roleEditDto;
+
+            if (input.Id.HasValue) //Editing existing role?
+            {
+                var role = await _roleManager.GetRoleByIdAsync(input.Id.Value);
+                grantedPermissions = (await _roleManager.GetGrantedPermissionsAsync(role)).ToArray();
+                roleEditDto = role.MapTo<RoleEditDto>();
+            }
+            else
+            {
+                roleEditDto = new RoleEditDto();
+            }
+
+            return new GetRoleForEditOutput
+            {
+                Role = roleEditDto,
+                Permissions = permissions.MapTo<List<FlatPermissionDto>>().OrderBy(p => p.DisplayName).ToList(),
+                GrantedPermissionNames = grantedPermissions.Select(p => p.Name).ToList()
+            };
+        }
 
         public override async Task<RoleDto> Create(CreateRoleDto input)
         {

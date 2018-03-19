@@ -16,9 +16,8 @@
         <div class="m-portlet m-portlet--mobile">
             <div class="m-portlet__body">
                 <div busy-if="vm.loading">
-                    <div ui-grid="vm.roleGridOptions" ui-grid-resize-columns ui-grid-auto-resize></div>
+                    <div ui-grid="vm.roleGridOptions" ui-grid-resize-columns ui-grid-auto-resize ng-style="vm.getTableHeight()"></div>
                 </div>
-
             </div>
         </div>
     </div>

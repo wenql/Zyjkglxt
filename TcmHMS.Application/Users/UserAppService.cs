@@ -11,7 +11,7 @@ using Abp.IdentityFramework;
 using TcmHMS.Authorization;
 using TcmHMS.Authorization.Roles;
 using TcmHMS.Authorization.Users;
-using TcmHMS.Roles.Dto;
+using TcmHMS.Application.Authorization.Roles.Dto;
 using TcmHMS.Users.Dto;
 using Microsoft.AspNet.Identity;
 

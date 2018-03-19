@@ -2,7 +2,7 @@
 using Abp.Authorization;
 using Abp.AutoMapper;
 
-namespace TcmHMS.Roles.Dto
+namespace TcmHMS.Application.Authorization.Roles.Dto
 {
     [AutoMapFrom(typeof(Permission))]
     public class PermissionDto : EntityDto<long>

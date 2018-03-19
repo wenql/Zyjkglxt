@@ -1,6 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 
-namespace TcmHMS.Roles
+namespace TcmHMS.Application.Authorization.Roles.Dto
 {
     public class GetRolesInput 
     {

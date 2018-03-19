@@ -32,11 +32,15 @@ appModule.config([
             });
     }
 ]);
-appModule.run(["$rootScope", "$state", '$uibModalStack', function ($rootScope, $state, $uibModalStack) {
+appModule.run(["$rootScope", "$state", 'i18nService', '$uibModalStack', function ($rootScope, $state, i18nService, $uibModalStack) {
     $rootScope.$state = $state;
     $rootScope.$on('$stateChangeSuccess', function () {
         $uibModalStack.dismissAll();
     });
+
+    //Set Ui-Grid language
+    i18nService.setCurrentLang("zh-cn");
+
     $rootScope.safeApply = function (fn) {
         var phase = this.$root.$$phase;
         if (phase === '$apply' || phase === '$digest') {

@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Abp.Application.Services.Dto;
 using Abp.Authorization.Roles;
 using Abp.AutoMapper;
 using TcmHMS.Authorization.Roles;
 
-namespace TcmHMS.Roles.Dto
+namespace TcmHMS.Application.Authorization.Roles.Dto
 {
-    [AutoMapFrom(typeof(Role)), AutoMapTo(typeof(Role))]
-    public class RoleDto : EntityDto<int>
+    [AutoMapTo(typeof(Role))]
+    public class CreateRoleDto
     {
         [Required]
         [StringLength(AbpRoleBase.MaxNameLength)]
@@ -17,6 +16,8 @@ namespace TcmHMS.Roles.Dto
         [Required]
         [StringLength(AbpRoleBase.MaxDisplayNameLength)]
         public string DisplayName { get; set; }
+
+        public string NormalizedName { get; set; }
 
         [StringLength(Role.MaxDescriptionLength)]
         public string Description { get; set; }

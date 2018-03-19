@@ -1,4 +1,8 @@
-﻿.ui-grid-header-viewport {
+﻿.ui-grid {
+    border: none !important;
+}
+
+.ui-grid-header-viewport {
     background-color: #e6e6e6 !important;
 }
 
@@ -9,12 +13,40 @@
     font-weight: 700;
     line-height: 21px;
     vertical-align: middle;
-    border-color: #c7c7c7;
     color: #373a3c;
-    border: none;
 }
 
 .ui-grid-cell-contents {
     padding: 10px;
 }
 
+.ui-grid-grid-footer {
+    line-height: 30px;
+    background-color: #f5f5f5 !important;
+    background: #fff;
+    color: #2d353c;
+    border: 1px solid #ececec;
+
+}
+
+.ui-grid-cell {
+    font-family: Poppins,Roboto;
+    border-right: 1px solid #ececec !important;
+}
+
+.ui-grid-cell-contents {
+    padding: 0px 10px;
+    line-height: 50px;
+}
+
+/*.ui-grid-row:nth-child(odd) .ui-grid-cell {
+    background-color: #f4f3fb !important
+}*/
+
+.ui-grid-canvas {
+    position: relative;
+    padding-top: 0px !important;
+}
+.ui-grid-row .ui-grid-cell:first-child {
+    border-left: 1px solid #ececec !important;
+}
