@@ -449,7 +449,9 @@
     <Content Include="Abp\Framework\styles\utils\ie10fix.css" />
     <Content Include="App\Main\app.js" />
     <Content Include="App\Main\directives\metronic\directives.js" />
+    <Content Include="App\Main\filters\momentjs-filters.js" />
     <Content Include="App\Main\services\appSession.js" />
+    <Content Include="App\Main\views\administration\roles\index.css" />
     <Content Include="App\Main\views\administration\roles\index.js" />
     <Content Include="App\Main\views\layout\header.css" />
     <Content Include="App\Main\views\layout\header.js" />
@@ -457,6 +459,7 @@
     <Content Include="App\Main\views\layout\layout.js" />
     <Content Include="App\Main\views\layout\sidebar.css" />
     <Content Include="App\Main\views\layout\sidebar.js" />
+    <Content Include="App\Main\views\layout\ui-grid-metronic.css" />
     <Content Include="Common\Scripts\helpers.js" />
     <Content Include="Content\metronic\assets\app\js\dashboard.js" />
     <Content Include="Content\metronic\assets\app\js\layout-builder.js" />
@@ -674,9 +677,17 @@
     <Content Include="App\Main\web.config" />
     <Content Include="libs\angular-bootstrap-switch\angular-bootstrap-switch.js" />
     <Content Include="libs\angular-bootstrap-switch\angular-bootstrap-switch.min.js" />
+    <Content Include="libs\angular-datatables\angular-datatables.directive.js" />
+    <Content Include="libs\angular-datatables\angular-datatables.factory.js" />
+    <Content Include="libs\angular-datatables\angular-datatables.instances.js" />
+    <Content Include="libs\angular-datatables\angular-datatables.js" />
+    <Content Include="libs\angular-datatables\angular-datatables.options.js" />
+    <Content Include="libs\angular-datatables\angular-datatables.renderer.js" />
+    <Content Include="libs\angular-datatables\angular-datatables.util.js" />
     <Content Include="libs\angular-daterangepicker\angular-daterangepicker.js" />
     <Content Include="libs\angular-daterangepicker\angular-daterangepicker.min.js" />
     <Content Include="libs\angular-file-upload\angular-file-upload.min.js" />
+    <Content Include="libs\angular-metronic-datatables\angular-metronic-datatables.js" />
     <Content Include="libs\angular-moment\angular-moment.js" />
     <Content Include="libs\angular-moment\angular-moment.min.js" />
     <Content Include="libs\angular-ocLazyLoad\ocLazyLoad.min.js" />
@@ -1042,8 +1053,11 @@
     <Content Include="libs\jquery-validation\src\localization\methods_fi.js" />
     <Content Include="libs\jquery-validation\src\localization\methods_nl.js" />
     <Content Include="libs\jquery-validation\src\localization\methods_pt.js" />
+    <Content Include="libs\angular-datatables\angular-datatables.css" />
+    <Content Include="libs\jquery.dataTables\jquery.dataTables.js" />
     <Content Include="libs\jquery.signalR\jquery.signalR-2.2.2.js" />
     <Content Include="libs\jquery.signalR\jquery.signalR-2.2.2.min.js" />
+    <Content Include="libs\jquery\jquery-1.6.4.js" />
     <Content Include="libs\jquery\jquery-migrate.min.js" />
     <Content Include="libs\jquery\jquery.js" />
     <Content Include="libs\jquery\jquery.min.js" />

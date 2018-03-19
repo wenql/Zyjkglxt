@@ -7,6 +7,8 @@ namespace TcmHMS.Roles
 {
     public interface IRoleAppService : IAsyncCrudAppService<RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto>
     {
+        Task<ListResultDto<RoleListDto>> GetRoles(GetRolesInput input);
+
         Task<ListResultDto<PermissionDto>> GetAllPermissions();
     }
 }

@@ -29,6 +29,11 @@
     .m-subheader .m-subheader__title.m-subheader__title--separator {
         border-right: 1px solid #e2e5ec;
     }
+
 .m-content {
     padding: 15px !important;
+}
+
+.m-portlet .m-portlet__body {
+    padding: 1.1rem !important;
 }

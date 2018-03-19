@@ -11,25 +11,7 @@ namespace TcmHMS.Web.Bundling
             AddMainLibCss(bundles);
             AddMainMetronicCss(bundles);
 
-            //bundles.Add(
-            //    new StyleBundle("~/Bundles/Frontend/metronic/css")
-            //        .Include("~/libs/metronic/assets/global/css/components.css", new CssRewriteUrlWithVirtualDirectoryTransform())
-            //        .Include("~/libs/metronic/assets/frontend/layout/css/style.css", new CssRewriteUrlWithVirtualDirectoryTransform())
-            //        .Include("~/libs/metronic/assets/frontend/pages/css/style-revolution-slider.css", new CssRewriteUrlWithVirtualDirectoryTransform())
-            //        .Include("~/libs/metronic/assets/frontend/layout/css/style-responsive.css", new CssRewriteUrlWithVirtualDirectoryTransform())
-            //        .Include("~/libs/metronic/assets/frontend/layout/css/themes/red.css", new CssRewriteUrlWithVirtualDirectoryTransform())
-            //        .ForceOrdered()
-            //    );
-
             AddMainLibJs(bundles);
-
-            //bundles.Add(
-            //  new ScriptBundle("~/Bundles/Frontend/metronic/js")
-            //      .Include(
-            //          "~/libs/metronic/assets/frontend/layout/scripts/back-to-top.js",
-            //          "~/libs/metronic/assets/frontend/layout/scripts/layout.js"
-            //      ).ForceOrdered()
-            //  );
 
             bundles.Add(
                  new ScriptBundle("~/Bundles/Main/metronic/js")
@@ -122,7 +104,7 @@ namespace TcmHMS.Web.Bundling
             bundles.Add(
                new ScriptBundle("~/Bundles/Main/libs/js").Include(
                     "~/libs/json2/json2.min.js",
-                    "~/libs/jquery/jquery.min.js",
+                    "~/libs/jquery/jquery.js",
                     "~/libs/jquery/jquery-migrate.min.js",
                     "~/libs/bootstrap/js/bootstrap.min.js",
                     "~/libs/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js",
@@ -130,6 +112,7 @@ namespace TcmHMS.Web.Bundling
                     "~/libs/jquery-blockui/jquery.blockui.min.js",
                     "~/libs/js-cookie/js.cookie.min.js",
                     "~/libs/jquery-uniform/jquery.uniform.min.js",
+                    "~/libs/jquery.dataTables/jquery.dataTables.js",
                     "~/libs/jquery.signalR/jquery.signalR-2.2.2.min.js",
                     "~/libs/localforage/localforage.min.js",
                     "~/libs/morris/morris.min.js",
@@ -160,6 +143,7 @@ namespace TcmHMS.Web.Bundling
                     "~/libs/angular-file-upload/angular-file-upload.min.js",
                     "~/libs/angular-ocLazyLoad/ocLazyLoad.min.js",
                     "~/libs/angular-daterangepicker/angular-daterangepicker.min.js",
+                    "~/libs/angular-metronic-datatables/angular-metronic-datatables.js",
                     "~/libs/angular-moment/angular-moment.min.js",
                     "~/libs/angular-bootstrap-switch/angular-bootstrap-switch.min.js",
                     "~/Abp/Framework/scripts/abp.js",

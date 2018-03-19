@@ -1,18 +1,22 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.Authorization.Users;
+using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.IdentityFramework;
+using Abp.Linq.Extensions;
 using Abp.UI;
 using TcmHMS.Authorization;
 using TcmHMS.Authorization.Roles;
 using TcmHMS.Authorization.Users;
 using TcmHMS.Roles.Dto;
 using Microsoft.AspNet.Identity;
+using Abp.Extensions;
 
 namespace TcmHMS.Roles
 {
@@ -40,6 +44,20 @@ namespace TcmHMS.Roles
             _userRoleRepository = userRoleRepository;
             _roleRepository = roleRepository;
         }
+
+        public async Task<ListResultDto<RoleListDto>> GetRoles(GetRolesInput input)
+        {
+            var roles = await _roleManager
+                .Roles
+                .WhereIf(
+                    !input.Permission.IsNullOrWhiteSpace(),
+                    r => r.Permissions.Any(rp => rp.Name == input.Permission && rp.IsGranted)
+                )
+                .ToListAsync();
+
+            return new ListResultDto<RoleListDto>(roles.MapTo<List<RoleListDto>>());
+        }
+
 
         public override async Task<RoleDto> Create(CreateRoleDto input)
         {
