@@ -35,6 +35,7 @@
                     paginationPageSize: app.consts.grid.defaultPageSize,
                     useExternalPagination: true,
                     useExternalSorting: true,
+                    paginationTemplate: "/app/main/directives/paginationTemplate.cshtml",
                     appScopeProvider: vm,
                     rowTemplate: '<div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell" ng-class="{ \'ui-grid-row-header-cell\': col.isRowHeader, \'text-muted\': !row.entity.isActive }"  ui-grid-cell></div>',
                     columnDefs: [

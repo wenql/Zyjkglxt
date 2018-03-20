@@ -17380,3 +17380,1397 @@ DEBUG 2018-03-20 17:28:43,959 [34   ] Abp.Modules.AbpModuleManager             -
 DEBUG 2018-03-20 17:28:43,960 [34   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
 DEBUG 2018-03-20 17:28:43,961 [34   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
 DEBUG 2018-03-20 17:28:43,961 [34   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-03-20 19:45:20,766 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-03-20 19:45:20,779 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-03-20 19:45:20,784 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Web.TcmHMSWebModule, TcmHMS.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,785 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSDataModule, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,785 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSCoreModule, TcmHMS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSApplicationModule, TcmHMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,786 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Api.TcmHMSWebApiModule, TcmHMS.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,787 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:20,790 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-03-20 19:45:20,998 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 19:45:20,998 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 19:45:20,998 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 19:45:21,273 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: TcmHMS.EntityFramework.TcmHMSDbContext, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:45:23,116 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-03-20 19:45:23,166 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-03-20 19:45:23,222 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-03-20 19:45:23,222 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Friendships.Cache.FriendCacheItem
+DEBUG 2018-03-20 19:45:23,226 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-03-20 19:45:23,226 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-03-20 19:45:23,226 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto
+DEBUG 2018-03-20 19:45:23,226 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2018-03-20 19:45:23,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2018-03-20 19:45:23,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleListDto
+DEBUG 2018-03-20 19:45:23,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2018-03-20 19:45:23,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.PermissionDto
+DEBUG 2018-03-20 19:45:23,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleDto
+DEBUG 2018-03-20 19:45:23,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionDto
+DEBUG 2018-03-20 19:45:23,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionWithLevelDto
+DEBUG 2018-03-20 19:45:23,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2018-03-20 19:45:24,197 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-03-20 19:45:24,198 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-03-20 19:45:24,199 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-03-20 19:45:24,201 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-03-20 19:45:24,203 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-03-20 19:45:24,204 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Permissions.IPermissionAppService' with service name 'app/permission'.
+WARN  2018-03-20 19:45:28,397 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+WARN  2018-03-20 19:45:33,593 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+WARN  2018-03-20 19:45:38,852 [7    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+WARN  2018-03-20 19:45:44,068 [7    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+WARN  2018-03-20 19:45:49,258 [7    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+WARN  2018-03-20 19:45:54,446 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+WARN  2018-03-20 19:45:59,692 [7    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+WARN  2018-03-20 19:46:04,971 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+Castle.MicroKernel.ComponentActivator.ComponentActivatorException: ComponentActivator: could not instantiate TcmHMS.EntityFramework.TcmHMSDbContext ---> System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.InvalidOperationException: The model backing the 'TcmHMSDbContext' context has changed since the database was created. Consider using Code First Migrations to update the database (http://go.microsoft.com/fwlink/?LinkId=238269).
+   在 System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)
+   在 System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()
+   在 System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   在 System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   在 System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)
+   在 System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.InternalContext.ForceOSpaceLoadingForKnownEntityTypes()
+   在 System.Data.Entity.DbContext.System.Data.Entity.Infrastructure.IObjectContextAdapter.get_ObjectContext()
+   在 Abp.EntityFramework.AbpDbContext.RegisterToChanges() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\AbpDbContext.cs:行号 148
+   在 Abp.Zero.EntityFramework.AbpZeroDbContext`3..ctor(String nameOrConnectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.EntityFramework\Zero\EntityFramework\AbpZeroDbContext.cs:行号 67
+   在 TcmHMS.EntityFramework.TcmHMSDbContext..ctor(String nameOrConnectionString) 位置 F:\workstation\Zyjkglxt\TcmHMS.EntityFramework\EntityFramework\TcmHMSDbContext.cs:行号 29
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeConstructorInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.FastCreateInstance(Type implType, Object[] arguments, ConstructorCandidate constructor)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstanceCore(ConstructorCandidate constructor, Object[] arguments, Type implType)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   在 Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   在 Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   在 Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   在 Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   在 Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   在 Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, IDictionary arguments)
+   在 Castle.Windsor.WindsorContainer.Resolve(Type service, Object argumentsAsAnonymousType)
+   在 Abp.Dependency.IocManager.Resolve(Type type, Object argumentsAsAnonymousType) 位置 D:\Github\aspnetboilerplate\src\Abp\Dependency\IocManager.cs:行号 207
+   在 Abp.EntityFramework.DefaultDbContextResolver.Resolve[TDbContext](String connectionString) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\DefaultDbContextResolver.cs:行号 23
+   在 Abp.EntityFramework.Uow.TransactionScopeEfTransactionStrategy.CreateDbContext[TDbContext](String connectionString, IDbContextResolver dbContextResolver) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\TransactionScopeEfTransactionStrategy.cs:行号 45
+   在 Abp.EntityFramework.Uow.EfUnitOfWork.GetOrCreateDbContext[TDbContext](Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\EfUnitOfWork.cs:行号 119
+   在 Abp.EntityFramework.Uow.UnitOfWorkExtensions.GetDbContext[TDbContext](IActiveUnitOfWork unitOfWork, Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkExtensions.cs:行号 38
+   在 Abp.EntityFramework.Uow.UnitOfWorkDbContextProvider`1.GetDbContext(Nullable`1 multiTenancySide) 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Uow\UnitOfWorkDbContextProvider.cs:行号 33
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Context() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 30
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.get_Table() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 35
+   在 Abp.EntityFramework.Repositories.EfRepositoryBase`3.GetAll() 位置 D:\Github\aspnetboilerplate\src\Abp.EntityFramework\EntityFramework\Repositories\EfRepositoryBaseOfTEntityAndTPrimaryKey.cs:行号 79
+   在 Castle.Proxies.Invocations.IRepository`2_GetAll_3.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 67
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 59
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.IRepository`2Proxy_1.GetAll()
+   在 Abp.BackgroundJobs.BackgroundJobStore.GetWaitingJobsAsync(Int32 maxResultCount) 位置 D:\Github\aspnetboilerplate\src\Abp.Zero.Common\BackgroundJobs\BackgroundJobStore.cs:行号 36
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync_callback(Int32 maxResultCount)
+   在 Castle.Proxies.Invocations.BackgroundJobStore_GetWaitingJobsAsync.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformAsyncUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 83
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 55
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Github\aspnetboilerplate\src\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 49
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.BackgroundJobStoreProxy.GetWaitingJobsAsync(Int32 maxResultCount)
+   在 Abp.BackgroundJobs.BackgroundJobManager.<DoWork>b__14_0() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 System.Threading.Tasks.Task`1.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass16_0`1.<Run>b__0(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.BackgroundJobs.BackgroundJobManager.DoWork() 位置 D:\Github\aspnetboilerplate\src\Abp\BackgroundJobs\BackgroundJobManager.cs:行号 93
+   在 Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) 位置 D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:行号 48
+DEBUG 2018-03-20 19:46:09,882 [9    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-03-20 19:46:09,883 [9    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-03-20 19:46:09,884 [9    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-03-20 19:46:09,884 [9    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-03-20 19:46:20,210 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-03-20 19:46:20,222 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-03-20 19:46:20,228 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Web.TcmHMSWebModule, TcmHMS.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,229 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSDataModule, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,229 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSCoreModule, TcmHMS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSApplicationModule, TcmHMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,230 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Api.TcmHMSWebApiModule, TcmHMS.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,231 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,231 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,231 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,231 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,231 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:20,233 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-03-20 19:46:20,401 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 19:46:20,401 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 19:46:20,401 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 19:46:20,694 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: TcmHMS.EntityFramework.TcmHMSDbContext, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 19:46:22,486 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-03-20 19:46:22,527 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-03-20 19:46:22,563 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-03-20 19:46:22,563 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Friendships.Cache.FriendCacheItem
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleListDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.PermissionDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleDto
+DEBUG 2018-03-20 19:46:22,566 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionDto
+DEBUG 2018-03-20 19:46:22,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionWithLevelDto
+DEBUG 2018-03-20 19:46:22,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2018-03-20 19:46:23,456 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-03-20 19:46:23,457 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-03-20 19:46:23,458 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-03-20 19:46:23,459 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-03-20 19:46:23,460 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-03-20 19:46:23,461 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Permissions.IPermissionAppService' with service name 'app/permission'.
+DEBUG 2018-03-20 23:20:51,816 [44   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-03-20 23:20:51,817 [44   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-03-20 23:20:51,818 [44   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-03-20 23:20:51,818 [44   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-03-20 23:20:54,928 [53   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-03-20 23:20:55,083 [53   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-03-20 23:20:55,089 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Web.TcmHMSWebModule, TcmHMS.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,091 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSDataModule, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,092 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,092 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,092 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,092 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,092 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,093 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,093 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSCoreModule, TcmHMS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,093 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSApplicationModule, TcmHMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,093 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,093 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Api.TcmHMSWebApiModule, TcmHMS.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,093 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,093 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,094 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,094 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,094 [53   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:55,096 [53   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-03-20 23:20:55,415 [53   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 23:20:55,415 [53   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 23:20:55,415 [53   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-03-20 23:20:55,672 [53   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: TcmHMS.EntityFramework.TcmHMSDbContext, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-03-20 23:20:56,236 [53   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-03-20 23:20:56,283 [53   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-03-20 23:20:56,320 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-03-20 23:20:56,320 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Friendships.Cache.FriendCacheItem
+DEBUG 2018-03-20 23:20:56,323 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-03-20 23:20:56,323 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-03-20 23:20:56,323 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto
+DEBUG 2018-03-20 23:20:56,323 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2018-03-20 23:20:56,323 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2018-03-20 23:20:56,323 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleListDto
+DEBUG 2018-03-20 23:20:56,323 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2018-03-20 23:20:56,324 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.PermissionDto
+DEBUG 2018-03-20 23:20:56,324 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleDto
+DEBUG 2018-03-20 23:20:56,324 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionDto
+DEBUG 2018-03-20 23:20:56,324 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionWithLevelDto
+DEBUG 2018-03-20 23:20:56,324 [53   ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2018-03-20 23:20:57,180 [53   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-03-20 23:20:57,181 [53   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-03-20 23:20:57,182 [53   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-03-20 23:20:57,183 [53   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-03-20 23:20:57,184 [53   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-03-20 23:20:57,184 [53   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Permissions.IPermissionAppService' with service name 'app/permission'.

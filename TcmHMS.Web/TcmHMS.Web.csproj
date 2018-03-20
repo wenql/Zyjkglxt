@@ -2036,6 +2036,7 @@
     <Content Include="App\Main\directives\permissionCombo.cshtml" />
     <Content Include="App\Main\directives\roleCombo.cshtml" />
     <Content Include="App\Main\views\administration\users\index.cshtml" />
+    <Content Include="App\Main\directives\paginationTemplate.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
