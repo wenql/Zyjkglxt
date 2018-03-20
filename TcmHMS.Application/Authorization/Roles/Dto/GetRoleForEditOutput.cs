@@ -1,8 +1,7 @@
 using System.Collections.Generic;
-using Abp.Application.Services.Dto;
-using TcmHMS.Application.Authorization.Permissions.Dto;
+using TcmHMS.Authorization.Permissions.Dto;
 
-namespace TcmHMS.Application.Authorization.Roles.Dto
+namespace TcmHMS.Authorization.Roles.Dto
 {
     public class GetRoleForEditOutput
     {

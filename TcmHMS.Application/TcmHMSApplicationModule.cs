@@ -8,7 +8,6 @@ using Abp.Modules;
 using TcmHMS.Application;
 using TcmHMS.Authorization.Roles;
 using TcmHMS.Authorization.Users;
-using TcmHMS.Users.Dto;
 
 namespace TcmHMS
 {

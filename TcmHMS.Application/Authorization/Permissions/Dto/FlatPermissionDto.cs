@@ -1,6 +1,6 @@
 using Abp.AutoMapper;
 
-namespace TcmHMS.Application.Authorization.Permissions.Dto
+namespace TcmHMS.Authorization.Permissions.Dto
 {
     [AutoMapFrom(typeof(Abp.Authorization.Permission))]
     public class FlatPermissionDto

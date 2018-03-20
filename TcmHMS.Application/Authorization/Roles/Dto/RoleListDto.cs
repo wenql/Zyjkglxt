@@ -2,9 +2,8 @@
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Entities.Auditing;
-using TcmHMS.Authorization.Roles;
 
-namespace TcmHMS.Application.Authorization.Roles.Dto
+namespace TcmHMS.Authorization.Roles.Dto
 {
     [AutoMapFrom(typeof(Role))]
     public class RoleListDto : EntityDto, IHasCreationTime

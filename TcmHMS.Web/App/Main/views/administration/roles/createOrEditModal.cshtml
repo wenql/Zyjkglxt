@@ -6,11 +6,14 @@
                 <span ng-if="vm.role.id">修改角色: {{vm.role.displayName}}</span>
                 <span ng-if="!vm.role.id">添加角色</span>
             </h4>
+            <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
         </div>
         <div class="modal-body">
             <uib-tabset class="tab-container tabbable-line">
                 <uib-tab heading="角色名称">
-                    <div class="form-group form-md-line-input form-md-floating-label no-hint">
+                    @*<div class="form-group form-md-line-input form-md-floating-label no-hint">
                         <input class="form-control" type="text" name="RoleDisplayName" ng-class="{'edited':vm.role.displayName}" ng-model="vm.role.displayName" required maxlength="@Role.MaxDisplayNameLength">
                         <label>角色名称</label>
                     </div>
@@ -25,6 +28,19 @@
                             </label>
                             <span class="help-block">@L("DefaultRole_Description")</span>
                         </div>
+                    </div>*@
+                    <div class="form-group">
+                        <label>
+                            角色名称*
+                        </label>
+                        <input type="text" class="form-control m-input"  name="RoleDisplayName" ng-class="{'edited':vm.role.displayName}" ng-model="vm.role.displayName" required maxlength="@Role.MaxDisplayNameLength">                     
+                    </div>
+                    <div class="m-checkbox-list">
+                        <label class="m-checkbox">
+                            <input id="EditRole_IsDefault"ng-model="vm.role.isDefault" name="IsDefault" type="checkbox" class="ng-untouched ng-pristine ng-valid">
+                            默认<span></span>
+                        </label>
+                        <span class="help-block">新用户将默认拥有此角色.</span>
                     </div>
                 </uib-tab>
                 <uib-tab heading="权限">

@@ -449,11 +449,15 @@
     <Content Include="Abp\Framework\styles\utils\ie10fix.css" />
     <Content Include="App\Main\app.js" />
     <Content Include="App\Main\directives\metronic\directives.js" />
+    <Content Include="App\Main\directives\permissionCombo.js" />
+    <Content Include="App\Main\directives\permissionTree.js" />
+    <Content Include="App\Main\directives\roleCombo.js" />
     <Content Include="App\Main\filters\momentjs-filters.js" />
     <Content Include="App\Main\services\appSession.js" />
     <Content Include="App\Main\views\administration\roles\createOrEditModal.js" />
     <Content Include="App\Main\views\administration\roles\index.css" />
     <Content Include="App\Main\views\administration\roles\index.js" />
+    <Content Include="App\Main\views\administration\users\index.js" />
     <Content Include="App\Main\views\layout\header.css" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.css" />
@@ -461,7 +465,7 @@
     <Content Include="App\Main\views\layout\sidebar.css" />
     <Content Include="App\Main\views\layout\sidebar.js" />
     <Content Include="App\Main\views\layout\ui-grid-metronic.css" />
-    <Content Include="Common\Scripts\helpers.js" />
+    <Content Include="Abp\Framework\scripts\helpers.js" />
     <Content Include="Content\metronic\assets\app\js\dashboard.js" />
     <Content Include="Content\metronic\assets\app\js\layout-builder.js" />
     <Content Include="Content\metronic\assets\app\media\img\bg\bg-1.jpg" />
@@ -560,6 +564,7 @@
     <Content Include="Content\metronic\assets\app\media\img\users\user5.jpg" />
     <Content Include="Content\metronic\assets\demo\default\base\scripts.bundle.js" />
     <Content Include="Content\metronic\assets\demo\default\base\style.bundle.css" />
+    <Content Include="Content\metronic\assets\demo\default\base\styles.e.bundle.css" />
     <Content Include="Content\metronic\assets\demo\default\custom\components\base\blockui.js" />
     <Content Include="Content\metronic\assets\demo\default\custom\components\base\bootstrap-notify.js" />
     <Content Include="Content\metronic\assets\demo\default\custom\components\base\dropdown.js" />
@@ -848,15 +853,14 @@
     <Content Include="libs\bootstrap-switch\css\bootstrap-switch.min.css" />
     <Content Include="libs\bootstrap-switch\js\bootstrap-switch.js" />
     <Content Include="libs\bootstrap-switch\js\bootstrap-switch.min.js" />
-    <Content Include="libs\bootstrap\css\bootstrap-rtl.css" />
-    <Content Include="libs\bootstrap\css\bootstrap-rtl.min.css" />
+    <Content Include="Content\materialize.css" />
+    <Content Include="libs\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="libs\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="libs\bootstrap\css\bootstrap.css" />
     <Content Include="libs\bootstrap\css\bootstrap.min.css" />
-    <Content Include="libs\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="libs\bootstrap\js\bootstrap.js" />
     <Content Include="libs\bootstrap\js\bootstrap.min.js" />
-    <Content Include="libs\bootstrap\js\npm.js" />
-    <Content Include="Content\materialize.css" />
     <Content Include="libs\jcrop\css\Jcrop.gif" />
     <Content Include="libs\jcrop\css\jquery.Jcrop.css" />
     <Content Include="libs\jcrop\css\jquery.Jcrop.min.css" />
@@ -1059,6 +1063,7 @@
     <Content Include="libs\jquery.signalR\jquery.signalR-2.2.2.js" />
     <Content Include="libs\jquery.signalR\jquery.signalR-2.2.2.min.js" />
     <Content Include="libs\jquery\jquery-1.6.4.js" />
+    <Content Include="libs\jquery\jquery-3.2.1.js" />
     <Content Include="libs\jquery\jquery-migrate.min.js" />
     <Content Include="libs\jquery\jquery.js" />
     <Content Include="libs\jquery\jquery.min.js" />
@@ -2028,6 +2033,9 @@
     <Content Include="App\Main\views\dashboard\index.cshtml" />
     <Content Include="App\Main\views\administration\roles\index.cshtml" />
     <Content Include="App\Main\views\administration\roles\createOrEditModal.cshtml" />
+    <Content Include="App\Main\directives\permissionCombo.cshtml" />
+    <Content Include="App\Main\directives\roleCombo.cshtml" />
+    <Content Include="App\Main\views\administration\users\index.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
@@ -2883,11 +2891,6 @@
     <Content Include="fonts\roboto\PwZc-YbIL414wB9rB1IAPRJtnKITppOI_IvcXXDNrsc.woff2" />
     <Content Include="fonts\roboto\u0TOpm082MNkS5K0Q4rhqvesZW2xOQ-xsNqO47m55DA.woff2" />
     <Content Include="fonts\roboto\UX6i4JxQDm3fVTc1CPuwqhJtnKITppOI_IvcXXDNrsc.woff2" />
-    <Content Include="libs\bootstrap\css\bootstrap.css.map" />
-    <Content Include="libs\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.eot" />
-    <Content Include="libs\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
-    <Content Include="libs\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.woff" />
-    <Content Include="libs\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\font-awesome\fontawesome-webfont.eot" />
     <Content Include="fonts\font-awesome\fontawesome-webfont.ttf" />
     <Content Include="fonts\font-awesome\fontawesome-webfont.woff" />
@@ -3026,6 +3029,11 @@
     <Content Include="libs\angular-moment\LICENSE" />
     <Content Include="libs\angular-moment\README.md" />
     <Content Include="libs\metronic\assets\admin\layout4\scripts\layout.min.js.map" />
+    <Content Include="libs\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="libs\bootstrap\css\bootstrap.css.map" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

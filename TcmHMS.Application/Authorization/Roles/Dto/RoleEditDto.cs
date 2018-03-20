@@ -1,8 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.AutoMapper;
-using TcmHMS.Authorization.Roles;
 
-namespace TcmHMS.Application.Authorization.Roles.Dto
+namespace TcmHMS.Authorization.Roles.Dto
 {
     [AutoMap(typeof(Role))]
     public class RoleEditDto

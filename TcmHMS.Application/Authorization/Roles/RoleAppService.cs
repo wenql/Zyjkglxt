@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services;
@@ -11,39 +12,23 @@ using Abp.Domain.Repositories;
 using Abp.IdentityFramework;
 using Abp.Linq.Extensions;
 using Abp.UI;
-using TcmHMS.Authorization;
-using TcmHMS.Authorization.Roles;
 using TcmHMS.Authorization.Users;
 using Microsoft.AspNet.Identity;
 using Abp.Extensions;
-using TcmHMS.Application.Authorization.Roles.Dto;
-using TcmHMS.Application.Authorization.Permissions.Dto;
+using TcmHMS.Authorization.Permissions;
+using TcmHMS.Authorization.Permissions.Dto;
+using TcmHMS.Authorization.Roles.Dto;
 
-namespace TcmHMS.Application.Authorization.Roles
+namespace TcmHMS.Authorization.Roles
 {
-    [AbpAuthorize(PermissionNames.Pages_Roles)]
-    public class RoleAppService : AsyncCrudAppService<Role, RoleDto, int, PagedResultRequestDto, CreateRoleDto, RoleDto>, IRoleAppService
+    [AbpAuthorize(PermissionNames.Pages_Administration_Roles)]
+    public class RoleAppService : TcmHMSAppServiceBase, IRoleAppService
     {
         private readonly RoleManager _roleManager;
-        private readonly UserManager _userManager;
-        private readonly IRepository<User, long> _userRepository;
-        private readonly IRepository<UserRole, long> _userRoleRepository;
-        private readonly IRepository<Role> _roleRepository;
 
-        public RoleAppService(
-            IRepository<Role> repository,
-            RoleManager roleManager,
-            UserManager userManager,
-            IRepository<User, long> userRepository,
-            IRepository<UserRole, long> userRoleRepository,
-            IRepository<Role> roleRepository)
-            : base(repository)
+        public RoleAppService(RoleManager roleManager)
         {
             _roleManager = roleManager;
-            _userManager = userManager;
-            _userRepository = userRepository;
-            _userRoleRepository = userRoleRepository;
-            _roleRepository = roleRepository;
         }
 
         public async Task<ListResultDto<RoleListDto>> GetRoles(GetRolesInput input)
@@ -59,7 +44,7 @@ namespace TcmHMS.Application.Authorization.Roles
             return new ListResultDto<RoleListDto>(roles.MapTo<List<RoleListDto>>());
         }
 
-        //[AbpAuthorize(PermissionNames.Pages_Administration_Roles_Create, PermissionNames.Pages_Administration_Roles_Edit)]
+        [AbpAuthorize(PermissionNames.Pages_Administration_Roles_Create, PermissionNames.Pages_Administration_Roles_Edit)]
         public async Task<GetRoleForEditOutput> GetRoleForEdit(NullableIdDto input)
         {
             var permissions = PermissionManager.GetAllPermissions();
@@ -85,73 +70,50 @@ namespace TcmHMS.Application.Authorization.Roles
             };
         }
 
-        public override async Task<RoleDto> Create(CreateRoleDto input)
+        public async Task CreateOrUpdateRole(CreateOrUpdateRoleInput input)
         {
-            CheckCreatePermission();
-
-            var role = ObjectMapper.Map<Role>(input);
-
-            CheckErrors(await _roleManager.CreateAsync(role));
-
-            var grantedPermissions = PermissionManager
-                .GetAllPermissions()
-                .Where(p => input.Permissions.Contains(p.Name))
-                .ToList();
-
-            await _roleManager.SetGrantedPermissionsAsync(role, grantedPermissions);
-
-            return MapToEntityDto(role);
+            if (input.Role.Id.HasValue)
+            {
+                await UpdateRoleAsync(input);
+            }
+            else
+            {
+                await CreateRoleAsync(input);
+            }
         }
 
-        public override async Task<RoleDto> Update(RoleDto input)
+        [AbpAuthorize(PermissionNames.Pages_Administration_Roles_Delete)]
+        public async Task DeleteRole(EntityDto input)
         {
-            CheckUpdatePermission();
-
             var role = await _roleManager.GetRoleByIdAsync(input.Id);
-
-            ObjectMapper.Map(input, role);
-
-            CheckErrors(await _roleManager.UpdateAsync(role));
-
-            var grantedPermissions = PermissionManager
-                .GetAllPermissions()
-                .Where(p => input.Permissions.Contains(p.Name))
-                .ToList();
-
-            await _roleManager.SetGrantedPermissionsAsync(role, grantedPermissions);
-
-            return MapToEntityDto(role);
-        }
-
-        public override async Task Delete(EntityDto<int> input)
-        {
-            CheckDeletePermission();
-
-            var role = await _roleManager.FindByIdAsync(input.Id);
-            if (role.IsStatic)
-            {
-                throw new UserFriendlyException("CannotDeleteAStaticRole");
-            }
-
-            var users = await GetUsersInRoleAsync(role.Name);
-
-            foreach (var user in users)
-            {
-                CheckErrors(await _userManager.RemoveFromRoleAsync(user, role.Name));
-            }
-
             CheckErrors(await _roleManager.DeleteAsync(role));
         }
 
-        private Task<List<long>> GetUsersInRoleAsync(string roleName)
+        [AbpAuthorize(PermissionNames.Pages_Administration_Roles_Edit)]
+        protected virtual async Task UpdateRoleAsync(CreateOrUpdateRoleInput input)
         {
-            var users = (from user in _userRepository.GetAll()
-                         join userRole in _userRoleRepository.GetAll() on user.Id equals userRole.UserId
-                         join role in _roleRepository.GetAll() on userRole.RoleId equals role.Id
-                         where role.Name == roleName
-                         select user.Id).Distinct().ToList();
+            Debug.Assert(input.Role.Id != null, "input.Role.Id should be set.");
 
-            return Task.FromResult(users);
+            var role = await _roleManager.GetRoleByIdAsync(input.Role.Id.Value);
+            role.DisplayName = input.Role.DisplayName;
+            role.IsDefault = input.Role.IsDefault;
+
+            await UpdateGrantedPermissionsAsync(role, input.GrantedPermissionNames);
+        }
+
+        [AbpAuthorize(PermissionNames.Pages_Administration_Roles_Create)]
+        protected virtual async Task CreateRoleAsync(CreateOrUpdateRoleInput input)
+        {
+            var role = new Role(AbpSession.TenantId, input.Role.DisplayName) { IsDefault = input.Role.IsDefault };
+            CheckErrors(await _roleManager.CreateAsync(role));
+            await CurrentUnitOfWork.SaveChangesAsync(); //It's done to get Id of the role.
+            await UpdateGrantedPermissionsAsync(role, input.GrantedPermissionNames);
+        }
+
+        private async Task UpdateGrantedPermissionsAsync(Role role, List<string> grantedPermissionNames)
+        {
+            var grantedPermissions = PermissionManager.GetPermissionsFromNamesByValidating(grantedPermissionNames);
+            await _roleManager.SetGrantedPermissionsAsync(role, grantedPermissions);
         }
 
         public Task<ListResultDto<PermissionDto>> GetAllPermissions()
@@ -161,22 +123,6 @@ namespace TcmHMS.Application.Authorization.Roles
             return Task.FromResult(new ListResultDto<PermissionDto>(
                 ObjectMapper.Map<List<PermissionDto>>(permissions)
             ));
-        }
-
-        protected override IQueryable<Role> CreateFilteredQuery(PagedResultRequestDto input)
-        {
-            return Repository.GetAllIncluding(x => x.Permissions);
-        }
-
-        protected override Task<Role> GetEntityByIdAsync(int id)
-        {
-            var role = Repository.GetAllIncluding(x => x.Permissions).FirstOrDefault(x => x.Id == id);
-            return Task.FromResult(role);
-        }
-
-        protected override IQueryable<Role> ApplySorting(IQueryable<Role> query, PagedResultRequestDto input)
-        {
-            return query.OrderBy(r => r.DisplayName);
         }
 
         protected virtual void CheckErrors(IdentityResult identityResult)

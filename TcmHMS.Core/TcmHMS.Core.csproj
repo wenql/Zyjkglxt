@@ -38,11 +38,17 @@
     <Reference Include="Abp, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.3.4.0\lib\netstandard2.0\Abp.dll</HintPath>
     </Reference>
+    <Reference Include="Abp.AutoMapper, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Abp.AutoMapper.3.1.1\lib\netstandard2.0\Abp.AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Abp.Zero, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.Zero.3.4.0\lib\net461\Abp.Zero.dll</HintPath>
     </Reference>
     <Reference Include="Abp.Zero.Common, Version=3.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.Zero.Common.3.4.0\lib\netstandard2.0\Abp.Zero.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=6.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.1.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
@@ -186,6 +192,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Authorization\Users\IUserPolicy.cs" />
+    <Compile Include="Authorization\Users\UserPolicy.cs" />
+    <Compile Include="Emailing\AbpZeroTemplateSmtpEmailSenderConfiguration.cs" />
+    <Compile Include="Emailing\EmailTemplateProvider.cs" />
+    <Compile Include="Emailing\IEmailTemplateProvider.cs" />
+    <Compile Include="Features\AppFeatureProvider.cs" />
+    <Compile Include="Features\AppFeatures.cs" />
+    <Compile Include="Friendships\Cache\FriendCacheItem.cs" />
+    <Compile Include="Friendships\Cache\FriendCacheItemExtensions.cs" />
+    <Compile Include="Friendships\Cache\IUserFriendsCache.cs" />
+    <Compile Include="Friendships\Cache\UserFriendCacheSyncronizer.cs" />
+    <Compile Include="Friendships\Cache\UserFriendsCache.cs" />
+    <Compile Include="Friendships\Cache\UserWithFriendsCacheItem.cs" />
+    <Compile Include="Friendships\ChatUserStateWatcher.cs" />
+    <Compile Include="Friendships\Friendship.cs" />
+    <Compile Include="Friendships\FriendshipExtensions.cs" />
+    <Compile Include="Friendships\FriendshipManager.cs" />
+    <Compile Include="Friendships\FriendshipState.cs" />
+    <Compile Include="Friendships\IFriendshipManager.cs" />
+    <Compile Include="Identity\IdentitySmsMessageService.cs" />
+    <Compile Include="Notifications\AppNotificationNames.cs" />
+    <Compile Include="Notifications\AppNotificationProvider.cs" />
+    <Compile Include="Notifications\AppNotifier.cs" />
+    <Compile Include="Notifications\IAppNotifier.cs" />
+    <Compile Include="TcmHMSDomainServiceBase.cs" />
+    <Compile Include="Authorization\Users\IUserEmailer.cs" />
+    <Compile Include="Authorization\Users\UserEmailer.cs" />
+    <Compile Include="Chat\ChatFeatureChecker.cs" />
+    <Compile Include="Chat\ChatMessage.cs" />
+    <Compile Include="Chat\ChatMessageManager.cs" />
+    <Compile Include="Chat\ChatMessageReadState.cs" />
+    <Compile Include="Chat\ChatSide.cs" />
+    <Compile Include="Chat\IChatCommunicator.cs" />
+    <Compile Include="Chat\IChatFeatureChecker.cs" />
+    <Compile Include="Chat\IChatMessageManager.cs" />
+    <Compile Include="Chat\NullChatCommunicator.cs" />
     <Compile Include="TcmHMSConsts.cs" />
     <Compile Include="TcmHMSCoreModule.cs" />
     <Compile Include="AppVersionHelper.cs" />
@@ -210,6 +252,8 @@
     <Compile Include="Authorization\Users\UserManager.cs" />
     <Compile Include="Authorization\Users\UserStore.cs" />
     <Compile Include="Validation\ValidationHelper.cs" />
+    <Compile Include="Web\IWebUrlService.cs" />
+    <Compile Include="Web\WebUrlService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -243,6 +287,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization\Source\TcmHMS-vi.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Emailing\EmailTemplates\default.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

@@ -19,17 +19,27 @@ appModule.config([
         $locationProvider.hashPrefix('');
         $urlRouterProvider.otherwise('/');
         $qProvider.errorOnUnhandledRejections(false);
-        $stateProvider
-            .state('dashboard',
+        $stateProvider.state('dashboard',
             {
                 url: '/',
                 templateUrl: '/App/Main/views/dashboard/index.cshtml'
-            })
-            .state('roles',
-            {
-                url: '/roles',
-                templateUrl: '/App/Main/views/administration/roles/index.cshtml'
             });
+
+        if (abp.auth.hasPermission('Pages.Administration.Roles')) {
+            $stateProvider.state('roles',
+                {
+                    url: '/roles',
+                    templateUrl: '/App/Main/views/administration/roles/index.cshtml'
+                });
+        }
+
+        if (abp.auth.hasPermission('Pages.Administration.Users')) {
+            $stateProvider.state('users',
+                {
+                    url: '/users',
+                    templateUrl: '/App/Main/views/administration/users/index.cshtml'
+                });
+        }
     }
 ]);
 appModule.run(["$rootScope", "$state", 'i18nService', '$uibModalStack', function ($rootScope, $state, i18nService, $uibModalStack) {

@@ -1,4 +1,4 @@
-namespace TcmHMS.Application.Authorization.Permissions.Dto
+namespace TcmHMS.Authorization.Permissions.Dto
 {
     public class FlatPermissionWithLevelDto : FlatPermissionDto
     {

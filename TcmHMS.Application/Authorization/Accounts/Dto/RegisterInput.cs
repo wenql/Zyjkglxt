@@ -2,7 +2,6 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.Auditing;
 using Abp.Authorization.Users;
-using TcmHMS.Users;
 using TcmHMS.Validation;
 using Abp.Extensions;
 using TcmHMS.Authorization.Users;

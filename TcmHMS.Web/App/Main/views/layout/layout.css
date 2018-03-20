@@ -37,3 +37,95 @@
 .m-portlet .m-portlet__body {
     padding: 1.1rem !important;
 }
+
+.modal-backdrop, .modal-backdrop.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+    .modal-backdrop, .modal-backdrop.fade.in {
+        opacity: .5;
+        filter: alpha(opacity=50);
+    }
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0,-20);
+}
+
+.modal.fade.in .modal-dialog {
+    transform: translate(0,0);
+}
+
+
+.tabbable-line > .nav-tabs {
+    border: none;
+    margin: 0 0 25px;
+    border-bottom: 1px solid #ebedf2;
+}
+
+    .tabbable-line > .nav-tabs > li {
+        margin: 0;
+        border-bottom: 1px solid transparent
+    }
+
+        .tabbable-line > .nav-tabs > li > a {
+            background: 0 0 !important;
+            border: 0;
+            margin: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #737373
+        }
+
+            .tabbable-line > .nav-tabs > li > a > i {
+                color: #a6a6a6
+            }
+
+        .tabbable-line > .nav-tabs > li.active {
+            background: 0 0;
+            border-bottom: 1px solid #3f4047;
+            position: relative
+        }
+
+            .tabbable-line > .nav-tabs > li.active > a {
+                border: 0;
+                color: #333
+            }
+
+                .tabbable-line > .nav-tabs > li.active > a > i {
+                    color: #404040
+                }
+
+        .tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+            background: 0 0;
+            border-bottom: 1px solid #3f4047
+        }
+
+            .tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+                border: 0;
+                background: 0 0 !important;
+                color: #333
+            }
+
+                .tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+                    color: #a6a6a6
+                }
+
+.tabbable-line > .tab-content {
+    margin-top: 0;
+    border: 0;
+}
+
+.form-group label {
+    font-weight: normal;
+}
+
+.form-control {
+    box-shadow: none;
+}
+
+.jstree-default .jstree-icon {
+    color: #ffb822 !important;
+}

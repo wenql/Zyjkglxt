@@ -6,10 +6,10 @@
                     <span>角色</span>
                 </h3>
                 <span class="m-section__sub">
-                    使用角色进行权限分组
+                    使用角色进行权限分组.
                 </span>
             </div>
-            <button class="btn btn-primary blue" style=""><i class="fa fa-plus"></i> 添加角色</button>
+            <button class="btn btn-primary blue" style="" ng-if="vm.permissions.create"  ng-click="vm.createRole()"><i class="fa fa-plus"></i> 添加角色</button>
         </div>
     </div>
     <div class="m-content">

@@ -20,8 +20,8 @@ namespace TcmHMS.Web
                     L("工作台"),
                     url: "dashboard",
                     icon: "m-menu__link-icon flaticon-line-graph",
-                    requiresAuthentication: true))
-                .AddItem(new MenuItemDefinition(
+                    requiresAuthentication: true)
+                ).AddItem(new MenuItemDefinition(
                         "Administration",
                         L("系统管理"),
                         icon: "m-menu__link-icon flaticon-interface-8")
@@ -29,12 +29,15 @@ namespace TcmHMS.Web
                         "Roles",
                         L("角色"),
                         url: "roles",
-                        icon: "m-menu__link-icon flaticon-suitcase"))
-                    .AddItem(new MenuItemDefinition(
+                        icon: "m-menu__link-icon flaticon-suitcase",
+                        requiredPermissionName: PermissionNames.Pages_Administration_Roles)
+                    ).AddItem(new MenuItemDefinition(
                         "Users",
                         L("用户"),
                         url: "users",
-                        icon: "m-menu__link-icon flaticon-users"))
+                        icon: "m-menu__link-icon flaticon-users",
+                        requiredPermissionName: PermissionNames.Pages_Administration_Users)
+                    )
                 );
         }
 

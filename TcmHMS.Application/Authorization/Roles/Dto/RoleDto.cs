@@ -3,9 +3,8 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 using Abp.Authorization.Roles;
 using Abp.AutoMapper;
-using TcmHMS.Authorization.Roles;
 
-namespace TcmHMS.Application.Authorization.Roles.Dto
+namespace TcmHMS.Authorization.Roles.Dto
 {
     [AutoMapFrom(typeof(Role)), AutoMapTo(typeof(Role))]
     public class RoleDto : EntityDto<int>

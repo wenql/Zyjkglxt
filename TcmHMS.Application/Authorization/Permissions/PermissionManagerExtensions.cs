@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Authorization;
 using Abp.Runtime.Validation;
 
-namespace TcmHMS.Application.Authorization.Permissions
+namespace TcmHMS.Authorization.Permissions
 {
     public static class PermissionManagerExtensions
     {

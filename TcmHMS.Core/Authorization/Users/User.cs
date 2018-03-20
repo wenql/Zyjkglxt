@@ -5,18 +5,37 @@ using Microsoft.AspNet.Identity;
 
 namespace TcmHMS.Authorization.Users
 {
+    /// <summary>
+    /// Represents a user in the system.
+    /// </summary>
     public class User : AbpUser<User>
     {
-        public const string DefaultPassword = "123qwe";
+        public const int MinPlainPasswordLength = 6;
 
-        public static string CreateRandomPassword()
+        public const int MaxPhoneNumberLength = 24;
+
+        public virtual Guid? ProfilePictureId { get; set; }
+
+        public virtual bool ShouldChangePasswordOnNextLogin { get; set; }
+
+        //Can add application specific user properties here
+
+        public User()
         {
-            return Guid.NewGuid().ToString("N").Truncate(16);
+            IsLockoutEnabled = true;
+            IsTwoFactorEnabled = true;
         }
 
+        /// <summary>
+        /// Creates admin <see cref="User"/> for a tenant.
+        /// </summary>
+        /// <param name="tenantId">Tenant Id</param>
+        /// <param name="emailAddress">Email address</param>
+        /// <param name="password">Password</param>
+        /// <returns>Created <see cref="User"/> object</returns>
         public static User CreateTenantAdminUser(int tenantId, string emailAddress, string password)
         {
-            var user = new User
+            return new User
             {
                 TenantId = tenantId,
                 UserName = AdminUserName,
@@ -25,8 +44,17 @@ namespace TcmHMS.Authorization.Users
                 EmailAddress = emailAddress,
                 Password = new PasswordHasher().HashPassword(password)
             };
+        }
 
-            return user;
+        public static string CreateRandomPassword()
+        {
+            return Guid.NewGuid().ToString("N").Truncate(16);
+        }
+
+        public void Unlock()
+        {
+            AccessFailedCount = 0;
+            LockoutEndDateUtc = null;
         }
     }
 }

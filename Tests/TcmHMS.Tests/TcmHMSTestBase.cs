@@ -13,7 +13,6 @@ using TcmHMS.Authorization.Users;
 using TcmHMS.EntityFramework;
 using TcmHMS.Migrations.SeedData;
 using TcmHMS.MultiTenancy;
-using TcmHMS.Users;
 using Castle.MicroKernel.Registration;
 using Effort;
 using EntityFramework.DynamicFilters;

@@ -1,7 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using TcmHMS.Authorization.Users;
-using TcmHMS.Users;
 
 namespace TcmHMS.Sessions.Dto
 {

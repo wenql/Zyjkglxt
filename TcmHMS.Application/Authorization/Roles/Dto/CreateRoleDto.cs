@@ -2,9 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.Authorization.Roles;
 using Abp.AutoMapper;
-using TcmHMS.Authorization.Roles;
 
-namespace TcmHMS.Application.Authorization.Roles.Dto
+namespace TcmHMS.Authorization.Roles.Dto
 {
     [AutoMapTo(typeof(Role))]
     public class CreateRoleDto

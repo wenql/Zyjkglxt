@@ -10,7 +10,6 @@ using TcmHMS.Api.Models;
 using TcmHMS.Authorization;
 using TcmHMS.Authorization.Users;
 using TcmHMS.MultiTenancy;
-using TcmHMS.Users;
 using Microsoft.Owin.Infrastructure;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.OAuth;

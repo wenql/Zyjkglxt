@@ -3,9 +3,10 @@ using System.Linq;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
-using TcmHMS.Application.Authorization.Permissions.Dto;
+using TcmHMS.Authorization.Permissions;
+using TcmHMS.Authorization.Permissions.Dto;
 
-namespace TcmHMS.Application.Authorization.Permissions
+namespace TcmHMS.Authorization.Permissions
 {
     public class PermissionAppService : TcmHMSAppServiceBase, IPermissionAppService
     {

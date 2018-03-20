@@ -5,7 +5,6 @@ using Abp.IdentityFramework;
 using Abp.Runtime.Session;
 using TcmHMS.Authorization.Users;
 using TcmHMS.MultiTenancy;
-using TcmHMS.Users;
 using Microsoft.AspNet.Identity;
 
 namespace TcmHMS

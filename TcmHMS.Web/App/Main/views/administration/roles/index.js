@@ -9,6 +9,11 @@
 
             vm.rowHeight = 50;
             vm.loading = false;
+            vm.permissions = {
+                create: abp.auth.hasPermission('Pages.Administration.Roles.Create'),
+                edit: abp.auth.hasPermission('Pages.Administration.Roles.Edit'),
+                'delete': abp.auth.hasPermission('Pages.Administration.Roles.Delete')
+            };
             vm.requestParams = {
                 permission: ''
             };
@@ -47,8 +52,8 @@
                         '  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body>' +
                         '    <button class="btn btn-xs btn-primary blue" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i>操作<span class="caret"></span></button>' +
                         '    <ul uib-dropdown-menu>' +
-                        '      <li><a href=\"javascript:;\" ng-click="grid.appScope.editRole(row.entity)">编辑</a></li>' +
-                        '      <li><a href=\"javascript:;\" ng-click="grid.appScope.deleteRole(row.entity)">删除</a></li>' +
+                        '      <li><a ng-if="grid.appScope.permissions.edit" href=\"javascript:;\" ng-click="grid.appScope.editRole(row.entity)">编辑</a></li>' +
+                        '      <li><a ng-if="!row.entity.isStatic && grid.appScope.permissions.delete" href=\"javascript:;\" ng-click="grid.appScope.deleteRole(row.entity)">删除</a></li>' +
                         '    </ul>' +
                         '  </div>' +
                         '</div>'
@@ -56,6 +61,11 @@
                 ],
                 data: []
             };
+
+            if (!vm.permissions.edit && !vm.permissions.delete) {
+                vm.roleGridOptions.columnDefs.pop();
+            }
+
             vm.getTableHeight = function () {
                 return {
                     height: (vm.roleGridOptions.data.length * vm.rowHeight + 80) + "px"
@@ -80,7 +90,7 @@
                                 id: role.id
                             }).then(function () {
                                 vm.getRoles();
-                                abp.notify.success(app.localize('SuccessfullyDeleted'));
+                                abp.notify.success('删除成功');
                             });
                         }
                     }
@@ -89,6 +99,10 @@
 
             vm.editRole = function (role) {
                 openCreateOrEditRoleModal(role.id);
+            };
+
+            vm.createRole = function () {
+                openCreateOrEditRoleModal(null);
             };
 
             function openCreateOrEditRoleModal(roleId) {

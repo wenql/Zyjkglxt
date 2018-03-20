@@ -14,9 +14,9 @@
                     role: vm.role,
                     grantedPermissionNames: vm.permissionEditData.grantedPermissionNames
                 }).then(function () {
-                    abp.notify.info(app.localize('SavedSuccessfully'));
+                    abp.notify.info('保存成功');
                     $uibModalInstance.close();
-                }).finally(function() {
+                }).finally(function () {
                     vm.saving = false;
                 });
             };
@@ -34,8 +34,7 @@
                         permissions: result.data.permissions,
                         grantedPermissionNames: result.data.grantedPermissionNames
                     };
-                    });
-
+                });
             }
 
             init();

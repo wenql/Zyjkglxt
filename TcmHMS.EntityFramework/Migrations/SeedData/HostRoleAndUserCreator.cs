@@ -68,7 +68,7 @@ namespace TcmHMS.Migrations.SeedData
                         Surname = "Administrator",
                         EmailAddress = "admin@aspnetboilerplate.com",
                         IsEmailConfirmed = true,
-                        Password = new PasswordHasher().HashPassword(User.DefaultPassword)
+                        Password = new PasswordHasher().HashPassword("admin123")
                     });
 
                 _context.SaveChanges();
