@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Abp.Localization;
 using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Xml;
 using Abp.Modules;
@@ -22,7 +23,17 @@ namespace TcmHMS
             Configuration.Modules.Zero().EntityTypes.Role = typeof(Role);
             Configuration.Modules.Zero().EntityTypes.User = typeof(User);
 
-            Configuration.Localization.IsEnabled = false;
+            Configuration.Localization.Sources.Add(
+                new DictionaryBasedLocalizationSource(
+                    "TcmHMS",
+                    new XmlEmbeddedFileLocalizationDictionaryProvider(
+                        Assembly.GetExecutingAssembly(),
+                        "TcmHMS.Localization.Source"
+                        )
+                    )
+                );
+
+            Configuration.Localization.Languages.Add(new LanguageInfo("zh-CN", "简体中文", isDefault: true));
 
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 

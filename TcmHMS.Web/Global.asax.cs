@@ -4,6 +4,7 @@ using Abp.Web;
 using Castle.Facilities.Logging;
 using Abp.WebApi.Validation;
 using System.Threading;
+using System.Globalization;
 
 namespace TcmHMS.Web
 {
@@ -27,6 +28,12 @@ namespace TcmHMS.Web
             //    Console.WriteLine(exception);
             //    throw;
             //}
+        }
+
+        protected override void Application_BeginRequest(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("zh-CN");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CN");
         }
     }
 }

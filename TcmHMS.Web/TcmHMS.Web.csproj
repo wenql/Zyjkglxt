@@ -460,6 +460,7 @@
     <Content Include="App\Main\views\administration\roles\index.js" />
     <Content Include="App\Main\views\administration\users\createOrEditModal.js" />
     <Content Include="App\Main\views\administration\users\index.js" />
+    <Content Include="App\Main\views\administration\users\permissionsModal.js" />
     <Content Include="App\Main\views\layout\header.css" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.css" />
@@ -2721,6 +2722,7 @@
     <Content Include="App\Main\views\administration\users\index.cshtml" />
     <Content Include="App\Main\directives\paginationTemplate.cshtml" />
     <Content Include="App\Main\views\administration\users\createOrEditModal.cshtml" />
+    <Content Include="App\Main\views\administration\users\permissionsModal.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">

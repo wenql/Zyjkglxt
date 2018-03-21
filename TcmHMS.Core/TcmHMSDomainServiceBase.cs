@@ -8,7 +8,7 @@ namespace TcmHMS
 
         protected TcmHMSDomainServiceBase()
         {
-            //LocalizationSourceName = TcmHMSConsts.LocalizationSourceName;
+            LocalizationSourceName = TcmHMSConsts.LocalizationSourceName;
         }
     }
 }

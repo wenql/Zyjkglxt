@@ -26,7 +26,7 @@
                     role: '',
                     skipCount: 0,
                     maxResultCount: app.consts.grid.defaultPageSize,
-                    sorting: null
+                    sorting: 'creationTime asc'
                 };
 
                 vm.userGridOptions = {
@@ -101,11 +101,11 @@
                             '  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body>' +
                             '    <button class="btn btn-xs btn-primary blue" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i>操作<span class="caret"></span></button>' +
                             '    <ul uib-dropdown-menu>' +
-                            '      <li><a ng-if="grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId" ng-click="grid.appScope.impersonate(row.entity)">切换至此用户</a></li>' +
-                            '      <li><a ng-if="grid.appScope.permissions.edit" ng-click="grid.appScope.editUser(row.entity)">修改</a></li>' +
-                            '      <li><a ng-if="grid.appScope.permissions.changePermissions" ng-click="grid.appScope.editPermissions(row.entity)">权限</a></li>' +
-                            '      <li><a ng-if="!row.entity.isActive" ng-click="grid.appScope.unlockUser(row.entity)">解锁</a></li>' +
-                            '      <li><a ng-if="grid.appScope.permissions.delete" ng-click="grid.appScope.deleteUser(row.entity)">删除</a></li>' +
+                            '      <li><a href="javascript:;" ng-if="grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId" ng-click="grid.appScope.impersonate(row.entity)">切换至此用户</a></li>' +
+                            '      <li><a href="javascript:;" ng-if="grid.appScope.permissions.edit" ng-click="grid.appScope.editUser(row.entity)">修改</a></li>' +
+                            '      <li><a href="javascript:;" ng-if="grid.appScope.permissions.changePermissions" ng-click="grid.appScope.editPermissions(row.entity)">权限</a></li>' +
+                            '      <li><a href="javascript:;" ng-if="!row.entity.isActive" ng-click="grid.appScope.unlockUser(row.entity)">解锁</a></li>' +
+                            '      <li><a href="javascript:;" ng-if="grid.appScope.permissions.delete" ng-click="grid.appScope.deleteUser(row.entity)">删除</a></li>' +
                             '    </ul>' +
                             '  </div>' +
                             '</div>'
@@ -176,6 +176,36 @@
                     openCreateOrEditUserModal(null);
                 };
 
+                vm.deleteUser = function (user) {
+                    if (user.userName == app.consts.userManagement.defaultAdminUserName) {
+                        abp.message.warn('不能删除系统用户');
+                        return;
+                    }
+
+                    abp.message.confirm(
+                        '确认删除用户：' + user.userName + '?',
+                        function (isConfirmed) {
+                            if (isConfirmed) {
+                                userService.deleteUser({
+                                    id: user.id
+                                }).then(function () {
+                                    vm.getUsers();
+                                    abp.notify.success('删除成功');
+                                });
+                            }
+                        }
+                    );
+                };
+
+                vm.unlockUser = function (user) {
+                    userService.unlockUser({
+                        id: user.id
+                    })
+                        .then(function () {
+                            abp.notify.success('操作成功');
+                        });
+                };
+
                 function openCreateOrEditUserModal(userId) {
                     var modalInstance = $uibModal.open({
                         templateUrl: '~/App/main/views/administration/users/createOrEditModal.cshtml',
@@ -193,6 +223,18 @@
                     });
                 }
 
+                vm.editPermissions = function (user) {
+                    $uibModal.open({
+                        templateUrl: '~/App/main/views/administration/users/permissionsModal.cshtml',
+                        controller: 'main.views.administration.users.permissionsModal as vm',
+                        backdrop: 'static',
+                        resolve: {
+                            user: function () {
+                                return user;
+                            }
+                        }
+                    });
+                };
 
                 vm.getUsers();
             }

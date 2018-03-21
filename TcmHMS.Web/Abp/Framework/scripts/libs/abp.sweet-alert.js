@@ -10,8 +10,7 @@
 
     var showMessage = function (type, message, title) {
         if (!title) {
-            title = message;
-            message = undefined;
+            title = '提示';
         }
 
         layer.open({

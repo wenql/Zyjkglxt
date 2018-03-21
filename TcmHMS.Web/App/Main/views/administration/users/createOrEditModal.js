@@ -7,6 +7,7 @@
             vm.user = null;
             vm.roles = [];
             vm.setRandomPassword = (userId == null);
+            vm.sendActivationEmail = false;
             vm.canChangeUserName = true;
             vm.cancel = function () {
                 $uibModalInstance.dismiss();
@@ -27,7 +28,7 @@
                 userService.createOrUpdateUser({
                     user: vm.user,
                     assignedRoleNames: assignedRoleNames,
-                    sendActivationEmail: false,
+                    sendActivationEmail: vm.sendActivationEmail,
                     setRandomPassword: vm.setRandomPassword
                 }).then(function () {
                     abp.notify.info('保存成功');

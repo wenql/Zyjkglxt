@@ -263,30 +263,10 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization\Source\TcmHMS-zh-CN.xml" />
-    <EmbeddedResource Include="Localization\Source\TcmHMS-tr.xml" />
     <EmbeddedResource Include="Localization\Source\TcmHMS.xml" />
-    <EmbeddedResource Include="Localization\Source\TcmHMS-lt.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\TcmHMS-pt-BR.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Localization\Source\TcmHMS-es.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\TcmHMS-fr.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\TcmHMS-it.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\TcmHMS-ja.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\TcmHMS-nl-NL.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\TcmHMS-vi.xml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Emailing\EmailTemplates\default.html" />
