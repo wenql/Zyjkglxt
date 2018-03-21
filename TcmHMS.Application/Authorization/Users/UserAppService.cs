@@ -253,10 +253,10 @@ namespace TcmHMS.Authorization.Users
         [AbpAuthorize(PermissionNames.Pages_Administration_Users_Create)]
         protected virtual async Task CreateUserAsync(CreateOrUpdateUserInput input)
         {
-            if (AbpSession.TenantId.HasValue)
-            {
-                await _userPolicy.CheckMaxUserCountAsync(AbpSession.GetTenantId());
-            }
+            //if (AbpSession.TenantId.HasValue)
+            //{
+            //    await _userPolicy.CheckMaxUserCountAsync(AbpSession.GetTenantId());
+            //}
 
             var user = input.User.MapTo<User>(); //Passwords is not mapped (see mapping configuration)
             user.TenantId = AbpSession.TenantId;

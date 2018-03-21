@@ -10,6 +10,7 @@
                     });
 
                 vm.loading = false;
+                vm.rowHeight = 50;
                 vm.currentUserId = abp.session.userId;
                 vm.permissions = {
                     create: abp.auth.hasPermission('Pages.Administration.Users.Create'),
@@ -35,91 +36,79 @@
                     paginationPageSize: app.consts.grid.defaultPageSize,
                     useExternalPagination: true,
                     useExternalSorting: true,
+                    rowHeight: vm.rowHeight,
                     paginationTemplate: "/app/main/directives/paginationTemplate.cshtml",
                     appScopeProvider: vm,
                     rowTemplate: '<div ng-repeat="(colRenderIndex, col) in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell" ng-class="{ \'ui-grid-row-header-cell\': col.isRowHeader, \'text-muted\': !row.entity.isActive }"  ui-grid-cell></div>',
                     columnDefs: [
                         {
-                            name: app.localize('Actions'),
-                            enableSorting: false,
-                            width: 120,
-                            cellTemplate:
-                            '<div class=\"ui-grid-cell-contents\">' +
-                            '  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body>' +
-                            '    <button class="btn btn-xs btn-primary blue" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i> ' + app.localize('Actions') + ' <span class="caret"></span></button>' +
-                            '    <ul uib-dropdown-menu>' +
-                            '      <li><a ng-if="grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId" ng-click="grid.appScope.impersonate(row.entity)">' + app.localize('LoginAsThisUser') + '</a></li>' +
-                            '      <li><a ng-if="grid.appScope.permissions.edit" ng-click="grid.appScope.editUser(row.entity)">' + app.localize('Edit') + '</a></li>' +
-                            '      <li><a ng-if="grid.appScope.permissions.changePermissions" ng-click="grid.appScope.editPermissions(row.entity)">' + app.localize('Permissions') + '</a></li>' +
-                            '      <li><a ng-click="grid.appScope.unlockUser(row.entity)">' + app.localize('Unlock') + '</a></li>' +
-                            '      <li><a ng-if="grid.appScope.permissions.delete" ng-click="grid.appScope.deleteUser(row.entity)">' + app.localize('Delete') + '</a></li>' +
-                            '    </ul>' +
-                            '  </div>' +
-                            '</div>'
-                        },
-                        {
-                            name: app.localize('UserName'),
+                            name: '用户名',
+                            enableColumnMenu: false,
                             field: 'userName',
-                            cellTemplate:
-                            '<div class=\"ui-grid-cell-contents\">' +
-                            '  <img ng-if="row.entity.profilePictureId" ng-src="' + abp.appPath + 'Profile/GetProfilePictureById?id={{row.entity.profilePictureId}}" width="22" height="22" class="img-rounded img-profile-picture-in-grid" />' +
-                            '  <img ng-if="!row.entity.profilePictureId" src="' + abp.appPath + 'Common/Images/default-profile-picture.png" width="22" height="22" class="img-rounded" />' +
-                            '  {{COL_FIELD CUSTOM_FILTERS}} &nbsp;' +
-                            '</div>',
                             minWidth: 140
                         },
                         {
-                            name: app.localize('Name'),
+                            name: '姓名',
+                            enableColumnMenu: false,
                             field: 'name',
                             minWidth: 120
                         },
                         {
-                            name: app.localize('Surname'),
-                            field: 'surname',
-                            minWidth: 120
-                        },
-                        {
-                            name: app.localize('Roles'),
+                            name: '角色',
+                            enableColumnMenu: false,
                             field: 'getRoleNames()',
                             enableSorting: false,
                             minWidth: 160
                         },
                         {
-                            name: app.localize('EmailAddress'),
+                            name: '邮箱地址',
+                            enableColumnMenu: false,
                             field: 'emailAddress',
                             minWidth: 200
                         },
                         {
-                            name: app.localize('EmailConfirm'),
-                            field: 'isEmailConfirmed',
-                            cellTemplate:
-                            '<div class=\"ui-grid-cell-contents\">' +
-                            '  <span ng-show="row.entity.isEmailConfirmed" class="label label-success">' + app.localize('Yes') + '</span>' +
-                            '  <span ng-show="!row.entity.isEmailConfirmed" class="label label-default">' + app.localize('No') + '</span>' +
-                            '</div>',
-                            minWidth: 80
-                        },
-                        {
-                            name: app.localize('Active'),
+                            name: '激活',
+                            enableColumnMenu: false,
                             field: 'isActive',
                             cellTemplate:
                             '<div class=\"ui-grid-cell-contents\">' +
-                            '  <span ng-show="row.entity.isActive" class="label label-success">' + app.localize('Yes') + '</span>' +
-                            '  <span ng-show="!row.entity.isActive" class="label label-default">' + app.localize('No') + '</span>' +
+                            '  <span ng-show="row.entity.isActive">是</span>' +
+                            '  <span ng-show="!row.entity.isActive">否</span>' +
                             '</div>',
                             minWidth: 80
                         },
                         {
-                            name: app.localize('LastLoginTime'),
+                            name: '上次登录时间',
+                            enableColumnMenu: false,
                             field: 'lastLoginTime',
-                            cellFilter: 'momentFormat: \'L\'',
+                            cellFilter: 'momentFormat: \'YYYY/MM/DD HH:mm:ss\'',
                             minWidth: 100
                         },
                         {
-                            name: app.localize('CreationTime'),
+                            name: '创建时间',
+                            enableColumnMenu: false,
                             field: 'creationTime',
-                            cellFilter: 'momentFormat: \'L\'',
+                            cellFilter: 'momentFormat: \'YYYY/MM/DD\'',
                             minWidth: 100
+                        },
+                        {
+                            name: '操作',
+                            enableSorting: false,
+                            enableColumnMenu: false,
+                            width: 150,
+                            cellTemplate:
+                            '<div class=\"ui-grid-cell-contents\">' +
+                            '  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body>' +
+                            '    <button class="btn btn-xs btn-primary blue" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i>操作<span class="caret"></span></button>' +
+                            '    <ul uib-dropdown-menu>' +
+                            '      <li><a ng-if="grid.appScope.permissions.impersonation && row.entity.id != grid.appScope.currentUserId" ng-click="grid.appScope.impersonate(row.entity)">切换至此用户</a></li>' +
+                            '      <li><a ng-if="grid.appScope.permissions.edit" ng-click="grid.appScope.editUser(row.entity)">修改</a></li>' +
+                            '      <li><a ng-if="grid.appScope.permissions.changePermissions" ng-click="grid.appScope.editPermissions(row.entity)">权限</a></li>' +
+                            '      <li><a ng-if="!row.entity.isActive" ng-click="grid.appScope.unlockUser(row.entity)">解锁</a></li>' +
+                            '      <li><a ng-if="grid.appScope.permissions.delete" ng-click="grid.appScope.deleteUser(row.entity)">删除</a></li>' +
+                            '    </ul>' +
+                            '  </div>' +
+                            '</div>'
                         }
                     ],
                     onRegisterApi: function (gridApi) {
@@ -143,6 +132,12 @@
                     data: []
                 };
 
+                vm.getTableHeight = function () {
+                    return {
+                        height: (vm.userGridOptions.data.length * vm.rowHeight + 100) + "px"
+                    };
+                };
+
                 vm.getUsers = function () {
                     vm.loading = true;
                     userService.getUsers($.extend({ filter: vm.filterText }, vm.requestParams))
@@ -153,6 +148,51 @@
                             vm.loading = false;
                         });
                 };
+
+                function addRoleNamesField(users) {
+                    for (var i = 0; i < users.length; i++) {
+                        var user = users[i];
+                        user.getRoleNames = function () {
+                            var roleNames = '';
+                            for (var j = 0; j < this.roles.length; j++) {
+                                if (roleNames.length) {
+                                    roleNames = roleNames + ', ';
+                                }
+                                roleNames = roleNames + this.roles[j].roleName;
+                            };
+
+                            return roleNames;
+                        }
+                    }
+
+                    return users;
+                }
+
+                vm.editUser = function (user) {
+                    openCreateOrEditUserModal(user.id);
+                };
+
+                vm.createUser = function () {
+                    openCreateOrEditUserModal(null);
+                };
+
+                function openCreateOrEditUserModal(userId) {
+                    var modalInstance = $uibModal.open({
+                        templateUrl: '~/App/main/views/administration/users/createOrEditModal.cshtml',
+                        controller: 'main.views.administration.users.createOrEditModal as vm',
+                        backdrop: 'static',
+                        resolve: {
+                            userId: function () {
+                                return userId;
+                            }
+                        }
+                    });
+
+                    modalInstance.result.then(function (result) {
+                        vm.getUsers();
+                    });
+                }
+
 
                 vm.getUsers();
             }

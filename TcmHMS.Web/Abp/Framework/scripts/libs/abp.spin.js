@@ -46,7 +46,6 @@
             if (options.blockUI != false) {
                 abp.ui.block();
             }
-
             $('body').spin(abp.libs.spinjs.spinner_config);
         } else {
             var $elm = $(elm);
@@ -57,8 +56,8 @@
                 if (options.blockUI != false) {
                     abp.ui.block(elm);
                 }
-
                 $elm.spin(abp.libs.spinjs.spinner_config);
+
             }
         }
 

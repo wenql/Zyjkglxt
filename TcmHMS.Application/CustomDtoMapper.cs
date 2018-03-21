@@ -1,5 +1,6 @@
 using AutoMapper;
 using TcmHMS.Authorization.Users;
+using TcmHMS.Authorization.Users.Dto;
 
 namespace TcmHMS.Application
 {
@@ -25,10 +26,10 @@ namespace TcmHMS.Application
 
         private static void CreateMappingsInternal(IMapperConfigurationExpression mapper)
         {
-            //mapper.CreateMap<User, UserEditDto>()
-            //    .ForMember(dto => dto.Password, options => options.Ignore())
-            //    .ReverseMap()
-            //    .ForMember(user => user.Password, options => options.Ignore());
+            mapper.CreateMap<User, UserEditDto>()
+                .ForMember(dto => dto.Password, options => options.Ignore())
+                .ReverseMap()
+                .ForMember(user => user.Password, options => options.Ignore());
         }
     }
 }

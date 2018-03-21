@@ -26,7 +26,6 @@
     background: #fff;
     color: #2d353c;
     border: 1px solid #ececec;
-
 }
 
 .ui-grid-cell {
@@ -47,6 +46,38 @@
     position: relative;
     padding-top: 0px !important;
 }
+
 .ui-grid-row .ui-grid-cell:first-child {
     border-left: 1px solid #ececec !important;
 }
+
+.ui-grid-cell-contents .btn-group.dropdown {
+    margin-top: -4px;
+}
+
+.ui-grid-pager-panel {
+    padding: 0px;
+    height: 50px;
+    line-height: 50px;
+}
+
+    .ui-grid-pager-panel .total-records-count {
+        float: left;
+        position: relative;
+    }
+
+    .ui-grid-pager-panel .ui-grid-pager-row-count-picker {
+        float: left;
+        margin-left: 20px;
+    }
+
+    .ui-grid-pager-panel .ui-paginator {
+        float: right;
+    }
+
+        .ui-grid-pager-panel .ui-paginator > .m-datatable__pager-nav {
+            margin: 0px !important;
+            padding: 0 !important;
+            display: inline-block;
+        }
+

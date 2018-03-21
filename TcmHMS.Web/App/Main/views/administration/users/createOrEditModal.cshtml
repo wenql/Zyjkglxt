@@ -1,0 +1,97 @@
+﻿@using Abp.Authorization.Users
+@using TcmHMS.Authorization.Users
+<div>
+    <form name="userCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.user.id">修改用户: {{vm.user.userName}}</span>
+                <span ng-if="!vm.user.id">添加用户</span>
+            </h4>
+            <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <uib-tabset class="tab-container tabbable-line">
+                <uib-tab heading="用户信息">
+                    <div class="form-group">
+                        <label>
+                            名字*
+                        </label>
+                        <input type="text" class="form-control" name="Name" ng-class="{'edited':vm.user.name}" ng-model="vm.user.name" required maxlength="@TcmHMS.Authorization.Users.User.MaxNameLength">
+                    </div>
+                    <div class="form-group">
+                        <label>邮箱地址*</label>
+                        <input type="email" name="EmailAddress" class="form-control" ng-class="{'edited':vm.user.emailAddress}" ng-model="vm.user.emailAddress" required maxlength="@AbpUserBase.MaxEmailAddressLength">
+                    </div>
+                    <div class="form-group">
+                        <label>电话号码</label>
+                        <input type="text" name="PhoneNumber" class="form-control" ng-class="{'edited':vm.user.phoneNumber}" ng-model="vm.user.phoneNumber" maxlength="@TcmHMS.Authorization.Users.User.MaxPhoneNumberLength">
+                    </div>
+                    <div class="form-group">
+                        <label>用户名*</label>
+                        <input type="text" ng-disabled="!vm.canChangeUserName" ng-class="{'edited':vm.user.userName}" name="UserName" class="form-control input-ltr" ng-model="vm.user.userName" required maxlength="@AbpUserBase.MaxUserNameLength">
+                        <span class="help-block" ng-show="!vm.canChangeUserName">管理用户，不能修改用户名.</span>
+                    </div>
+                    <div class="m-checkbox-list">
+                        <div class="md-checkbox">
+                            <label style="font-weight: normal;" class="m-checkbox">
+                                <input id="EditUser_SetRandomPassword" name="SetRandomPassword" ng-model="vm.setRandomPassword" type="checkbox">
+                                使用随机密码.<span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group" ng-if="!vm.setRandomPassword">
+                        <label>密码</label>
+                        <input type="password" name="Password" class="form-control" ng-model="vm.user.password" ng-required="!vm.user.id && !vm.setRandomPassword" maxlength="@TcmHMS.Authorization.Users.User.MaxPlainPasswordLength" ng-minlength="@TcmHMS.Authorization.Users.User.MinPlainPasswordLength">
+                    </div>
+                    <div class="form-group" ng-if="!vm.setRandomPassword">
+                        <label>密码 (核对)</label>
+                        <input type="password" name="PasswordRepeat" class="form-control" ng-model="vm.user.passwordRepeat" ng-required="!vm.user.id && !vm.setRandomPassword" maxlength="@TcmHMS.Authorization.Users.User.MaxPlainPasswordLength" ui-validate=" '$value==vm.user.password' " ui-validate-watch=" 'vm.user.password' " ng-minlength="@TcmHMS.Authorization.Users.User.MinPlainPasswordLength">
+                    </div>
+                    <div class="md-checkbox-list">
+                        <div class="md-checkbox">
+                            <label style="font-weight: normal;" class="m-checkbox">
+                                <input id="EditUser_ShouldChangePasswordOnNextLogin" name="ShouldChangePasswordOnNextLogin" ng-model="vm.user.shouldChangePasswordOnNextLogin" type="checkbox">
+                                下次登录需要修改密码.<span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="md-checkbox-list">
+                        <div class="md-checkbox">
+                            <label style="font-weight: normal;" class="m-checkbox">
+                                <input id="EditUser_IsActive" name="IsActive" ng-model="vm.user.isActive" type="checkbox">
+                                激活<span></span>
+                            </label>
+                        </div>
+                    </div>
+                    @*<div class="md-checkbox-list">
+                                           <div class="md-checkbox">
+                                    <label style="font-weight: normal;" class="m-checkbox">
+                                        <input id="EditUser_IsLockoutEnabled" name="IsLockoutEnabled" ng-model="vm.user.isLockoutEnabled" type="checkbox">
+                                        是否启用锁定？<span></span>
+                                    </label>
+                                </div>
+                        </div>*@
+                </uib-tab>
+                <uib-tab>
+                    <uib-tab-heading>
+                        角色<b class="badge badge-primary" style="margin-left: 5px;">{{vm.getAssignedRoleCount()}}</b>
+                    </uib-tab-heading>
+                    <div class="m-checkbox-list">
+                        <div class="md-checkbox" ng-repeat="role in vm.roles">
+                            <label style="font-weight: normal;" class="m-checkbox">
+                                <input id="EditUser_{{role.roleName}}" name="{{role.roleName}}" ng-model="role.isAssigned" type="checkbox" class="md-check">
+                                {{role.roleDisplayName}}<span></span>
+                            </label>
+                        </div>
+                    </div>
+                </uib-tab>
+            </uib-tabset>
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">取消</button>
+            <button type="submit" button-busy="vm.saving" busy-text="保存中" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="userCreateOrEditForm.$invalid"><i class="fa fa-save"></i> <span>保存</span></button>
+        </div>
+    </form>
+</div>

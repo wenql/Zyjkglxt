@@ -26,6 +26,7 @@
                         userOptions.success && userOptions.success(data);
                     }
                 }).fail(function (jqXHR) {
+                    console.log(jqXHR)
                     if (jqXHR.responseJSON && jqXHR.responseJSON.__abp) {
                         abp.ajax.handleResponse(jqXHR.responseJSON, userOptions, $dfd, jqXHR);
                     } else {

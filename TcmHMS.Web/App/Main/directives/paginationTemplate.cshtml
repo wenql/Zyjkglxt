@@ -1,132 +1,48 @@
-﻿<div>
-    <div role="navigation">
-        <ul class="pagination">
+﻿<div class="ui-grid-pager-panel"
+     ui-grid-pager
+     ng-show="grid.options.enablePaginationControls">
+    <span class="total-records-count">
+        总行数: {{grid.options.totalItems}}
+    </span>
+    <div class="ui-grid-pager-row-count-picker"
+         ng-if="grid.options.paginationPageSizes.length > 1 && !grid.options.useCustomPagination">
+        <select ui-grid-one-bind-aria-labelledby-grid="'items-per-page-label'"
+                ng-model="grid.options.paginationPageSize"
+                ng-options="o as o for o in grid.options.paginationPageSizes"></select>
+    </div>
+    <div class="ui-paginator">
+        <ul class="m-datatable__pager-nav">
             <li>
-                <a href="#" ui-grid-one-bind-aria-label="aria.pageToFirst"
-                   ng-click="pageFirstPageClick()"
-                   ng-disabled="cantPageBackward()">
-                    <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+                <a ng-click="pageFirstPageClick()"
+                   ng-disabled="cantPageBackward()" ng-class="!cantPageBackward() ? 'm-datatable__pager-link m-datatable__pager-link--first' : 'm-datatable__pager-link m-datatable__pager-link--first m-datatable__pager-link--disabled'">
+                    <i class="la la-angle-double-left"></i>
                 </a>
             </li>
             <li>
-                <a href="#"
-                   ui-grid-one-bind-title="aria.pageBack"
-                   ui-grid-one-bind-aria-label="aria.pageBack"
-                   ng-click="pagePreviousPageClick()"
-                   ng-disabled="cantPageBackward()">
-                    <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
-                </a>
-            </li>
-            <!--
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            -->
-            <li>
-                <a href="#"
-                   ui-grid-one-bind-title="aria.pageForward"
-                   ui-grid-one-bind-aria-label="aria.pageForward"
-                   ng-click="pageForwardPageClick()"
-                   ng-disabled="cantPageForward()">
-                    <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
-                </a>
-            </li>
-            <li>
-                <a href="#" ui-grid-one-bind-aria-label="aria.pageToLast"
-                   ng-click="pageLasttPageClick()"
-                   ng-disabled="cantPageToLast()">
-                    <span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
+                <a ng-click="pagePreviousPageClick()"
+                   ng-disabled="cantPageBackward()" ng-class="!cantPageBackward() ? 'm-datatable__pager-link m-datatable__pager-link--prev ' : 'm-datatable__pager-link m-datatable__pager-link--prev m-datatable__pager-link--disabled'">
+                    <i class="la la-angle-left"></i>
                 </a>
             </li>
         </ul>
-    </div>
-</div>
-<div class="ui-grid-pager-panel"
-     ui-grid-pager
-     ng-show="grid.options.enablePaginationControls">
-    <div role="navigation"
-         class="ui-grid-pager-container">
-        <div class="ui-grid-pager-control">
-            <button type="button"
-                    class="ui-grid-pager-first"
-                    ui-grid-one-bind-title="aria.pageToFirst"
-                    ui-grid-one-bind-aria-label="aria.pageToFirst"
-                    ng-click="pageFirstPageClick()"
-                    ng-disabled="cantPageBackward()">
-                <div ng-class="grid.isRTL() ? 'last-triangle' : 'first-triangle'">
-                    <div ng-class="grid.isRTL() ? 'last-bar-rtl' : 'first-bar'">
-                    </div>
-                </div>
-            </button>
-            <button type="button"
-                    class="ui-grid-pager-previous"
-                    ui-grid-one-bind-title="aria.pageBack"
-                    ui-grid-one-bind-aria-label="aria.pageBack"
-                    ng-click="pagePreviousPageClick()"
-                    ng-disabled="cantPageBackward()">
-                <div ng-class="grid.isRTL() ? 'last-triangle prev-triangle' : 'first-triangle prev-triangle'"></div>
-            </button>
-            <input type="number"
-                   ui-grid-one-bind-title="aria.pageSelected"
-                   ui-grid-one-bind-aria-label="aria.pageSelected"
-                   class="ui-grid-pager-control-input"
-                   ng-model="grid.options.paginationCurrentPage"
-                   min="1"
-                   max="{{ paginationApi.getTotalPages() }}"
-                   required />
-            <span class="ui-grid-pager-max-pages-number"
-                  ng-show="paginationApi.getTotalPages() > 0">
-                <abbr ui-grid-one-bind-title="paginationOf">
-                    /
-                </abbr>
-                {{ paginationApi.getTotalPages() }}
-            </span>
-            <button type="button"
-                    class="ui-grid-pager-next"
-                    ui-grid-one-bind-title="aria.pageForward"
-                    ui-grid-one-bind-aria-label="aria.pageForward"
-                    ng-click="pageNextPageClick()"
-                    ng-disabled="cantPageForward()">
-                <div ng-class="grid.isRTL() ? 'first-triangle next-triangle' : 'last-triangle next-triangle'"></div>
-            </button>
-            <button type="button"
-                    class="ui-grid-pager-last"
-                    ui-grid-one-bind-title="aria.pageToLast"
-                    ui-grid-one-bind-aria-label="aria.pageToLast"
-                    ng-click="pageLastPageClick()"
-                    ng-disabled="cantPageToLast()">
-                <div ng-class="grid.isRTL() ? 'first-triangle' : 'last-triangle'">
-                    <div ng-class="grid.isRTL() ? 'first-bar-rtl' : 'last-bar'">
-                    </div>
-                </div>
-            </button>
-        </div>
-        <div class="ui-grid-pager-row-count-picker"
-             ng-if="grid.options.paginationPageSizes.length > 1 && !grid.options.useCustomPagination">
-            <select ui-grid-one-bind-aria-labelledby-grid="'items-per-page-label'"
-                    ng-model="grid.options.paginationPageSize"
-                    ng-options="o as o for o in grid.options.paginationPageSizes"></select>
-            <span ui-grid-one-bind-id-grid="'items-per-page-label'"
-                  class="ui-grid-pager-row-count-label">
-                &nbsp;{{sizesLabel}}
-            </span>
-        </div>
-        <span ng-if="grid.options.paginationPageSizes.length <= 1"
-              class="ui-grid-pager-row-count-label">
-            {{grid.options.paginationPageSize}}&nbsp;{{sizesLabel}}
-        </span>
-    </div>
-    <div class="ui-grid-pager-count-container">
-        <div class="ui-grid-pager-count">
-            <span ng-show="grid.options.totalItems > 0">
-                {{ 1 + paginationApi.getFirstRowIndex() }}
-                <abbr ui-grid-one-bind-title="paginationThrough">
-                    -
-                </abbr>
-                {{ 1 + paginationApi.getLastRowIndex() }} {{paginationOf}} {{grid.options.totalItems}} {{totalItemsLabel}}
-            </span>
-        </div>
+        <ul ng-repeat="i in paginationApi.getTotalPagesArr()" class="m-datatable__pager-nav">
+            <li>
+                <a ng-click="grid.options.paginationCurrentPage=i" ng-class="i==grid.options.paginationCurrentPage?'m-datatable__pager-link m-datatable__pager-link-number m-datatable__pager-link--active':'m-datatable__pager-link m-datatable__pager-link-number'">{{i}}</a>
+            </li>
+        </ul>
+        <ul class="m-datatable__pager-nav">
+            <li>
+                <a ng-click="pageNextPageClick()"
+                   ng-disabled="cantPageForward()" ng-class="!cantPageForward()?'m-datatable__pager-link m-datatable__pager-link--next':'m-datatable__pager-link m-datatable__pager-link--next m-datatable__pager-link--disabled'">
+                    <i class="la la-angle-right"></i>
+                </a>
+            </li>
+            <li>
+                <a ng-click="pageLastPageClick()"
+                   ng-disabled="cantPageToLast()" ng-class="!cantPageToLast()?'m-datatable__pager-link m-datatable__pager-link--last':'m-datatable__pager-link m-datatable__pager-link--last m-datatable__pager-link--disabled'">
+                    <i class="la la-angle-double-right"></i>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
