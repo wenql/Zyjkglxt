@@ -197,8 +197,8 @@
     <Compile Include="Emailing\AbpZeroTemplateSmtpEmailSenderConfiguration.cs" />
     <Compile Include="Emailing\EmailTemplateProvider.cs" />
     <Compile Include="Emailing\IEmailTemplateProvider.cs" />
-    <Compile Include="Entities\TcmDepartments.cs" />
-    <Compile Include="Entities\TcmDiseases.cs" />
+    <Compile Include="Entities\Departments.cs" />
+    <Compile Include="Entities\Diseases.cs" />
     <Compile Include="Features\AppFeatureProvider.cs" />
     <Compile Include="Features\AppFeatures.cs" />
     <Compile Include="Friendships\Cache\FriendCacheItem.cs" />

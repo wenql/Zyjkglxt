@@ -1,14 +1,30 @@
 ﻿using System.Data.Common;
+using System.Data.Entity;
 using Abp.Zero.EntityFramework;
 using TcmHMS.Authorization.Roles;
 using TcmHMS.Authorization.Users;
+using TcmHMS.Entities;
 using TcmHMS.MultiTenancy;
 
 namespace TcmHMS.EntityFramework
 {
     public class TcmHMSDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
-        //TODO: Define an IDbSet for your Entities...
+
+        public IDbSet<Departments> Departments { get; set; }
+
+        public IDbSet<Diseases> Diseases { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Departments>().ToTable("TcmDepartments").HasKey(t => t.Id);
+            modelBuilder.Entity<Diseases>().ToTable("TcmDiseases").HasKey(t => t.Id)
+                .HasRequired(t => t.Department)
+                .WithMany()
+                .HasForeignKey(t => t.DepartmentId);
+        }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

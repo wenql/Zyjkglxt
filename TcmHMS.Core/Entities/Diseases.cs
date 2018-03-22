@@ -8,7 +8,7 @@ namespace TcmHMS.Entities
     /// <summary>
     /// 疾病
     /// </summary>
-    public class TcmDiseases : Entity, IHasCreationTime
+    public class Diseases : Entity, IHasCreationTime
     {
         public const int MaxDescriptionLength = 5000;
 
@@ -46,9 +46,9 @@ namespace TcmHMS.Entities
         /// <summary>
         /// 所属科室
         /// </summary>
-        public virtual TcmDepartments Department { get; set; }
+        public virtual Departments Department { get; set; }
 
-        public TcmDiseases()
+        public Diseases()
         {
             this.CreationTime = DateTime.Now;
         }

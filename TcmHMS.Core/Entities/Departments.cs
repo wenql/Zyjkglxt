@@ -8,7 +8,7 @@ namespace TcmHMS.Entities
     /// <summary>
     /// 科室
     /// </summary>
-    public class TcmDepartments : Entity, IHasCreationTime
+    public class Departments : Entity, IHasCreationTime
     {
         public const int MaxDescriptionLength = 5000;
 
@@ -38,7 +38,7 @@ namespace TcmHMS.Entities
         /// </summary>
         public DateTime CreationTime { get; set; }
 
-        public TcmDepartments()
+        public Departments()
         {
             this.CreationTime = DateTime.Now;
         }
