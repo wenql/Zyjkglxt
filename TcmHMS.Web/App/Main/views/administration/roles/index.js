@@ -30,7 +30,6 @@
                         field: 'displayName',
                         cellTemplate:
                         '<div class=\"ui-grid-cell-contents\">' +
-                        '  {{COL_FIELD CUSTOM_FILTERS}} &nbsp;' +
                         '  <span ng-show="row.entity.isStatic" class="m-badge m-badge--brand m-badge--wide ng-tns-c2-0 ng-star-inserted" title="不能删除系统角色.">系统</span>&nbsp;' +
                         '  <span ng-show="row.entity.isDefault" class="m-badge m-badge--metal m-badge--wide ng-tns-c2-0 ng-star-inserted" title="新用户将默认拥有此角色.">默认</span>' +
                         '</div>'
@@ -50,7 +49,7 @@
                         cellTemplate:
                         '<div class=\"ui-grid-cell-contents\">' +
                         '  <div class="btn-group dropdown" uib-dropdown="" dropdown-append-to-body>' +
-                        '    <button class="btn btn-xs btn-primary blue" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i>操作<span class="caret"></span></button>' +
+                        '    <button class="btn btn-xs btn-primary blue" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i>操作</button>' +
                         '    <ul uib-dropdown-menu>' +
                         '      <li><a ng-if="grid.appScope.permissions.edit" href=\"javascript:;\" ng-click="grid.appScope.editRole(row.entity)">编辑</a></li>' +
                         '      <li><a ng-if="!row.entity.isStatic && grid.appScope.permissions.delete" href=\"javascript:;\" ng-click="grid.appScope.deleteRole(row.entity)">删除</a></li>' +
