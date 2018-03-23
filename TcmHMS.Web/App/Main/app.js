@@ -40,6 +40,18 @@ appModule.config([
                     templateUrl: '/App/Main/views/administration/users/index.cshtml'
                 });
         }
+
+        $stateProvider.state('departments',
+            {
+                url: '/departments',
+                templateUrl: '/App/Main/views/dictionaries/departments/index.cshtml'
+            });
+
+        $stateProvider.state('diseases',
+            {
+                url: '/diseases',
+                templateUrl: '/App/Main/views/dictionaries/diseases/index.cshtml'
+            });
     }
 ]);
 appModule.run(["$rootScope", "$state", 'i18nService', '$uibModalStack', function ($rootScope, $state, i18nService, $uibModalStack) {

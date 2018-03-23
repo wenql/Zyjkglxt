@@ -63,5 +63,8 @@
     <text name="Administration.Roles" value="角色" />
     <text name="Administration.Users" value="用户" />
 
+    <text name="Dictionaries" value="数据字典" />
+    <text name="Departments" value="科室" />
+    <text name="Diseases" value="疾病" />
   </texts>
 </localizationDictionary>

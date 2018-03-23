@@ -16,12 +16,29 @@ namespace TcmHMS.Web
         {
             context.Manager.MainMenu
                 .AddItem(new MenuItemDefinition(
-                    "Dashboard",
-                    L("Dashboard"),
-                    url: "dashboard",
-                    icon: "m-menu__link-icon flaticon-line-graph",
-                    requiresAuthentication: true)
-                ).AddItem(new MenuItemDefinition(
+                        "Dashboard",
+                        L("Dashboard"),
+                        url: "dashboard",
+                        icon: "m-menu__link-icon flaticon-line-graph",
+                        requiresAuthentication: true)
+                )
+                .AddItem(new MenuItemDefinition(
+                        "Dictionaries",
+                        L("Dictionaries"),
+                        icon: "m-menu__link-icon flaticon-folder-1")
+                    .AddItem(new MenuItemDefinition(
+                        "Departments",
+                        L("Departments"),
+                        url: "departments",
+                        icon: "m-menu__link-icon fa fa-circle-o")
+                    ).AddItem(new MenuItemDefinition(
+                        "Diseases",
+                        L("Diseases"),
+                        url: "diseases",
+                        icon: "m-menu__link-icon fa fa-circle-o")
+                    )
+                )
+                .AddItem(new MenuItemDefinition(
                         "Administration",
                         L("Administration"),
                         icon: "m-menu__link-icon flaticon-interface-8")
@@ -29,13 +46,13 @@ namespace TcmHMS.Web
                         "Roles",
                         L("Administration.Roles"),
                         url: "roles",
-                        icon: "m-menu__link-icon flaticon-suitcase",
+                        icon: "m-menu__link-icon fa fa-circle-o",
                         requiredPermissionName: PermissionNames.Pages_Administration_Roles)
                     ).AddItem(new MenuItemDefinition(
                         "Users",
                         L("Administration.Users"),
                         url: "users",
-                        icon: "m-menu__link-icon flaticon-users",
+                        icon: "m-menu__link-icon fa fa-circle-o",
                         requiredPermissionName: PermissionNames.Pages_Administration_Users)
                     )
                 );

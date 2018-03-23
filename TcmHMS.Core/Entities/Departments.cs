@@ -11,15 +11,20 @@ namespace TcmHMS.Entities
     public class Departments : Entity, IHasCreationTime
     {
         public const int MaxDescriptionLength = 5000;
+        public const int MaxNameOrCodeLength = 32;
 
         /// <summary>
         /// 名称
         /// </summary>
+        [Required]
+        [StringLength(MaxNameOrCodeLength)]
         public string DisplayName { get; set; }
 
         /// <summary>
         /// 代码
         /// </summary>
+        [Required]
+        [StringLength(MaxNameOrCodeLength)]
         public string Code { get; set; }
 
         /// <summary>

@@ -11,6 +11,7 @@ namespace TcmHMS.Entities
     public class Diseases : Entity, IHasCreationTime
     {
         public const int MaxDescriptionLength = 5000;
+        public const int MaxNameOrPinyinLength = 32;
 
         /// <summary>
         /// 部门Id
@@ -20,11 +21,15 @@ namespace TcmHMS.Entities
         /// <summary>
         /// 名称
         /// </summary>
+        [Required]
+        [StringLength(MaxNameOrPinyinLength)]
         public string DisplayName { get; set; }
 
         /// <summary>
         /// 拼音
         /// </summary>
+        [Required]
+        [StringLength(MaxNameOrPinyinLength)]
         public string Pinyin { get; set; }
 
         /// <summary>

@@ -2723,6 +2723,8 @@
     <Content Include="App\Main\directives\paginationTemplate.cshtml" />
     <Content Include="App\Main\views\administration\users\createOrEditModal.cshtml" />
     <Content Include="App\Main\views\administration\users\permissionsModal.cshtml" />
+    <Content Include="App\Main\views\dictionaries\departments\index.cshtml" />
+    <Content Include="App\Main\views\dictionaries\diseases\index.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
