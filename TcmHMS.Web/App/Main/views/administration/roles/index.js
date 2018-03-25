@@ -30,6 +30,7 @@
                         field: 'displayName',
                         cellTemplate:
                         '<div class=\"ui-grid-cell-contents\">' +
+                        '  {{COL_FIELD CUSTOM_FILTERS}} &nbsp;' +
                         '  <span ng-show="row.entity.isStatic" class="m-badge m-badge--brand m-badge--wide ng-tns-c2-0 ng-star-inserted" title="不能删除系统角色.">系统</span>&nbsp;' +
                         '  <span ng-show="row.entity.isDefault" class="m-badge m-badge--metal m-badge--wide ng-tns-c2-0 ng-star-inserted" title="新用户将默认拥有此角色.">默认</span>' +
                         '</div>'

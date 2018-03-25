@@ -11,18 +11,18 @@ namespace TcmHMS.EntityFramework
     public class TcmHMSDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
 
-        public IDbSet<Departments> Departments { get; set; }
+        public IDbSet<Department> Departments { get; set; }
 
-        public IDbSet<Diseases> Diseases { get; set; }
+        public IDbSet<Disease> Diseases { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Departments>().ToTable("TcmDepartments").HasKey(t => t.Id);
-            modelBuilder.Entity<Diseases>().ToTable("TcmDiseases").HasKey(t => t.Id)
+            modelBuilder.Entity<Department>().ToTable("TcmDepartment").HasKey(t => t.Id);
+            modelBuilder.Entity<Disease>().ToTable("TcmDisease").HasKey(t => t.Id)
                 .HasRequired(t => t.Department)
-                .WithMany()
+                .WithMany(t => t.Disease)
                 .HasForeignKey(t => t.DepartmentId);
         }
 

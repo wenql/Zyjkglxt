@@ -1,6 +1,7 @@
 ﻿using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace TcmHMS.Entities
@@ -8,7 +9,7 @@ namespace TcmHMS.Entities
     /// <summary>
     /// 科室
     /// </summary>
-    public class Departments : Entity, IHasCreationTime
+    public class Department : Entity, IHasCreationTime
     {
         public const int MaxDescriptionLength = 5000;
         public const int MaxNameOrCodeLength = 32;
@@ -43,7 +44,17 @@ namespace TcmHMS.Entities
         /// </summary>
         public DateTime CreationTime { get; set; }
 
-        public Departments()
+        private ICollection<Disease> _disease;
+
+        /// <summary>
+        /// Gets or sets the blog comments
+        /// </summary>
+        public virtual ICollection<Disease> Disease
+        {
+            get { return _disease ?? (_disease = new List<Disease>()); }
+        }
+
+        public Department()
         {
             this.CreationTime = DateTime.Now;
         }

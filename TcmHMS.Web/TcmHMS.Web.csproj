@@ -461,6 +461,11 @@
     <Content Include="App\Main\views\administration\users\createOrEditModal.js" />
     <Content Include="App\Main\views\administration\users\index.js" />
     <Content Include="App\Main\views\administration\users\permissionsModal.js" />
+    <Content Include="App\Main\views\dictionaries\departments\createOrEditModal.js" />
+    <Content Include="App\Main\views\dictionaries\departments\index.js" />
+    <Content Include="App\Main\views\dictionaries\diseases\createOrEditModal.js" />
+    <Content Include="App\Main\views\dictionaries\diseases\index.js" />
+    <Content Include="App\Main\views\dictionaries\departments\departmentCombo.js" />
     <Content Include="App\Main\views\layout\header.css" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.css" />
@@ -2725,6 +2730,8 @@
     <Content Include="App\Main\views\administration\users\permissionsModal.cshtml" />
     <Content Include="App\Main\views\dictionaries\departments\index.cshtml" />
     <Content Include="App\Main\views\dictionaries\diseases\index.cshtml" />
+    <Content Include="App\Main\views\dictionaries\departments\createOrEditModal.cshtml" />
+    <Content Include="App\Main\views\dictionaries\departments\departmentCombo.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">

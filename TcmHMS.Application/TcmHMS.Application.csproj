@@ -226,7 +226,17 @@
     <Compile Include="Authorization\Users\Dto\UserLoginAttemptDto.cs" />
     <Compile Include="Authorization\Users\Dto\UserRoleDto.cs" />
     <Compile Include="CustomDtoMapper.cs" />
+    <Compile Include="Departments\DepartmentAppService.cs" />
+    <Compile Include="Departments\Dto\DepartmentEditDto.cs" />
+    <Compile Include="Departments\Dto\DepartmentListDto.cs" />
+    <Compile Include="Departments\Dto\GetDepartmentsInput.cs" />
+    <Compile Include="Departments\IDepartmentAppService.cs" />
+    <Compile Include="Diseases\DiseaseAppService.cs" />
+    <Compile Include="Diseases\Dto\DiseaseListDto.cs" />
+    <Compile Include="Diseases\Dto\GetDiseasesInput.cs" />
+    <Compile Include="Diseases\IDiseaseAppService.cs" />
     <Compile Include="Dto\FileDto.cs" />
+    <Compile Include="Dto\GetEntitiesInput.cs" />
     <Compile Include="Dto\PagedAndFilteredInputDto.cs" />
     <Compile Include="Dto\PagedAndSortedInputDto.cs" />
     <Compile Include="Dto\PagedInputDto.cs" />
@@ -266,9 +276,7 @@
       <Name>TcmHMS.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Departments\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

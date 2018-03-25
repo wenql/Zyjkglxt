@@ -65,6 +65,6 @@
 
     <text name="Dictionaries" value="数据字典" />
     <text name="Departments" value="科室" />
-    <text name="Diseases" value="疾病" />
+    <text name="Diseases" value="病症" />
   </texts>
 </localizationDictionary>

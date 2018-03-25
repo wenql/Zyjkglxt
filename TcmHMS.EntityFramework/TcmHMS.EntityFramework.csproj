@@ -230,6 +230,14 @@
     <Compile Include="Migrations\201803230212594_intalCreate.Designer.cs">
       <DependentUpon>201803230212594_intalCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803230819508_intalCreate1.cs" />
+    <Compile Include="Migrations\201803230819508_intalCreate1.Designer.cs">
+      <DependentUpon>201803230819508_intalCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803251028174_intalCreate2.cs" />
+    <Compile Include="Migrations\201803251028174_intalCreate2.Designer.cs">
+      <DependentUpon>201803251028174_intalCreate2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="TcmHMSDataModule.cs" />
@@ -270,6 +278,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803230212594_intalCreate.resx">
       <DependentUpon>201803230212594_intalCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803230819508_intalCreate1.resx">
+      <DependentUpon>201803230819508_intalCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803251028174_intalCreate2.resx">
+      <DependentUpon>201803251028174_intalCreate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

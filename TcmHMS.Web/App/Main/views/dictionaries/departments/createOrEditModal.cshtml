@@ -1,0 +1,58 @@
+﻿@using TcmHMS.Entities
+<div>
+    <form name="departmentCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.department.id">修改科室: {{vm.department.displayName}}</span>
+                <span ng-if="!vm.department.id">添加科室</span>
+            </h4>
+            <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>
+                    科室名称*
+                </label>
+                <input type="text" class="form-control" name="DepartmentDisplayName" ng-class="{'edited':vm.department.displayName}" ng-model="vm.department.displayName" required maxlength="@Department.MaxNameOrCodeLength">
+                <span class="errorSty" ng-hide="departmentCreateOrEditForm.DepartmentDisplayName.$pristine || departmentCreateOrEditForm.DepartmentDisplayName.$valid" ng-show="departmentCreateOrEditForm.DepartmentDisplayName.$invalid">
+                    <span ng-show="departmentCreateOrEditForm.DepartmentDisplayName.$error.required">*请输入名称</span>
+                    <span ng-show="departmentCreateOrEditForm.DepartmentDisplayName.$error.maxlength">*名称不多于32位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    科室代码*
+                </label>
+                <input type="text" class="form-control" name="DepartmentCode" ng-class="{'edited':vm.department.code}" ng-model="vm.department.code" required maxlength="@Department.MaxNameOrCodeLength">
+                <span class="errorSty" ng-hide="departmentCreateOrEditForm.DepartmentCode.$pristine || departmentCreateOrEditForm.DepartmentCode.$valid" ng-show="departmentCreateOrEditForm.DepartmentCode.$invalid">
+                    <span ng-show="departmentCreateOrEditForm.DepartmentCode.$error.required">*请输入代码</span>
+                    <span ng-show="departmentCreateOrEditForm.DepartmentDisplayName.$error.maxlength">*名称不多于32位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    备注
+                </label>
+                <textarea class="form-control m-input" name="description" rows="3" ng-model="vm.department.description" maxlength="@Department.MaxDescriptionLength"></textarea>
+                <span class="errorSty" ng-hide="departmentCreateOrEditForm.description.$pristine || departmentCreateOrEditForm.description.$valid" ng-show="departmentCreateOrEditForm.description.$invalid">
+                    <span ng-show="departmentCreateOrEditForm.description.$error.maxlength">*备注不多于5000位</span>
+                </span>
+
+            </div>
+            <div class="md-checkbox-list">
+                <div class="md-checkbox">
+                    <label style="font-weight: normal;" class="m-checkbox">
+                        <input id="EditUser_IsActive" name="IsEnabled" ng-model="vm.department.isEnabled" type="checkbox">
+                        生效<span></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">取消</button>
+            <button type="submit" button-busy="vm.saving" busy-text="保存中" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="departmentCreateOrEditForm.$invalid"><i class="fa fa-save"></i> <span>保存</span></button>
+        </div>
+    </form>
+</div>

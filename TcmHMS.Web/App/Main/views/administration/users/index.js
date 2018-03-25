@@ -72,8 +72,8 @@
                             field: 'isActive',
                             cellTemplate:
                             '<div class=\"ui-grid-cell-contents\">' +
-                            '  <span ng-show="row.entity.isActive">是</span>' +
-                            '  <span ng-show="!row.entity.isActive">否</span>' +
+                            '  <span class="m-badge m-badge--focus m-badge--wide" ng-show="row.entity.isActive">是</span>' +
+                            '  <span class="m-badge m-badge--danger m-badge--wide" ng-show="!row.entity.isActive">否</span>' +
                             '</div>',
                             minWidth: 80
                         },

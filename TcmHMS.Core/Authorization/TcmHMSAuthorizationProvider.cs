@@ -10,8 +10,17 @@ namespace TcmHMS.Authorization
         {
             var pages = context.GetPermissionOrNull(PermissionNames.Pages) ?? context.CreatePermission(PermissionNames.Pages, L("页面"));
 
-            var administration = pages.CreateChildPermission(PermissionNames.Pages_Administration, L("系统管理"));
+            var dictionaries = pages.CreateChildPermission(PermissionNames.Pages_Dictionaries, L("数据字典"));
+            var departments = dictionaries.CreateChildPermission(PermissionNames.Pages_Dictionaries_Departments, L("科室"));
+            departments.CreateChildPermission(PermissionNames.Pages_Dictionaries_Departments_Create, L("添加科室"));
+            departments.CreateChildPermission(PermissionNames.Pages_Dictionaries_Departments_Edit, L("修改科室"));
+            departments.CreateChildPermission(PermissionNames.Pages_Dictionaries_Departments_Delete, L("删除科室"));
+            var diseases = dictionaries.CreateChildPermission(PermissionNames.Pages_Dictionaries_Diseases, L("病症"));
+            diseases.CreateChildPermission(PermissionNames.Pages_Dictionaries_Diseases_Create, L("添加病症"));
+            diseases.CreateChildPermission(PermissionNames.Pages_Dictionaries_Diseases_Edit, L("修改病症"));
+            diseases.CreateChildPermission(PermissionNames. Pages_Dictionaries_Diseases_Delete, L("删除病症"));
 
+            var administration = pages.CreateChildPermission(PermissionNames.Pages_Administration, L("系统管理"));
             var roles = administration.CreateChildPermission(PermissionNames.Pages_Administration_Roles, L("角色"));
             roles.CreateChildPermission(PermissionNames.Pages_Administration_Roles_Create, L("添加角色"));
             roles.CreateChildPermission(PermissionNames.Pages_Administration_Roles_Edit, L("修改角色"));

@@ -17,7 +17,10 @@
                         <label>
                             角色名称*
                         </label>
-                        <input type="text" class="form-control"  name="RoleDisplayName" ng-class="{'edited':vm.role.displayName}" ng-model="vm.role.displayName" required maxlength="@Role.MaxDisplayNameLength">                     
+                        <input type="text" class="form-control" name="RoleDisplayName" ng-class="{'edited':vm.role.displayName}" ng-model="vm.role.displayName" required maxlength="@Role.MaxDisplayNameLength">
+                        <span class="errorSty" ng-hide="roleCreateOrEditForm.RoleDisplayName.$pristine || roleCreateOrEditForm.RoleDisplayName.$valid" ng-show="roleCreateOrEditForm.RoleDisplayName.$invalid">
+                            <span ng-show="roleCreateOrEditForm.RoleDisplayName.$error.required">*请输入名称</span>
+                        </span>
                     </div>
                     <div class="m-checkbox-list">
                         <label class="m-checkbox">

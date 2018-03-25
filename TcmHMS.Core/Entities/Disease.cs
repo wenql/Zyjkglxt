@@ -8,7 +8,7 @@ namespace TcmHMS.Entities
     /// <summary>
     /// 疾病
     /// </summary>
-    public class Diseases : Entity, IHasCreationTime
+    public class Disease : Entity, IHasCreationTime
     {
         public const int MaxDescriptionLength = 5000;
         public const int MaxNameOrPinyinLength = 32;
@@ -24,6 +24,13 @@ namespace TcmHMS.Entities
         [Required]
         [StringLength(MaxNameOrPinyinLength)]
         public string DisplayName { get; set; }
+
+        /// <summary>
+        /// 发病症状
+        /// </summary>
+        [Required]
+        [StringLength(MaxDescriptionLength)]
+        public string Symptom { get; set; }
 
         /// <summary>
         /// 拼音
@@ -51,9 +58,9 @@ namespace TcmHMS.Entities
         /// <summary>
         /// 所属科室
         /// </summary>
-        public virtual Departments Department { get; set; }
+        public virtual Department Department { get; set; }
 
-        public Diseases()
+        public Disease()
         {
             this.CreationTime = DateTime.Now;
         }

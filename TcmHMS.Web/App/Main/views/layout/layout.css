@@ -124,6 +124,7 @@
 
 .form-control {
     box-shadow: none;
+    height: auto !important;
 }
 
 .jstree-default .jstree-icon {
@@ -134,4 +135,10 @@
 .form-group .form-control.ng-touched.ng-invalid {
     border-style: dotted;
     border-color: red;
+}
+
+.form-group span.errorSty {
+    color: #f4516c;
+    margin-top: 0.2rem;
+    font-size: 0.85rem;
 }
