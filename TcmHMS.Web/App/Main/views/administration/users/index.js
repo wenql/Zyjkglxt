@@ -22,8 +22,9 @@
                 };
 
                 vm.requestParams = {
+                    Filter: '',
                     permission: '',
-                    role: '',
+                    role: parseInt(0),
                     skipCount: 0,
                     maxResultCount: app.consts.grid.defaultPageSize,
                     sorting: 'creationTime asc'
@@ -140,6 +141,8 @@
 
                 vm.getUsers = function () {
                     vm.loading = true;
+                    var params = $.extend({ filter: vm.filterText }, vm.requestParams);
+                    params.role = params.role === 0 ? '' : params.role;
                     userService.getUsers($.extend({ filter: vm.filterText }, vm.requestParams))
                         .then(function (result) {
                             vm.userGridOptions.totalItems = result.data.totalCount;

@@ -1,0 +1,72 @@
+﻿@using TcmHMS.Entities
+<div>
+    <form name="diseaseCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.disease.id">修改病症: {{vm.disease.displayName}}</span>
+                <span ng-if="!vm.disease.id">添加病症</span>
+            </h4>
+            <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>
+                    名称*
+                </label>
+                <input type="text" class="form-control" name="DiseaseDisplayName" ng-class="{'edited':vm.disease.displayName}" ng-model="vm.disease.displayName" required maxlength="@Disease.MaxNameOrPinyinLength">
+                <span class="errorSty" ng-hide="diseaseCreateOrEditForm.DiseaseDisplayName.$pristine || diseaseCreateOrEditForm.DiseaseDisplayName.$valid" ng-show="diseaseCreateOrEditForm.DiseaseDisplayName.$invalid">
+                    <span ng-show="diseaseCreateOrEditForm.DiseaseDisplayName.$error.required">*请输入名称</span>
+                    <span ng-show="diseaseCreateOrEditForm.DiseaseDisplayName.$error.maxlength">*名称不多于32位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    科室*
+                </label>
+                <department-combo name="DiseaseDepartment" selected-department="vm.disease.departmentId"></department-combo>
+            </div>
+            <div class="form-group">
+                <label>
+                    拼音*
+                </label>
+                <input type="text" class="form-control" name="DiseasePinyin" ng-class="{'edited':vm.disease.pinyin}" ng-model="vm.disease.pinyin" required maxlength="@Disease.MaxNameOrPinyinLength">
+                <span class="errorSty" ng-hide="diseaseCreateOrEditForm.DiseasePinyin.$pristine || diseaseCreateOrEditForm.DiseasePinyin.$valid" ng-show="diseaseCreateOrEditForm.DiseasePinyin.$invalid">
+                    <span ng-show="diseaseCreateOrEditForm.DiseasePinyin.$error.required">*请输入拼音</span>
+                    <span ng-show="diseaseCreateOrEditForm.DiseasePinyin.$error.maxlength">*拼音不多于32位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    症状描述
+                </label>
+                <textarea class="form-control m-input" name="symptom" rows="3" ng-model="vm.disease.symptom" maxlength="@Disease.MaxDescriptionLength"></textarea>
+                <span class="errorSty" ng-hide="diseaseCreateOrEditForm.symptom.$pristine || diseaseCreateOrEditForm.symptom.$valid" ng-show="diseaseCreateOrEditForm.symptom.$invalid">
+                    <span ng-show="diseaseCreateOrEditForm.symptom.$error.maxlength">*症状描述不多于5000位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    备注
+                </label>
+                <textarea class="form-control m-input" name="description" rows="3" ng-model="vm.disease.description" maxlength="@Disease.MaxDescriptionLength"></textarea>
+                <span class="errorSty" ng-hide="diseaseCreateOrEditForm.description.$pristine || diseaseCreateOrEditForm.description.$valid" ng-show="diseaseCreateOrEditForm.description.$invalid">
+                    <span ng-show="diseaseCreateOrEditForm.description.$error.maxlength">*备注不多于5000位</span>
+                </span>
+            </div>
+            <div class="md-checkbox-list">
+                <div class="md-checkbox">
+                    <label style="font-weight: normal;" class="m-checkbox">
+                        <input id="EditUser_IsActive" name="IsEnabled" ng-model="vm.disease.isEnabled" type="checkbox">
+                        生效<span></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">取消</button>
+            <button type="submit" button-busy="vm.saving" busy-text="保存中" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="diseaseCreateOrEditForm.$invalid||vm.disease.departmentId==0"><i class="fa fa-save"></i> <span>保存</span></button>
+        </div>
+    </form>
+</div>

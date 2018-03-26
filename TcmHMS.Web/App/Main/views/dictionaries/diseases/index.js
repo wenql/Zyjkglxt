@@ -11,15 +11,14 @@
 
                 vm.loading = false;
                 vm.rowHeight = 50;
-
                 vm.permissions = {
-                    create: abp.auth.hasPermission('Pages.Administration.Diseases.Create'),
-                    edit: abp.auth.hasPermission('Pages.Administration.Diseases.Edit'),
-                    'delete': abp.auth.hasPermission('Pages.Administration.Diseases.Delete'),
+                    create: abp.auth.hasPermission('Pages.Dictionaries.Diseases.Create'),
+                    edit: abp.auth.hasPermission('Pages.Dictionaries.Diseases.Edit'),
+                    'delete': abp.auth.hasPermission('Pages.Dictionaries.Diseases.Delete')
                 };
 
                 vm.requestParams = {
-                    department: '',
+                    department: $stateParams.departmentId === '' ? parseInt(0) : parseInt($stateParams.departmentId),
                     keyword: '',
                     skipCount: 0,
                     maxResultCount: app.consts.grid.defaultPageSize,
@@ -50,6 +49,29 @@
                             field: 'pinyin',
                             enableSorting: false,
                             minWidth: 160
+                        },
+                        {
+                            name: '科室',
+                            enableColumnMenu: false,
+                            field: 'department.displayName',
+                            enableSorting: false,
+                            minWidth: 160
+                        },
+                        {
+                            name: '有效',
+                            enableColumnMenu: false,
+                            field: 'isEnabled',
+                            cellTemplate:
+                            '<div class=\"ui-grid-cell-contents\">' +
+                            '  <span class="m-badge m-badge--focus m-badge--wide" ng-show="row.entity.isEnabled">是</span>' +
+                            '  <span class="m-badge m-badge--danger m-badge--wide" ng-show="!row.entity.isEnabled">否</span>' +
+                            '</div>',
+                            minWidth: 80
+                        },
+                        {
+                            name: '描述',
+                            enableColumnMenu: false,
+                            field: 'symptom'
                         },
                         {
                             name: '创建时间',
@@ -96,6 +118,10 @@
                     data: []
                 };
 
+                if (!vm.permissions.edit && !vm.permissions.delete) {
+                    vm.diseaseGridOptions.columnDefs.pop();
+                }
+
                 vm.getTableHeight = function () {
                     return {
                         height: (vm.diseaseGridOptions.data.length * vm.rowHeight + 100) + "px"
@@ -104,7 +130,9 @@
 
                 vm.getDiseases = function () {
                     vm.loading = true;
-                    diseaseService.getDiseases($.extend({ filter: vm.filterText }, vm.requestParams))
+                    var params = $.extend({ filter: vm.filterText }, vm.requestParams);
+                    params.department = params.department === 0 ? '' : params.department;
+                    diseaseService.getDiseases(params)
                         .then(function (result) {
                             vm.diseaseGridOptions.totalItems = result.data.totalCount;
                             vm.diseaseGridOptions.data = result.data.items;
@@ -122,13 +150,8 @@
                 };
 
                 vm.deleteDisease = function (disease) {
-                    if (disease.diseaseName == app.consts.diseaseManagement.defaultAdminDiseaseName) {
-                        abp.message.warn('不能删除系统用户');
-                        return;
-                    }
-
                     abp.message.confirm(
-                        '确认删除用户：' + disease.diseaseName + '?',
+                        '确认删除病症：' + disease.displayName + '?',
                         function (isConfirmed) {
                             if (isConfirmed) {
                                 diseaseService.deleteDisease({
@@ -144,8 +167,8 @@
 
                 function openCreateOrEditDiseaseModal(diseaseId) {
                     var modalInstance = $uibModal.open({
-                        templateUrl: '~/App/main/views/administration/diseases/createOrEditModal.cshtml',
-                        controller: 'main.views.administration.diseases.createOrEditModal as vm',
+                        templateUrl: '~/App/main/views/dictionaries/diseases/createOrEditModal.cshtml',
+                        controller: 'main.views.dictionaries.diseases.createOrEditModal as vm',
                         backdrop: 'static',
                         resolve: {
                             diseaseId: function () {

@@ -4,7 +4,7 @@
             return {
                 restrict: 'E',
                 replace: true,
-                templateUrl: '/App/common/directives/roleCombo.cshtml',
+                templateUrl: '/App/Main/directives/roleCombo.cshtml',
                 scope: {
                     selectedRole: '=?'
                 },
@@ -13,6 +13,7 @@
                     $scope.emptyText = attrs.emptyText || '';
 
                     roleService.getRoles({}).then(function (result) {
+                        result.data.items.unshift({ id: 0, displayName: $scope.emptyText });
                         $scope.roles = result.data.items;
                         //refresh combo
                         $timeout(function () {

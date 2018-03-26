@@ -18,5 +18,26 @@ namespace TcmHMS.Diseases
         /// <param name="input"></param>
         /// <returns></returns>
         Task<ListResultDto<DiseaseListDto>> GetDiseases(GetDiseasesInput input);
+
+        /// <summary>
+        /// 获取
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<DiseaseEditDto> GetDiseaseForEdit(NullableIdDto input);
+
+        /// <summary>
+        /// 保存
+        /// </summary>
+        /// <param name="disease"></param>
+        /// <returns></returns>
+        Task createOrUpdateDisease(DiseaseEditDto disease);
+
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task DeleteDisease(EntityDto input);
     }
 }

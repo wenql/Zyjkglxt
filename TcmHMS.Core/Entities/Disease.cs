@@ -28,7 +28,6 @@ namespace TcmHMS.Entities
         /// <summary>
         /// 发病症状
         /// </summary>
-        [Required]
         [StringLength(MaxDescriptionLength)]
         public string Symptom { get; set; }
 
@@ -63,6 +62,7 @@ namespace TcmHMS.Entities
         public Disease()
         {
             this.CreationTime = DateTime.Now;
+            this.IsEnabled = true;
         }
     }
 }

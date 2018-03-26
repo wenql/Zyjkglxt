@@ -1,0 +1,9 @@
+﻿<select name="DepartmentSelectionCombobox"
+        class="form-control"
+        ng-options="department.id as department.displayName for department in departments"
+        ng-model="selectedDepartment"
+        ui-jq="selectpicker"
+        ui-options='{ iconBase: "famfamfam-flag", tickIcon: "fa fa-check"}'
+        data-none-selected-text="{{emptyText}}"
+        data-live-search="true">
+</select>

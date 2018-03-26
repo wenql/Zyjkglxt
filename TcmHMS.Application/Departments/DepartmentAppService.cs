@@ -33,7 +33,7 @@ namespace TcmHMS.Departments
         [AbpAuthorize(PermissionNames.Pages_Dictionaries_Departments_Delete)]
         public async Task DeleteDepartment(EntityDto input)
         {
-            var department = await _departmentRepository.FirstOrDefaultAsync(input.Id);
+            var department = await _departmentRepository.GetAsync(input.Id);
             if (department == null)
                 throw new UserFriendlyException("记录不存在");
 
@@ -51,7 +51,7 @@ namespace TcmHMS.Departments
             {
                 throw new UserFriendlyException("名称已存在");
             }
-            if (!CheckNameError(department.Code, department.Id))
+            if (!CheckCodeError(department.Code, department.Id))
             {
                 throw new UserFriendlyException("代码已存在");
             }
@@ -70,12 +70,12 @@ namespace TcmHMS.Departments
 
         private bool CheckNameError(string name, int? id)
         {
-            return !this._departmentRepository.GetAll().WhereIf(id.HasValue, x => x.Id != id).Where(x => x.DisplayName == name).Any();
+            return !this._departmentRepository.GetAll().WhereIf(id.HasValue, x => x.Id != id).Any(x => x.DisplayName == name);
         }
 
         private bool CheckCodeError(string code, int? id)
         {
-            return !this._departmentRepository.GetAll().WhereIf(id.HasValue, x => x.Id != id).Where(x => x.Code == code).Any();
+            return !this._departmentRepository.GetAll().WhereIf(id.HasValue, x => x.Id != id).Any(x => x.Code == code);
         }
 
         public async Task<DepartmentEditDto> GetDepartmentForEdit(NullableIdDto input)

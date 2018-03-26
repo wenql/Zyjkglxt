@@ -15,6 +15,30 @@
     <div class="m-content">
         <div class="m-portlet">
             <div class="m-portlet__body">
+                <form class="horizontal-form">
+                    <div class="form-body" enter-key="vm.getUsers()">
+                        <div class="row margin-bottom-10">
+                            <div class="col-md-5">
+                                <div class="form-group m-form__group">
+                                    <div class="input-group">
+                                        <input ng-model="vm.requestParams.Filter" auto-focus class="form-control" placeholder="关键字搜索..." type="text">
+                                        <div class="input-group-append">
+                                            <button ng-click="vm.getUsers()" class="btn btn-secondary" type="submit"><i class="icon-magnifier"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <role-combo selected-role="vm.requestParams.role" empty-text="按角色搜索..."></role-combo>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button ng-click="vm.getUsers()" class="btn btn-primary blue"><i class="fa fa-refresh"></i> 刷新</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
                 <div busy-if="vm.loading">
                     <div ui-grid="vm.userGridOptions" ui-grid-pagination ui-grid-resize-columns ui-grid-auto-resize ng-style="vm.getTableHeight()"></div>
                 </div>

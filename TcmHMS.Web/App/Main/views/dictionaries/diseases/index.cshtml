@@ -9,16 +9,16 @@
                     管理科室下的各种疾病.
                 </span>
             </div>
-            <button class="btn btn-primary blue" style="" ng-click="vm.createDiseaset()"><i class="fa fa-plus"></i> 添加病症</button>
+            <button class="btn btn-primary blue" style="" ng-click="vm.createDisease()"><i class="fa fa-plus"></i> 添加病症</button>
         </div>
     </div>
     <div class="m-content">
         <div class="m-portlet">
             <div class="m-portlet__body">
                 <form class="horizontal-form">
-                    <div class="form-body" enter-key="vm.getUsers()">
+                    <div class="form-body" enter-key="vm.getDepartments()">
                         <div class="row margin-bottom-10">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <div class="form-group m-form__group">
                                     <div class="input-group">
                                         <input ng-model="vm.requestParams.keyword" auto-focus class="form-control" placeholder="关键字搜索..." type="text">
@@ -28,10 +28,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <div class="form-group">
-                                    <department-combo selected-department="vm.requestParams.department" empty-text="按科室搜索"></department-combo>
+                                    <department-combo selected-department="vm.requestParams.department" empty-text="按科室搜索..."></department-combo>
                                 </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button ng-click="vm.getDepartments()" class="btn btn-primary blue"><i class="fa fa-refresh"></i> 刷新</button>
                             </div>
                         </div>
                     </div>

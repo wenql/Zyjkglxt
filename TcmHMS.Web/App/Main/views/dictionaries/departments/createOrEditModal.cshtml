@@ -28,7 +28,7 @@
                 <input type="text" class="form-control" name="DepartmentCode" ng-class="{'edited':vm.department.code}" ng-model="vm.department.code" required maxlength="@Department.MaxNameOrCodeLength">
                 <span class="errorSty" ng-hide="departmentCreateOrEditForm.DepartmentCode.$pristine || departmentCreateOrEditForm.DepartmentCode.$valid" ng-show="departmentCreateOrEditForm.DepartmentCode.$invalid">
                     <span ng-show="departmentCreateOrEditForm.DepartmentCode.$error.required">*请输入代码</span>
-                    <span ng-show="departmentCreateOrEditForm.DepartmentDisplayName.$error.maxlength">*名称不多于32位</span>
+                    <span ng-show="departmentCreateOrEditForm.DepartmentCode.$error.maxlength">*代码不多于32位</span>
                 </span>
             </div>
             <div class="form-group">

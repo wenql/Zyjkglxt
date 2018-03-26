@@ -232,6 +232,7 @@
     <Compile Include="Departments\Dto\GetDepartmentsInput.cs" />
     <Compile Include="Departments\IDepartmentAppService.cs" />
     <Compile Include="Diseases\DiseaseAppService.cs" />
+    <Compile Include="Diseases\Dto\DiseaseEditDto.cs" />
     <Compile Include="Diseases\Dto\DiseaseListDto.cs" />
     <Compile Include="Diseases\Dto\GetDiseasesInput.cs" />
     <Compile Include="Diseases\IDiseaseAppService.cs" />
