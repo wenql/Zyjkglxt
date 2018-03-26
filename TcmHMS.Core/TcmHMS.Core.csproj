@@ -197,8 +197,13 @@
     <Compile Include="Emailing\AbpZeroTemplateSmtpEmailSenderConfiguration.cs" />
     <Compile Include="Emailing\EmailTemplateProvider.cs" />
     <Compile Include="Emailing\IEmailTemplateProvider.cs" />
+    <Compile Include="Entities\Constitution\ConstitutionGroup.cs" />
+    <Compile Include="Entities\Constitution\ConstitutionSubject.cs" />
+    <Compile Include="Entities\Constitution\ConstitutionSubjectOption.cs" />
+    <Compile Include="Entities\Constitution\ConstitutionSuggest.cs" />
     <Compile Include="Entities\Department.cs" />
     <Compile Include="Entities\Disease.cs" />
+    <Compile Include="Entities\Patient.cs" />
     <Compile Include="Features\AppFeatureProvider.cs" />
     <Compile Include="Features\AppFeatures.cs" />
     <Compile Include="Friendships\Cache\FriendCacheItem.cs" />
