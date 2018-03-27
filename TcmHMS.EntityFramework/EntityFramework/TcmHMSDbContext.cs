@@ -15,6 +15,10 @@ namespace TcmHMS.EntityFramework
 
         public IDbSet<Disease> Diseases { get; set; }
 
+        public IDbSet<Rank> Ranks { get; set; }
+
+        public IDbSet<Medicine> Medicines { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

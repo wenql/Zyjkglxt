@@ -46,13 +46,7 @@ namespace TcmHMS.Entities
 
         private ICollection<Disease> _disease;
 
-        /// <summary>
-        /// Gets or sets the blog comments
-        /// </summary>
-        public virtual ICollection<Disease> Disease
-        {
-            get { return _disease ?? (_disease = new List<Disease>()); }
-        }
+        public virtual ICollection<Disease> Disease => _disease ?? (_disease = new List<Disease>());
 
         public Department()
         {

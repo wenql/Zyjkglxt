@@ -2,6 +2,9 @@
 
 namespace TcmHMS.Entities.Constitution
 {
+    /// <summary>
+    /// 体质分类
+    /// </summary>
     public enum ConstitutionGroup
     {
         /// <summary>

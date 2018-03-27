@@ -3,6 +3,7 @@
     "ui.bootstrap",
     'ui.utils',
     "ui.jq",
+    "ui.sortable",
     'ui.grid',
     'ui.grid.pagination',
     "oc.lazyLoad",
@@ -51,6 +52,12 @@ appModule.config([
                 {
                     url: '/diseases:departmentId',
                     templateUrl: '/App/Main/views/dictionaries/diseases/index.cshtml'
+                });
+        if (abp.auth.hasPermission('Pages.Dictionaries.Ranks'))
+            $stateProvider.state('ranks',
+                {
+                    url: '/ranks',
+                    templateUrl: '/App/Main/views/dictionaries/ranks/index.cshtml'
                 });
     }
 ]);

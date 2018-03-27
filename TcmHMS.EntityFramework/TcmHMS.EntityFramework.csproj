@@ -242,6 +242,10 @@
     <Compile Include="Migrations\201803260316413_intalCreate3.Designer.cs">
       <DependentUpon>201803260316413_intalCreate3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803270841031_intalCreate4.cs" />
+    <Compile Include="Migrations\201803270841031_intalCreate4.Designer.cs">
+      <DependentUpon>201803270841031_intalCreate4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="TcmHMSDataModule.cs" />
@@ -291,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803260316413_intalCreate3.resx">
       <DependentUpon>201803260316413_intalCreate3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803270841031_intalCreate4.resx">
+      <DependentUpon>201803270841031_intalCreate4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

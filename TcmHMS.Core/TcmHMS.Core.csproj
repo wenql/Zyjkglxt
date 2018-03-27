@@ -203,7 +203,12 @@
     <Compile Include="Entities\Constitution\ConstitutionSuggest.cs" />
     <Compile Include="Entities\Department.cs" />
     <Compile Include="Entities\Disease.cs" />
+    <Compile Include="Entities\Doctor.cs" />
+    <Compile Include="Entities\Enum\BloodType.cs" />
+    <Compile Include="Entities\Enum\Married.cs" />
+    <Compile Include="Entities\Medicine.cs" />
     <Compile Include="Entities\Patient.cs" />
+    <Compile Include="Entities\Rank.cs" />
     <Compile Include="Features\AppFeatureProvider.cs" />
     <Compile Include="Features\AppFeatures.cs" />
     <Compile Include="Friendships\Cache\FriendCacheItem.cs" />

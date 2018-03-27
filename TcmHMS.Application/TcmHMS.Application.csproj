@@ -242,6 +242,11 @@
     <Compile Include="Dto\PagedAndSortedInputDto.cs" />
     <Compile Include="Dto\PagedInputDto.cs" />
     <Compile Include="Dto\PagedSortedAndFilteredInputDto.cs" />
+    <Compile Include="Ranks\Dto\GetRanksInput.cs" />
+    <Compile Include="Ranks\Dto\RankEditDto.cs" />
+    <Compile Include="Ranks\Dto\RankListDto.cs" />
+    <Compile Include="Ranks\IRankAppService.cs" />
+    <Compile Include="Ranks\RankAppService.cs" />
     <Compile Include="TcmHMSApplicationModule.cs" />
     <Compile Include="TcmHMSAppServiceBase.cs" />
     <Compile Include="Authorization\Accounts\AccountAppService.cs" />

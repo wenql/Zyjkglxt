@@ -13,6 +13,10 @@
         public const string Pages_Dictionaries_Diseases_Create = "Pages.Dictionaries.Diseases.Create";
         public const string Pages_Dictionaries_Diseases_Edit = "Pages.Dictionaries.Diseases.Edit";
         public const string Pages_Dictionaries_Diseases_Delete = "Pages.Dictionaries.Diseases.Delete";
+        public const string Pages_Dictionaries_Ranks = "Pages.Dictionaries.Ranks";
+        public const string Pages_Dictionaries_Ranks_Create = "Pages.Dictionaries.Ranks.Create";
+        public const string Pages_Dictionaries_Ranks_Edit = "Pages.Dictionaries.Ranks.Edit";
+        public const string Pages_Dictionaries_Ranks_Delete = "Pages.Dictionaries.Ranks.Delete";
 
         public const string Pages_Administration = "Pages.Administration";
 

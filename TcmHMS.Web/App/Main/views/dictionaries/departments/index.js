@@ -104,7 +104,7 @@
 
             vm.deleteDepartment = function (department) {
                 abp.message.confirm(
-                    '确认删除角色：' + department.displayName + '?',
+                    '确认删除科室：' + department.displayName + '?',
                     function (isConfirmed) {
                         if (isConfirmed) {
                             departmentService.deleteDepartment({

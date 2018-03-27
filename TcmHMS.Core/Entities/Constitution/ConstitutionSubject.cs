@@ -1,12 +1,47 @@
-﻿using System;
+﻿using Abp.Domain.Entities;
+using Abp.Domain.Entities.Auditing;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace TcmHMS.Entities.Constitution
 {
-    class ConstitutionSubject
+    /// <summary>
+    /// 体质问卷
+    /// </summary>
+    public class ConstitutionSubject : Entity, IHasCreationTime
     {
+        public const int MaxTitleLength = 200;
+
+        /// <summary>
+        /// 体质分组
+        /// </summary>
+        public int GroupId { get; set; }
+
+        /// <summary>
+        /// 标题
+        /// </summary>
+        [Required]
+        [StringLength(MaxTitleLength)]
+        public string Title { get; set; }
+
+        /// <summary>
+        /// 性别限定
+        /// </summary>
+        public int SpecifyGebder { get; set; }
+
+        /// <summary>
+        /// 创建日期
+        /// </summary>
+        public DateTime CreationTime { get; set; }
+
+        private ICollection<ConstitutionSubjectOption> _options;
+
+        public virtual ICollection<ConstitutionSubjectOption> Options => _options ?? (_options = new List<ConstitutionSubjectOption>());
+
+        public ConstitutionSubject()
+        {
+            this.CreationTime = DateTime.Now;
+        }
     }
 }

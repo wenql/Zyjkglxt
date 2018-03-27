@@ -1,0 +1,40 @@
+﻿@using TcmHMS.Entities
+<div>
+    <form name="rankCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.rank.id">修改职称: {{vm.rank.displayName}}</span>
+                <span ng-if="!vm.rank.id">添加职称</span>
+            </h4>
+            <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>
+                    职称名称*
+                </label>
+                <input type="text" class="form-control" name="RankDisplayName" ng-class="{'edited':vm.rank.displayName}" ng-model="vm.rank.displayName" required maxlength="@Rank.MaxNameLength">
+                <span class="errorSty" ng-hide="rankCreateOrEditForm.RankDisplayName.$pristine || rankCreateOrEditForm.RankDisplayName.$valid" ng-show="rankCreateOrEditForm.RankDisplayName.$invalid">
+                    <span ng-show="rankCreateOrEditForm.RankDisplayName.$error.required">*请输入名称</span>
+                    <span ng-show="rankCreateOrEditForm.RankDisplayName.$error.maxlength">*名称不多于32位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    拼音*
+                </label>
+                <input type="text" class="form-control" name="RankPinyin" ng-class="{'edited':vm.rank.pinyin}" ng-model="vm.rank.pinyin" required maxlength="@Rank.MaxNameLength">
+                <span class="errorSty" ng-hide="rankCreateOrEditForm.RankPinyin.$pristine || rankCreateOrEditForm.RankPinyin.$valid" ng-show="rankCreateOrEditForm.RankPinyin.$invalid">
+                    <span ng-show="rankCreateOrEditForm.RankPinyin.$error.required">*请输入代码</span>
+                    <span ng-show="rankCreateOrEditForm.RankPinyin.$error.maxlength">*代码不多于32位</span>
+                </span>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">取消</button>
+            <button type="submit" button-busy="vm.saving" busy-text="保存中" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="rankCreateOrEditForm.$invalid"><i class="fa fa-save"></i> <span>保存</span></button>
+        </div>
+    </form>
+</div>

@@ -32,12 +32,20 @@ namespace TcmHMS.Web
                         url: "departments",
                         icon: "m-menu__link-icon fa fa-circle-o",
                         requiredPermissionName:PermissionNames.Pages_Dictionaries_Departments)
-                    ).AddItem(new MenuItemDefinition(
+                    )
+                    .AddItem(new MenuItemDefinition(
                         "Diseases",
                         L("Diseases"),
                         url: "diseases",
                         icon: "m-menu__link-icon fa fa-circle-o", 
                         requiredPermissionName: PermissionNames.Pages_Dictionaries_Diseases)
+                    )
+                    .AddItem(new MenuItemDefinition(
+                        "Ranks",
+                        L("Ranks"),
+                        url: "ranks",
+                        icon: "m-menu__link-icon fa fa-circle-o",
+                        requiredPermissionName: PermissionNames.Pages_Dictionaries_Ranks)
                     )
                 )
                 .AddItem(new MenuItemDefinition(

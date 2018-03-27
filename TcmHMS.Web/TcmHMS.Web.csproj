@@ -466,6 +466,8 @@
     <Content Include="App\Main\views\dictionaries\diseases\createOrEditModal.js" />
     <Content Include="App\Main\views\dictionaries\diseases\index.js" />
     <Content Include="App\Main\directives\departmentCombo.js" />
+    <Content Include="App\Main\views\dictionaries\ranks\createOrEditModal.js" />
+    <Content Include="App\Main\views\dictionaries\ranks\index.js" />
     <Content Include="App\Main\views\layout\header.css" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.css" />
@@ -2733,6 +2735,8 @@
     <Content Include="App\Main\views\dictionaries\departments\createOrEditModal.cshtml" />
     <Content Include="App\Main\directives\departmentCombo.cshtml" />
     <Content Include="App\Main\views\dictionaries\diseases\createOrEditModal.cshtml" />
+    <Content Include="App\Main\views\dictionaries\ranks\index.cshtml" />
+    <Content Include="App\Main\views\dictionaries\ranks\createOrEditModal.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
@@ -2761,6 +2765,7 @@
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
     <Content Include="Scripts\angular-scenario.js" />
+    <Content Include="Scripts\angular-ui\angular-sortable.js" />
     <Content Include="Scripts\angular-touch.js" />
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular-ui-router.js" />
