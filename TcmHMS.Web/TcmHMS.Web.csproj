@@ -467,6 +467,7 @@
     <Content Include="App\Main\views\dictionaries\diseases\index.js" />
     <Content Include="App\Main\directives\departmentCombo.js" />
     <Content Include="App\Main\views\dictionaries\ranks\createOrEditModal.js" />
+    <Content Include="App\Main\views\dictionaries\ranks\index.css" />
     <Content Include="App\Main\views\dictionaries\ranks\index.js" />
     <Content Include="App\Main\views\layout\header.css" />
     <Content Include="App\Main\views\layout\header.js" />

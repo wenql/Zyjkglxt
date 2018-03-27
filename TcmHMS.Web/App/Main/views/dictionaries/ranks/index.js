@@ -6,7 +6,6 @@
             $scope.$on('$viewContentLoaded', function () {
                 mLayout.initAjax();
             });
-
             vm.rowHeight = 50;
             vm.loading = false;
             vm.permissions = {

@@ -137,8 +137,29 @@
     border-color: red;
 }
 
+.m-datatable.m-datatable--default > .m-datatable__table {
+    min-height: 20px !important;
+}
+.m-datatable__table  tr th{
+    background-color: #e6e6e6 !important;
+}
 .form-group span.errorSty {
     color: #f4516c;
     margin-top: 0.2rem;
     font-size: 0.85rem;
+}
+.ui-sortable-placeholder {
+    display: block !important;
+    border: 1px dashed #5867dd !important;
+    padding: 11px 10px;
+    width: 100% !important;
+    visibility: visible !important;
+}
+.ui-sortable-handle
+{
+    cursor:move;
+}
+.ui-sortable-helper {
+    background: #5867dd !important;
+    color:#ffffff !important;
 }

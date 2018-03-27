@@ -82,6 +82,7 @@ namespace TcmHMS.Web.Bundling
                     .Include("~/libs/jstree/themes/default/style.css", new CssRewriteUrlWithVirtualDirectoryTransform())
                     .Include("~/libs/toastr/toastr.min.css")
                     .Include("~/libs/angular-ui-grid/ui-grid.min.css", new CssRewriteUrlWithVirtualDirectoryTransform())
+                    .Include("~/libs/jquery-ui/jquery-ui.min.css", new CssRewriteUrlWithVirtualDirectoryTransform())
                     .Include("~/libs/bootstrap-daterangepicker/daterangepicker.css")
                     .Include("~/libs/bootstrap-select/bootstrap-select.min.css")
                     .Include("~/libs/bootstrap-switch/css/bootstrap-switch.min.css")

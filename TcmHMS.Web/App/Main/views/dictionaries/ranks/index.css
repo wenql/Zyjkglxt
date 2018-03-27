@@ -1,0 +1,12 @@
+﻿.ui-sortable td.m-datatable__cell {
+    padding: 0px 10px !important;
+}
+
+.ui-sortable .ui-sortable-placeholder {
+    padding: 0px 10px !important;
+    height: 52px !important;
+}
+
+.ui-sortable .ui-grid-cell-contents {
+    padding: 0 !important;
+}
