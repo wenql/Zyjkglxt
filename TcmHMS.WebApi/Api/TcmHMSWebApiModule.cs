@@ -16,7 +16,7 @@ namespace TcmHMS.Api
     {
         public override void PreInitialize()
         {
-            Configuration.Modules.AbpWeb().AntiForgery.IsEnabled = false;
+            //Configuration.Modules.AbpWeb().AntiForgery.IsEnabled = false;
         }
         public override void Initialize()
         {
@@ -38,14 +38,17 @@ namespace TcmHMS.Api
             Configuration.Modules.AbpWebApi().HttpConfiguration
                 .EnableSwagger(c =>
                 {
-                    c.SingleApiVersion("v1", "API文档");
+                    c.SingleApiVersion("v1", "TcmHMS.WebApi");
                     c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
                     var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
                     var commentsFileName = "Bin//TcmHMS.Application.xml";
                     var commentsFile = Path.Combine(baseDirectory, commentsFileName);
                     c.IncludeXmlComments(commentsFile);
                 })
-                .EnableSwaggerUi();
+                .EnableSwaggerUi(c =>
+                {
+                    c.InjectJavaScript(Assembly.GetExecutingAssembly(), "TcmHMS.Scripts.Swagger-Custom.js");
+                });
         }
     }
 }
