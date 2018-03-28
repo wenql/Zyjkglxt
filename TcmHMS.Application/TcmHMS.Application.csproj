@@ -242,6 +242,11 @@
     <Compile Include="Dto\PagedAndSortedInputDto.cs" />
     <Compile Include="Dto\PagedInputDto.cs" />
     <Compile Include="Dto\PagedSortedAndFilteredInputDto.cs" />
+    <Compile Include="Medicines\Dto\GetMedicinesInput.cs" />
+    <Compile Include="Medicines\Dto\MedicineEditDto.cs" />
+    <Compile Include="Medicines\Dto\MedicineListDto.cs" />
+    <Compile Include="Medicines\IMedicineAppService.cs" />
+    <Compile Include="Medicines\MedicineAppService.cs" />
     <Compile Include="Ranks\Dto\GetRanksInput.cs" />
     <Compile Include="Ranks\Dto\RankEditDto.cs" />
     <Compile Include="Ranks\Dto\RankListDto.cs" />

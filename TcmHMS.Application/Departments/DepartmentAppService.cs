@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Abp.Application.Services.Dto;
-
+﻿using Abp.Application.Services.Dto;
+using Abp.Authorization;
+using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.Extensions;
+using Abp.Linq.Extensions;
+using Abp.ObjectMapping;
+using Abp.UI;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Threading.Tasks;
+using TcmHMS.Authorization;
 using TcmHMS.Departments.Dto;
 using TcmHMS.Entities;
-using System.Data.Entity;
-using Abp.Linq.Extensions;
-using Abp.AutoMapper;
-using Abp.UI;
-using Abp.Authorization;
-using TcmHMS.Authorization;
 
 namespace TcmHMS.Departments
 {
@@ -22,12 +20,12 @@ namespace TcmHMS.Departments
     public class DepartmentAppService : TcmHMSAppServiceBase, IDepartmentAppService
     {
         private readonly IRepository<Department> _departmentRepository;
-        private readonly IRepository<Disease> _diseaseRepository;
+        private readonly IObjectMapper _objectMapper;
 
-        public DepartmentAppService(IRepository<Department> departmentRepository, IRepository<Disease> diseaseRepository)
+        public DepartmentAppService(IRepository<Department> departmentRepository, IObjectMapper objectMapper)
         {
             this._departmentRepository = departmentRepository;
-            this._diseaseRepository = diseaseRepository;
+            this._objectMapper = objectMapper;
         }
 
         [AbpAuthorize(PermissionNames.Pages_Dictionaries_Departments_Delete)]
@@ -45,7 +43,7 @@ namespace TcmHMS.Departments
         }
 
         [AbpAuthorize(PermissionNames.Pages_Dictionaries_Departments_Create, PermissionNames.Pages_Dictionaries_Departments_Edit)]
-        public async Task createOrUpdateDepartment(DepartmentEditDto department)
+        public async Task CreateOrUpdateDepartment(DepartmentEditDto department)
         {
             if (!CheckNameError(department.DisplayName, department.Id))
             {
@@ -55,16 +53,10 @@ namespace TcmHMS.Departments
             {
                 throw new UserFriendlyException("代码已存在");
             }
-            var model = new Department();
-            if (department.Id.HasValue)
-            {
-                model = await this._departmentRepository.GetAsync(department.Id.Value);
-            }
-            model.DisplayName = department.DisplayName;
-            model.Code = department.Code;
-            model.IsEnabled = department.IsEnabled;
-            model.Description = department.Description;
-            await this._departmentRepository.InsertOrUpdateAsync(model);
+            await this._departmentRepository.InsertOrUpdateAsync(this._objectMapper.Map(department,
+                department.Id.HasValue
+                    ? await this._departmentRepository.GetAsync(department.Id.Value)
+                    : new Department()));
 
         }
 

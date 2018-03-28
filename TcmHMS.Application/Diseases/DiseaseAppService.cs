@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Linq.Dynamic;
-using System.Text;
-using System.Threading.Tasks;
-using Abp.Application.Services.Dto;
+﻿using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
 using Abp.Extensions;
 using Abp.Linq.Extensions;
 using Abp.UI;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Linq.Dynamic;
+using System.Threading.Tasks;
+using Abp.ObjectMapping;
 using TcmHMS.Authorization;
 using TcmHMS.Departments.Dto;
 using TcmHMS.Diseases.Dto;
@@ -23,11 +22,14 @@ namespace TcmHMS.Diseases
     {
         private readonly IRepository<Department> _departmentRepository;
         private readonly IRepository<Disease> _diseaseRepository;
+        private readonly IObjectMapper _objectMapper;
 
-        public DiseaseAppService(IRepository<Department> departmentRepository, IRepository<Disease> diseaseRepository)
+        public DiseaseAppService(IRepository<Department> departmentRepository, IRepository<Disease> diseaseRepository,
+            IObjectMapper objectMapper)
         {
             this._departmentRepository = departmentRepository;
             this._diseaseRepository = diseaseRepository;
+            this._objectMapper = objectMapper;
         }
 
         [AbpAuthorize(PermissionNames.Pages_Dictionaries_Diseases_Delete)]
@@ -42,24 +44,15 @@ namespace TcmHMS.Diseases
         }
 
         [AbpAuthorize(PermissionNames.Pages_Dictionaries_Diseases_Create, PermissionNames.Pages_Dictionaries_Diseases_Edit)]
-        public async Task createOrUpdateDisease(DiseaseEditDto disease)
+        public async Task CreateOrUpdateDisease(DiseaseEditDto disease)
         {
             if (!CheckNameError(disease.DisplayName, disease.Id))
             {
                 throw new UserFriendlyException("名称已存在");
             }
-            var model = new Disease();
-            if (disease.Id.HasValue)
-            {
-                model = await this._diseaseRepository.GetAsync(disease.Id.Value);
-            }
-            model.DepartmentId = disease.DepartmentId;
-            model.DisplayName = disease.DisplayName;
-            model.Pinyin = disease.Pinyin;
-            model.IsEnabled = disease.IsEnabled;
-            model.Symptom = disease.Symptom;
-            model.Description = disease.Description;
-            await this._diseaseRepository.InsertOrUpdateAsync(model);
+            await this._diseaseRepository.InsertOrUpdateAsync(this._objectMapper.Map(disease, disease.Id.HasValue
+                    ? await this._diseaseRepository.GetAsync(disease.Id.Value)
+                    : new Disease()));
 
         }
 

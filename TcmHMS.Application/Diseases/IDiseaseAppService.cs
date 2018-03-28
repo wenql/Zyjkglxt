@@ -1,9 +1,5 @@
 ﻿using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using TcmHMS.Departments.Dto;
 using TcmHMS.Diseases.Dto;
@@ -31,7 +27,7 @@ namespace TcmHMS.Diseases
         /// </summary>
         /// <param name="disease"></param>
         /// <returns></returns>
-        Task createOrUpdateDisease(DiseaseEditDto disease);
+        Task CreateOrUpdateDisease(DiseaseEditDto disease);
 
         /// <summary>
         /// 删除

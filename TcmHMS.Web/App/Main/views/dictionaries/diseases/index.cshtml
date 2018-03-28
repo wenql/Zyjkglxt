@@ -9,7 +9,7 @@
                     管理科室下的各种疾病.
                 </span>
             </div>
-            <button class="btn btn-primary blue" style="" ng-click="vm.createDisease()"><i class="fa fa-plus"></i> 添加病症</button>
+            <button class="btn btn-primary blue" style="" ng-if="vm.permissions.create"  ng-click="vm.createDisease()"><i class="fa fa-plus"></i> 添加病症</button>
         </div>
     </div>
     <div class="m-content">

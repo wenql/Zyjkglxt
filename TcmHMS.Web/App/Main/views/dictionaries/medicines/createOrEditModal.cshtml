@@ -1,0 +1,87 @@
+﻿@using TcmHMS.Entities
+<div>
+    <form name="medicineCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.medicine.id">修改药品: {{vm.medicine.displayName}}</span>
+                <span ng-if="!vm.medicine.id">添加药品</span>
+            </h4>
+            <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>
+                    名称*
+                </label>
+                <input type="text" class="form-control" name="MedicineDisplayName" ng-class="{'edited':vm.medicine.displayName}" ng-model="vm.medicine.displayName" required maxlength="@Medicine.MaxNameOrPinyinLength">
+                <span class="errorSty" ng-hide="medicineCreateOrEditForm.MedicineDisplayName.$pristine || medicineCreateOrEditForm.MedicineDisplayName.$valid" ng-show="medicineCreateOrEditForm.MedicineDisplayName.$invalid">
+                    <span ng-show="medicineCreateOrEditForm.MedicineDisplayName.$error.required">*请输入名称</span>
+                    <span ng-show="medicineCreateOrEditForm.MedicineDisplayName.$error.maxlength">*名称不多于32位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    编号*
+                </label>
+                <input type="text" class="form-control" name="MedicineIdentifier" ng-class="{'edited':vm.medicine.identifier}" ng-model="vm.medicine.identifier" required maxlength="@Medicine.MaxNameOrPinyinLength">
+                <span class="errorSty" ng-hide="medicineCreateOrEditForm.MedicineIdentifier.$pristine || medicineCreateOrEditForm.MedicineIdentifier.$valid" ng-show="medicineCreateOrEditForm.MedicineIdentifier.$invalid">
+                    <span ng-show="medicineCreateOrEditForm.MedicineIdentifier.$error.required">*请输入编号</span>
+                    <span ng-show="medicineCreateOrEditForm.MedicineIdentifier.$error.maxlength">*编号不多于32位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    拼音*
+                </label>
+                <input type="text" class="form-control" name="MedicinePinyin" ng-class="{'edited':vm.medicine.pinyin}" ng-model="vm.medicine.pinyin" required maxlength="@Medicine.MaxNameOrPinyinLength">
+                <span class="errorSty" ng-hide="medicineCreateOrEditForm.MedicinePinyin.$pristine || medicineCreateOrEditForm.MedicinePinyin.$valid" ng-show="medicineCreateOrEditForm.MedicinePinyin.$invalid">
+                    <span ng-show="medicineCreateOrEditForm.MedicinePinyin.$error.required">*请输入拼音</span>
+                    <span ng-show="medicineCreateOrEditForm.MedicinePinyin.$error.maxlength">*拼音不多于32位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    药品来源
+                </label>
+                <input type="text" class="form-control" name="MedicineSource" ng-class="{'edited':vm.medicine.source}" ng-model="vm.medicine.source" required maxlength="@Medicine.MaxLength">
+                <span class="errorSty" ng-hide="medicineCreateOrEditForm.MedicineSource.$pristine || medicineCreateOrEditForm.MedicineSource.$valid" ng-show="medicineCreateOrEditForm.MedicineSource.$invalid">
+                    <span ng-show="medicineCreateOrEditForm.MedicineSource.$error.required">*请输入拼音</span>
+                    <span ng-show="medicineCreateOrEditForm.MedicineSource.$error.maxlength">*拼音不多于5000位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    包装规格
+                </label>
+                <textarea class="form-control m-input" name="PackagingSpec" rows="3" ng-model="vm.medicine.packagingSpec" maxlength="@Medicine.MaxLength"></textarea>
+                <span class="errorSty" ng-hide="medicineCreateOrEditForm.PackagingSpec.$pristine || medicineCreateOrEditForm.PackagingSpec.$valid" ng-show="medicineCreateOrEditForm.PackagingSpec.$invalid">
+                    <span ng-show="medicineCreateOrEditForm.PackagingSpec.$error.maxlength">*包装规格不多于5000位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    主治功能
+                </label>
+                <textarea class="form-control m-input" name="Function" rows="3" ng-model="vm.medicine.function" maxlength="@Medicine.MaxLength"></textarea>
+                <span class="errorSty" ng-hide="medicineCreateOrEditForm.Function.$pristine || medicineCreateOrEditForm.Function.$valid" ng-show="medicineCreateOrEditForm.Function.$invalid">
+                    <span ng-show="medicineCreateOrEditForm.Function.$error.maxlength">*主治功能不多于5000位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    用法用量
+                </label>
+                <textarea class="form-control m-input" name="Dosage" rows="3" ng-model="vm.medicine.dosage" maxlength="@Medicine.MaxLength"></textarea>
+                <span class="errorSty" ng-hide="medicineCreateOrEditForm.Dosage.$pristine || medicineCreateOrEditForm.Dosage.$valid" ng-show="medicineCreateOrEditForm.Dosage.$invalid">
+                    <span ng-show="medicineCreateOrEditForm.Dosage.$error.maxlength">*用法用量不多于5000位</span>
+                </span>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">取消</button>
+            <button type="submit" button-busy="vm.saving" busy-text="保存中" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="medicineCreateOrEditForm.$invalid||vm.medicine.departmentId==0"><i class="fa fa-save"></i> <span>保存</span></button>
+        </div>
+    </form>
+</div>

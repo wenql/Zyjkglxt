@@ -1,0 +1,40 @@
+﻿<div ng-controller="main.views.dictionaries.medicines.index as vm">
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title m-subheader__title--separator">
+                    <span>药品</span>
+                </h3>
+                <span class="m-section__sub">
+                    管理常见药品规格功效等.
+                </span>
+            </div>
+            <button class="btn btn-primary blue" style="" ng-if="vm.permissions.create" ng-click="vm.createMedicine()"><i class="fa fa-plus"></i> 添加药品</button>
+        </div>
+    </div>
+    <div class="m-content">
+        <div class="m-portlet">
+            <div class="m-portlet__body">
+                <form class="horizontal-form">
+                    <div class="form-body" enter-key="vm.getMedicines()">
+                        <div class="row margin-bottom-10">
+                            <div class="col-md-12">
+                                <div class="form-group m-form__group">
+                                    <div class="input-group">
+                                        <input ng-model="vm.requestParams.keyword" auto-focus class="form-control" placeholder="关键字搜索..." type="text">
+                                        <div class="input-group-append">
+                                            <button ng-click="vm.getMedicines()" class="btn btn-secondary" type="submit"><i class="icon-magnifier"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div busy-if="vm.loading">
+                    <div ui-grid="vm.medicineGridOptions" ui-grid-pagination ui-grid-resize-columns ui-grid-auto-resize ng-style="vm.getTableHeight()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

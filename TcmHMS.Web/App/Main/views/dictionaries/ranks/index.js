@@ -1,7 +1,7 @@
 ﻿(function () {
     appModule.controller('main.views.dictionaries.ranks.index', [
-        '$scope', '$uibModal', '$templateCache', 'abp.services.app.rank',
-        function ($scope, $uibModal, $templateCache, rankService) {
+        '$scope', '$uibModal', '$templateCache', 'abp.services.app.rank', '$timeout',
+        function ($scope, $uibModal, $templateCache, rankService, $timeout) {
             var vm = this;
             $scope.$on('$viewContentLoaded', function () {
                 mLayout.initAjax();
@@ -16,16 +16,35 @@
             vm.requestParams = {
                 keyword: ''
             };
-           
+
             vm.getRanks = function () {
                 vm.loading = true;
                 rankService.getRanks(vm.requestParams).then(function (result) {
-                    //vm.rankGridOptions.data = result.data.items;
                     $scope.data = result.data.items;
                 }).finally(function () {
                     vm.loading = false;
                 });
             };
+
+            $scope.sortableOptions = {
+                // 数据有变化
+                update: function (e, ui) {
+                    $timeout(function () {
+                        var rankIds = [];
+                        for (var i = 0; i < $scope.data.length; i++) {
+                            rankIds.push($scope.data[i].id);
+                        }
+                        vm.loading = true;
+                        rankService.updateSortable(rankIds).then(function (result) {
+                            abp.notify.success('排序成功');
+                        }).finally(function () {
+                            vm.loading = false;
+                        });
+                    });
+                },
+                stop: function (e, ui) {
+                }
+            }
 
             vm.deleteRank = function (rank) {
                 abp.message.confirm(

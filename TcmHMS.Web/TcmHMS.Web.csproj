@@ -466,6 +466,8 @@
     <Content Include="App\Main\views\dictionaries\diseases\createOrEditModal.js" />
     <Content Include="App\Main\views\dictionaries\diseases\index.js" />
     <Content Include="App\Main\directives\departmentCombo.js" />
+    <Content Include="App\Main\views\dictionaries\medicines\createOrEditModal.js" />
+    <Content Include="App\Main\views\dictionaries\medicines\index.js" />
     <Content Include="App\Main\views\dictionaries\ranks\createOrEditModal.js" />
     <Content Include="App\Main\views\dictionaries\ranks\index.css" />
     <Content Include="App\Main\views\dictionaries\ranks\index.js" />
@@ -2738,6 +2740,8 @@
     <Content Include="App\Main\views\dictionaries\diseases\createOrEditModal.cshtml" />
     <Content Include="App\Main\views\dictionaries\ranks\index.cshtml" />
     <Content Include="App\Main\views\dictionaries\ranks\createOrEditModal.cshtml" />
+    <Content Include="App\Main\views\dictionaries\medicines\createOrEditModal.cshtml" />
+    <Content Include="App\Main\views\dictionaries\medicines\index.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">

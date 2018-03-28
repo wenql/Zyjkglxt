@@ -27,7 +27,7 @@ namespace TcmHMS.Departments
         /// </summary>
         /// <param name="department"></param>
         /// <returns></returns>
-        Task createOrUpdateDepartment(DepartmentEditDto department);
+        Task CreateOrUpdateDepartment(DepartmentEditDto department);
 
         /// <summary>
         /// 删除科室

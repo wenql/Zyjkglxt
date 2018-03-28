@@ -1,6 +1,5 @@
 ﻿using Abp.Authorization;
 using Abp.Localization;
-using Abp.MultiTenancy;
 
 namespace TcmHMS.Authorization
 {
@@ -26,6 +25,12 @@ namespace TcmHMS.Authorization
             ranks.CreateChildPermission(PermissionNames.Pages_Dictionaries_Ranks_Create, L("添加职称"));
             ranks.CreateChildPermission(PermissionNames.Pages_Dictionaries_Ranks_Edit, L("修改职称"));
             ranks.CreateChildPermission(PermissionNames.Pages_Dictionaries_Ranks_Delete, L("删除职称"));
+
+
+            var medicines = dictionaries.CreateChildPermission(PermissionNames.Pages_Dictionaries_Medicines, L("药品"));
+            medicines.CreateChildPermission(PermissionNames.Pages_Dictionaries_Medicines_Create, L("添加药品"));
+            medicines.CreateChildPermission(PermissionNames.Pages_Dictionaries_Medicines_Edit, L("修改药品"));
+            medicines.CreateChildPermission(PermissionNames.Pages_Dictionaries_Medicines_Delete, L("删除药品"));
 
             var administration = pages.CreateChildPermission(PermissionNames.Pages_Administration, L("系统管理"));
             var roles = administration.CreateChildPermission(PermissionNames.Pages_Administration_Roles, L("角色"));

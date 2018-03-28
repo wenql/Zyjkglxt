@@ -59,6 +59,12 @@ appModule.config([
                     url: '/ranks',
                     templateUrl: '/App/Main/views/dictionaries/ranks/index.cshtml'
                 });
+        if (abp.auth.hasPermission('Pages.Dictionaries.Medicines'))
+            $stateProvider.state('medicines',
+                {
+                    url: '/medicines',
+                    templateUrl: '/App/Main/views/dictionaries/medicines/index.cshtml'
+                });
     }
 ]);
 appModule.run(["$rootScope", "$state", 'i18nService', '$uibModalStack', function ($rootScope, $state, i18nService, $uibModalStack) {

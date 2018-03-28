@@ -24,10 +24,15 @@ namespace TcmHMS.EntityFramework
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Department>().ToTable("TcmDepartment").HasKey(t => t.Id);
+
             modelBuilder.Entity<Disease>().ToTable("TcmDisease").HasKey(t => t.Id)
                 .HasRequired(t => t.Department)
                 .WithMany(t => t.Disease)
                 .HasForeignKey(t => t.DepartmentId);
+
+            modelBuilder.Entity<Rank>().ToTable("TcmRank").HasKey(t => t.Id);
+
+            modelBuilder.Entity<Medicine>().ToTable("TcmMedicine").HasKey(t => t.Id);
         }
 
         /* NOTE: 

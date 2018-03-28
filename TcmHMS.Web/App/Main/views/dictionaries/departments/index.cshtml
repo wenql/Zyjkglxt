@@ -9,7 +9,7 @@
                     管理各职能科室.
                 </span>
             </div>
-            <button class="btn btn-primary blue" style="" ng-click="vm.createDepartment()"><i class="fa fa-plus"></i> 添加科室</button>
+            <button class="btn btn-primary blue" style="" ng-if="vm.permissions.create"  ng-click="vm.createDepartment()"><i class="fa fa-plus"></i> 添加科室</button>
         </div>
     </div>
     <div class="m-content">

@@ -47,6 +47,13 @@ namespace TcmHMS.Web
                         icon: "m-menu__link-icon fa fa-circle-o",
                         requiredPermissionName: PermissionNames.Pages_Dictionaries_Ranks)
                     )
+                    .AddItem(new MenuItemDefinition(
+                        "Medicines",
+                        L("Medicines"),
+                        url: "medicines",
+                        icon: "m-menu__link-icon fa fa-circle-o",
+                        requiredPermissionName: PermissionNames.Pages_Dictionaries_Medicines)
+                    )
                 )
                 .AddItem(new MenuItemDefinition(
                         "Administration",

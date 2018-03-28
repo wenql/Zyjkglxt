@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
+using Abp.ObjectMapping;
 using TcmHMS.Authorization;
 using TcmHMS.Entities;
 using TcmHMS.Ranks.Dto;
@@ -19,9 +20,11 @@ namespace TcmHMS.Ranks
     public class RankAppService : TcmHMSAppServiceBase, IRankAppService
     {
         private readonly IRepository<Rank> _rankRepository;
-        public RankAppService(IRepository<Rank> rankRepository)
+        private readonly IObjectMapper _objectMapper;
+        public RankAppService(IRepository<Rank> rankRepository, IObjectMapper objectMapper)
         {
             this._rankRepository = rankRepository;
+            this._objectMapper = objectMapper;
         }
 
         [AbpAuthorize(PermissionNames.Pages_Dictionaries_Ranks_Delete)]
@@ -35,23 +38,28 @@ namespace TcmHMS.Ranks
 
         }
 
+        public async Task UpdateSortable(List<int> rankIds)
+        {
+            if (!rankIds.Any())
+                throw new UserFriendlyException("记录不存在");
+
+            for (int i = 0; i < rankIds.Count; i++)
+            {
+                var rank = await this._rankRepository.GetAsync(rankIds[i]);
+                rank.DisplayOrder = i;
+                await this._rankRepository.UpdateAsync(rank);
+            }
+        }
+
         [AbpAuthorize(PermissionNames.Pages_Dictionaries_Ranks_Create, PermissionNames.Pages_Dictionaries_Ranks_Edit)]
-        public async Task createOrUpdateRank(RankEditDto rank)
+        public async Task CreateOrUpdateRank(RankEditDto rank)
         {
             if (!CheckNameError(rank.DisplayName, rank.Id))
             {
                 throw new UserFriendlyException("名称已存在");
             }
-            var model = new Rank();
-            if (rank.Id.HasValue)
-            {
-                model = await this._rankRepository.GetAsync(rank.Id.Value);
-            }
-            model.DisplayName = rank.DisplayName;
-            model.Pinyin = rank.Pinyin;
-            model.DisplayOrder = rank.DisplayOrder;
-            await this._rankRepository.InsertOrUpdateAsync(model);
-
+            await this._rankRepository.InsertOrUpdateAsync(_objectMapper.Map(rank,
+                rank.Id.HasValue ? await this._rankRepository.GetAsync(rank.Id.Value) : new Rank()));
         }
 
         private bool CheckNameError(string name, int? id)

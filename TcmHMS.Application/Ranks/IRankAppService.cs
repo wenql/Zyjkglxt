@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
+using System.Threading.Tasks;
 using TcmHMS.Ranks.Dto;
 
 namespace TcmHMS.Ranks
@@ -28,9 +25,9 @@ namespace TcmHMS.Ranks
         /// <summary>
         /// 保存实体数据
         /// </summary>
-        /// <param name="department"></param>
+        /// <param name="rank"></param>
         /// <returns></returns>
-        Task createOrUpdateRank(RankEditDto department);
+        Task CreateOrUpdateRank(RankEditDto rank);
 
         /// <summary>
         /// 删除科室
@@ -38,5 +35,12 @@ namespace TcmHMS.Ranks
         /// <param name="input"></param>
         /// <returns></returns>
         Task DeleteRank(EntityDto input);
+
+        /// <summary>
+        /// 更新排序
+        /// </summary>
+        /// <param name="rankIds"></param>
+        /// <returns></returns>
+        Task UpdateSortable(List<int> rankIds);
     }
 }

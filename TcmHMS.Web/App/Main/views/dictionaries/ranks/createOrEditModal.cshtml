@@ -27,7 +27,7 @@
                 </label>
                 <input type="text" class="form-control" name="RankPinyin" ng-class="{'edited':vm.rank.pinyin}" ng-model="vm.rank.pinyin" required maxlength="@Rank.MaxNameLength">
                 <span class="errorSty" ng-hide="rankCreateOrEditForm.RankPinyin.$pristine || rankCreateOrEditForm.RankPinyin.$valid" ng-show="rankCreateOrEditForm.RankPinyin.$invalid">
-                    <span ng-show="rankCreateOrEditForm.RankPinyin.$error.required">*请输入代码</span>
+                    <span ng-show="rankCreateOrEditForm.RankPinyin.$error.required">*请输入拼音</span>
                     <span ng-show="rankCreateOrEditForm.RankPinyin.$error.maxlength">*代码不多于32位</span>
                 </span>
             </div>
