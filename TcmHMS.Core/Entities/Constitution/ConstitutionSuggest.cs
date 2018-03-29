@@ -12,6 +12,7 @@ namespace TcmHMS.Entities.Constitution
         /// <summary>
         /// 体质分组
         /// </summary>
+        [Required]
         public int GroupId { get; set; }
 
         /// <summary>

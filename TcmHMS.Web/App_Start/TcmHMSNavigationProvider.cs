@@ -23,21 +23,49 @@ namespace TcmHMS.Web
                         requiresAuthentication: true)
                 )
                 .AddItem(new MenuItemDefinition(
+                        "Constitution",
+                        L("Constitution"),
+                        icon: "m-menu__link-icon flaticon-list-1"
+                    )
+                    .AddItem(new MenuItemDefinition(
+                        "ConstitutionGroups",
+                        L("ConstitutionGroups"),
+                        url: "constitutionGroups",
+                        icon: "m-menu__link-icon fa fa-circle-o",
+                        requiredPermissionName: PermissionNames.Pages_Constitutions_Groups)
+                    )
+                    .AddItem(new MenuItemDefinition(
+                        "ConstitutionSubjects",
+                        L("ConstitutionSubjects"),
+                        url: "constitutionSubjects",
+                        icon: "m-menu__link-icon fa fa-circle-o",
+                        requiredPermissionName: PermissionNames.Pages_Constitutions_Subjects)
+                    )
+                    .AddItem(new MenuItemDefinition(
+                        "ConstitutionSuggests",
+                        L("ConstitutionSuggests"),
+                        url: "constitutionSuggests",
+                        icon: "m-menu__link-icon fa fa-circle-o",
+                        requiredPermissionName: PermissionNames.Pages_Constitutions_Suggests)
+                    )
+                )
+                .AddItem(new MenuItemDefinition(
                         "Dictionaries",
                         L("Dictionaries"),
-                        icon: "m-menu__link-icon flaticon-folder-1")
+                        icon: "m-menu__link-icon flaticon-folder-1"
+                    )
                     .AddItem(new MenuItemDefinition(
                         "Departments",
                         L("Departments"),
                         url: "departments",
                         icon: "m-menu__link-icon fa fa-circle-o",
-                        requiredPermissionName:PermissionNames.Pages_Dictionaries_Departments)
+                        requiredPermissionName: PermissionNames.Pages_Dictionaries_Departments)
                     )
                     .AddItem(new MenuItemDefinition(
                         "Diseases",
                         L("Diseases"),
                         url: "diseases",
-                        icon: "m-menu__link-icon fa fa-circle-o", 
+                        icon: "m-menu__link-icon fa fa-circle-o",
                         requiredPermissionName: PermissionNames.Pages_Dictionaries_Diseases)
                     )
                     .AddItem(new MenuItemDefinition(

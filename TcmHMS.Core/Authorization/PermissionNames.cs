@@ -39,5 +39,16 @@
         public const string Pages_Administration_Users_Delete = "Pages.Administration.Users.Delete";
         public const string Pages_Administration_Users_ChangePermissions = "Pages.Administration.Users.ChangePermissions";
         public const string Pages_Administration_Users_Impersonation = "Pages.Administration.Users.Impersonation";
+
+        public const string Pages_Constitutions = "Pages_Constitutions";
+        public const string Pages_Constitutions_Groups = "Pages_Constitutions_Groups"; 
+        public const string Pages_Constitutions_Subjects = "Pages.Constitutions.Subjects";
+        public const string Pages_Constitutions_Subjects_Create = "Pages.Constitutions.Subjects.Create";
+        public const string Pages_Constitutions_Subjects_Edit = "Pages.Constitutions.Subjects.Edit";
+        public const string Pages_Constitutions_Subjects_Delete = "Pages.Constitutions.Subjects.Delete";
+        public const string Pages_Constitutions_Suggests = "Pages.Constitutions.Suggests";
+        public const string Pages_Constitutions_Suggests_Create = "Pages.Constitutions.Suggests.Create";
+        public const string Pages_Constitutions_Suggests_Edit = "Pages.Constitution.Suggests.Edit";
+        public const string Pages_Constitutions_Suggests_Delete = "Pages.Constitution.Suggests.Delete";
     }
 }

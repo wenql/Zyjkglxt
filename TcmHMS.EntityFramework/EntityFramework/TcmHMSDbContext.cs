@@ -4,13 +4,13 @@ using Abp.Zero.EntityFramework;
 using TcmHMS.Authorization.Roles;
 using TcmHMS.Authorization.Users;
 using TcmHMS.Entities;
+using TcmHMS.Entities.Constitution;
 using TcmHMS.MultiTenancy;
 
 namespace TcmHMS.EntityFramework
 {
     public class TcmHMSDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
-
         public IDbSet<Department> Departments { get; set; }
 
         public IDbSet<Disease> Diseases { get; set; }
@@ -19,20 +19,40 @@ namespace TcmHMS.EntityFramework
 
         public IDbSet<Medicine> Medicines { get; set; }
 
+        public IDbSet<ConstitutionSuggest> ConstitutionSuggests { get; set; }
+
+        public IDbSet<ConstitutionSubject> ConstitutionSubjects { get; set; }
+
+        public IDbSet<ConstitutionSubjectOption> ConstitutionSubjectOptions { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Department>().ToTable("TcmDepartment").HasKey(t => t.Id);
+            modelBuilder.Entity<Department>().ToTable("TcmDepartment")
+                .HasKey(t => t.Id);
 
-            modelBuilder.Entity<Disease>().ToTable("TcmDisease").HasKey(t => t.Id)
+            modelBuilder.Entity<Disease>().ToTable("TcmDisease")
+                .HasKey(t => t.Id)
                 .HasRequired(t => t.Department)
                 .WithMany(t => t.Disease)
                 .HasForeignKey(t => t.DepartmentId);
 
-            modelBuilder.Entity<Rank>().ToTable("TcmRank").HasKey(t => t.Id);
+            modelBuilder.Entity<Rank>().ToTable("TcmRank")
+                .HasKey(t => t.Id);
 
-            modelBuilder.Entity<Medicine>().ToTable("TcmMedicine").HasKey(t => t.Id);
+            modelBuilder.Entity<Medicine>().ToTable("TcmMedicine")
+                .HasKey(t => t.Id);
+
+            modelBuilder.Entity<ConstitutionSuggest>().ToTable("TcmConstitutionSuggest")
+                .HasKey(t => t.Id);
+            modelBuilder.Entity<ConstitutionSubject>().ToTable("TcmConstitutionSubject")
+                .HasKey(t => t.Id);
+            modelBuilder.Entity<ConstitutionSubjectOption>().ToTable("TcmConstitutionSubjectOption")
+                .HasKey(t => t.Id)
+                .HasRequired(o => o.Subject)
+                .WithMany(s => s.Options)
+                .HasForeignKey(t => t.SubjectId);
         }
 
         /* NOTE: 

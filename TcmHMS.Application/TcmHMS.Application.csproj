@@ -225,6 +225,9 @@
     <Compile Include="Authorization\Users\Dto\UserListDto.cs" />
     <Compile Include="Authorization\Users\Dto\UserLoginAttemptDto.cs" />
     <Compile Include="Authorization\Users\Dto\UserRoleDto.cs" />
+    <Compile Include="Constitution\ConstitutionAppService.cs" />
+    <Compile Include="Constitution\Dto\ConstitutionGroupListDto.cs" />
+    <Compile Include="Constitution\IConstitutionAppService.cs" />
     <Compile Include="CustomDtoMapper.cs" />
     <Compile Include="Departments\DepartmentAppService.cs" />
     <Compile Include="Departments\Dto\DepartmentEditDto.cs" />
