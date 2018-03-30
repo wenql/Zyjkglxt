@@ -1,0 +1,48 @@
+﻿<div ng-controller="main.views.constitutions.subjects.index as vm">
+    <div class="m-subheader ">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto">
+                <h3 class="m-subheader__title m-subheader__title--separator">
+                    <span>体质问卷</span>
+                </h3>
+                <span class="m-section__sub">
+                    管理体质辨识的题库.
+                </span>
+            </div>
+            <button class="btn btn-primary blue" style="" ng-if="vm.permissions.create" ng-click="vm.createSubject()"><i class="fa fa-plus"></i> 添加问卷</button>
+        </div>
+    </div>
+    <div class="m-content">
+        <div class="m-portlet">
+            <div class="m-portlet__body">
+                <form class="horizontal-form">
+                    <div class="form-body" enter-key="vm.getSubjects()">
+                        <div class="row margin-bottom-10">
+                            <div class="col-md-5">
+                                <div class="form-group m-form__group">
+                                    <div class="input-group">
+                                        <input ng-model="vm.requestParams.keyword" auto-focus class="form-control" placeholder="关键字搜索..." type="text">
+                                        <div class="input-group-append">
+                                            <button ng-click="vm.getSubjects()" class="btn btn-secondary" type="submit"><i class="icon-magnifier"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <constitution-combo selected-group="vm.requestParams.group" empty-text="按体质分类搜索..."></constitution-combo>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button ng-click="vm.getConstitutionSubjects()" class="btn btn-primary blue"><i class="fa fa-refresh"></i> 刷新</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div busy-if="vm.loading">
+                    <div ui-grid="vm.subjectGridOptions" ui-grid-pagination ui-grid-resize-columns ui-grid-auto-resize ng-style="vm.getTableHeight()"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

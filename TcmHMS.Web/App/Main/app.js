@@ -26,44 +26,60 @@ appModule.config([
                 templateUrl: '/App/Main/views/dashboard/index.cshtml'
             });
 
-        if (abp.auth.hasPermission('Pages.Administration.Roles')) {
+        if (abp.auth.hasPermission('Pages.Administration.Roles'))
             $stateProvider.state('roles',
                 {
                     url: '/roles',
                     templateUrl: '/App/Main/views/administration/roles/index.cshtml'
                 });
-        }
 
-        if (abp.auth.hasPermission('Pages.Administration.Users')) {
+        if (abp.auth.hasPermission('Pages.Administration.Users'))
             $stateProvider.state('users',
                 {
                     url: '/users',
                     templateUrl: '/App/Main/views/administration/users/index.cshtml'
                 });
-        }
+
         if (abp.auth.hasPermission('Pages.Dictionaries.Departments'))
             $stateProvider.state('departments',
                 {
                     url: '/departments',
                     templateUrl: '/App/Main/views/dictionaries/departments/index.cshtml'
                 });
+
         if (abp.auth.hasPermission('Pages.Dictionaries.Diseases'))
             $stateProvider.state('diseases',
                 {
                     url: '/diseases:departmentId',
                     templateUrl: '/App/Main/views/dictionaries/diseases/index.cshtml'
                 });
+
         if (abp.auth.hasPermission('Pages.Dictionaries.Ranks'))
             $stateProvider.state('ranks',
                 {
                     url: '/ranks',
                     templateUrl: '/App/Main/views/dictionaries/ranks/index.cshtml'
                 });
+
         if (abp.auth.hasPermission('Pages.Dictionaries.Medicines'))
             $stateProvider.state('medicines',
                 {
                     url: '/medicines',
                     templateUrl: '/App/Main/views/dictionaries/medicines/index.cshtml'
+                });
+
+        if (abp.auth.hasPermission('Pages.Constitutions.Groups'))
+            $stateProvider.state('constitutionGroups',
+                {
+                    url: '/constitutionGroups',
+                    templateUrl: '/App/Main/views/constitution/groups/index.cshtml'
+                });
+
+        if (abp.auth.hasPermission('Pages.Constitutions.Subjects'))
+            $stateProvider.state('constitutionSubjects',
+                {
+                    url: '/constitutionSubjects:groupId',
+                    templateUrl: '/App/Main/views/constitution/subjects/index.cshtml'
                 });
     }
 ]);

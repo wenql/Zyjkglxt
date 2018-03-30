@@ -173,6 +173,9 @@
                         resolve: {
                             diseaseId: function () {
                                 return diseaseId;
+                            },
+                            departmentId: function () {
+                                return vm.requestParams.department;
                             }
                         }
                     });

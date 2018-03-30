@@ -68,7 +68,7 @@
     <text name="Medicines" value="药品" />
     <text name="Constitution" value="体质辨识" />
     <text name="ConstitutionGroups" value="体质分类" />
-    <text name="ConstitutionSubjects" value="问卷题库" />
+    <text name="ConstitutionSubjects" value="体质问卷" />
     <text name="ConstitutionSuggests" value="健康建议" />
   </texts>
 </localizationDictionary>

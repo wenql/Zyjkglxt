@@ -1,9 +1,11 @@
 using AutoMapper;
 using TcmHMS.Authorization.Users;
 using TcmHMS.Authorization.Users.Dto;
+using TcmHMS.Constitution.Dto;
 using TcmHMS.Departments.Dto;
 using TcmHMS.Diseases.Dto;
 using TcmHMS.Entities;
+using TcmHMS.Entities.Constitution;
 using TcmHMS.Medicines.Dto;
 using TcmHMS.Ranks.Dto;
 
@@ -46,6 +48,9 @@ namespace TcmHMS.Application
                 .ForMember(user => user.CreationTime, options => options.Ignore());
 
             mapper.CreateMap<MedicineEditDto, Medicine>()
+                .ForMember(user => user.CreationTime, options => options.Ignore());
+
+            mapper.CreateMap<ConstitutionSubjectEditDto, ConstitutionSubject>()
                 .ForMember(user => user.CreationTime, options => options.Ignore());
         }
     }

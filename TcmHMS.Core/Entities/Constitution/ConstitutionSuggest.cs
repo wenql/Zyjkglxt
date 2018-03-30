@@ -76,9 +76,9 @@ namespace TcmHMS.Entities.Constitution
         public string HealthyRecipes { get; set; }
 
         /// <summary>
-        /// 是否启用
+        /// 是否默认
         /// </summary>
-        public bool IsEnabled { get; set; }
+        public bool IsDefault { get; set; }
 
         /// <summary>
         /// 创建日期

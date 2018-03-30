@@ -13,7 +13,7 @@ namespace TcmHMS.Authorization
 
             constitution.CreateChildPermission(PermissionNames.Pages_Constitutions_Groups, L("体质分类"));
 
-            var subjects = constitution.CreateChildPermission(PermissionNames.Pages_Constitutions_Subjects, L("问卷题库"));
+            var subjects = constitution.CreateChildPermission(PermissionNames.Pages_Constitutions_Subjects, L("体质问卷"));
             subjects.CreateChildPermission(PermissionNames.Pages_Constitutions_Subjects_Create, L("添加问卷"));
             subjects.CreateChildPermission(PermissionNames.Pages_Constitutions_Subjects_Edit, L("修改问卷"));
             subjects.CreateChildPermission(PermissionNames.Pages_Constitutions_Subjects_Delete, L("删除问卷"));

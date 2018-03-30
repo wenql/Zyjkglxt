@@ -1,0 +1,37 @@
+﻿@using TcmHMS.Entities.Constitution
+<div>
+    <form name="subjectCreateOrEditForm" role="form" novalidate class="form-validation">
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.subject.id">修改问卷: {{vm.subject.title}}</span>
+                <span ng-if="!vm.subject.id">添加问卷</span>
+            </h4>
+            <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>
+                    标题*
+                </label>
+                <input type="text" class="form-control" name="SubjectTitle" ng-class="{'edited':vm.subject.displayName}" ng-model="vm.subject.displayName" required maxlength="@ConstitutionSubject.MaxTitleLength">
+                <span class="errorSty" ng-hide="subjectCreateOrEditForm.SubjectTitle.$pristine || subjectCreateOrEditForm.SubjectTitle.$valid" ng-show="subjectCreateOrEditForm.SubjectTitle.$invalid">
+                    <span ng-show="subjectCreateOrEditForm.SubjectTitle.$error.required">*请输入标题</span>
+                    <span ng-show="subjectCreateOrEditForm.SubjectTitle.$error.maxlength">*名称不多于200位</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <label>
+                    分类*
+                </label>
+                <constitution-combo name="SubjectGroup" selected-group="vm.subject.groupId"></constitution-combo>
+            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">取消</button>
+            <button type="submit" button-busy="vm.saving" busy-text="保存中" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="subjectCreateOrEditForm.$invalid||vm.subject.departmentId==0"><i class="fa fa-save"></i> <span>保存</span></button>
+        </div>
+    </form>
+</div>

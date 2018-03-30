@@ -16,14 +16,14 @@
         <div class="m-portlet">
             <div class="m-portlet__body">
                 <form class="horizontal-form">
-                    <div class="form-body" enter-key="vm.getDepartments()">
+                    <div class="form-body" enter-key="vm.getDiseases()">
                         <div class="row margin-bottom-10">
                             <div class="col-md-5">
                                 <div class="form-group m-form__group">
                                     <div class="input-group">
                                         <input ng-model="vm.requestParams.keyword" auto-focus class="form-control" placeholder="关键字搜索..." type="text">
                                         <div class="input-group-append">
-                                            <button ng-click="vm.getDepartments()" class="btn btn-secondary" type="submit"><i class="icon-magnifier"></i></button>
+                                            <button ng-click="vm.getDiseases()" class="btn btn-secondary" type="submit"><i class="icon-magnifier"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <button ng-click="vm.getDepartments()" class="btn btn-primary blue"><i class="fa fa-refresh"></i> 刷新</button>
+                                <button ng-click="vm.getDiseases()" class="btn btn-primary blue"><i class="fa fa-refresh"></i> 刷新</button>
                             </div>
                         </div>
                     </div>

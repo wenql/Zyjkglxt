@@ -1,7 +1,7 @@
 ﻿(function () {
     appModule.controller('main.views.dictionaries.diseases.createOrEditModal', [
-        '$scope', '$uibModalInstance', 'abp.services.app.disease', 'diseaseId',
-        function ($scope, $uibModalInstance, diseaseService, diseaseId) {
+        '$scope', '$uibModalInstance', 'abp.services.app.disease', 'diseaseId', 'departmentId',
+        function ($scope, $uibModalInstance, diseaseService, diseaseId, departmentId) {
             var vm = this;
             vm.saving = false;
             vm.disease = null;
@@ -28,6 +28,9 @@
                     id: diseaseId
                 }).then(function (result) {
                     vm.disease = result.data;
+                    console.log(vm.disease)
+                    if (vm.disease.id == null && departmentId > 0)
+                        vm.disease.departmentId = departmentId;
                 });
             }
 

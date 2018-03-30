@@ -47,7 +47,6 @@ namespace TcmHMS.Diseases.Dto
         /// </summary>
         public string Description { get; set; }
 
-        [AutoMapFrom(typeof(Department))]
         public DepartmentListDto Department { get; set; }
     }
 }

@@ -40,8 +40,8 @@
         public const string Pages_Administration_Users_ChangePermissions = "Pages.Administration.Users.ChangePermissions";
         public const string Pages_Administration_Users_Impersonation = "Pages.Administration.Users.Impersonation";
 
-        public const string Pages_Constitutions = "Pages_Constitutions";
-        public const string Pages_Constitutions_Groups = "Pages_Constitutions_Groups"; 
+        public const string Pages_Constitutions = "Pages.Constitutions";
+        public const string Pages_Constitutions_Groups = "Pages.Constitutions.Groups"; 
         public const string Pages_Constitutions_Subjects = "Pages.Constitutions.Subjects";
         public const string Pages_Constitutions_Subjects_Create = "Pages.Constitutions.Subjects.Create";
         public const string Pages_Constitutions_Subjects_Edit = "Pages.Constitutions.Subjects.Edit";

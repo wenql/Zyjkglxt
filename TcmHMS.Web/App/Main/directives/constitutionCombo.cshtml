@@ -1,0 +1,8 @@
+﻿<select name="ConstitutiontSelectionCombobox"
+        class="form-control"
+        ng-options="group.groupId as group.groupName for group in groups"
+        ng-model="selectedGroup"
+        ui-jq="selectpicker"
+        ui-options='{ iconBase: "famfamfam-flag", tickIcon: "fa fa-check"}'
+        data-none-selected-text="{{emptyText}}"
+        data-live-search="true"></select>

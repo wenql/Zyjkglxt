@@ -26,6 +26,7 @@
     background: #fff;
     color: #2d353c;
     border: 1px solid #ececec;
+    padding-left: 10px;
 }
 
 .ui-grid-cell {
