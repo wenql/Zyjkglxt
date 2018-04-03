@@ -13,9 +13,11 @@
                     $scope.emptyText = attrs.emptyText || '';
 
                     onstitutionService.getConstitutionGroups({}).then(function (result) {
-                        if (attrs.emptyText)
+                        if (attrs.emptyText) {
                             result.data.items.unshift({ groupId: 0, groupName: $scope.emptyText });
+                        }
                         $scope.groups = result.data.items;
+                        console.log($scope.groups)
 
                         //refresh combo
                         $timeout(function () {

@@ -43,7 +43,24 @@
                             field: 'title',
                             minWidth: 120
                         },
-
+                        {
+                            name: '分类',
+                            enableColumnMenu: false,
+                            field: 'group.groupName',
+                            minWidth: 120
+                        },
+                        {
+                            name: '性别限定',
+                            enableColumnMenu: false,
+                            field: 'specifyGebder',
+                            minWidth: 100,
+                            cellTemplate:
+                            '<div class=\"ui-grid-cell-contents\">' +
+                            '  <span class="m-badge m-badge--focus m-badge--wide" ng-show="row.entity.specifyGebder==0">不限</span>' +
+                            '  <span class="m-badge m-badge--danger m-badge--wide" ng-show="row.entity.specifyGebder==1">仅限男性</span>' +
+                            '  <span class="m-badge m-badge--danger m-badge--wide" ng-show="row.entity.specifyGebder==2">仅限女性</span>' +
+                            '</div>'
+                        },
                         {
                             name: '创建时间',
                             enableColumnMenu: false,
@@ -125,7 +142,7 @@
                         '确认删除问卷：' + subject.title + '?',
                         function (isConfirmed) {
                             if (isConfirmed) {
-                                constitutionService.deleteConstitutionSubjects({
+                                constitutionService.deleteConstitutionSubject({
                                     id: subject.id
                                 }).then(function () {
                                     vm.getSubjects();

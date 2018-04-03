@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Abp.AutoMapper;
 using TcmHMS.Entities.Constitution;
 
@@ -23,5 +24,12 @@ namespace TcmHMS.Constitution.Dto
         /// 性别限定
         /// </summary>
         public int SpecifyGebder { get; set; }
+
+        public List<ConstitutionSubjectOptionListDto> Options { get; set; }
+
+        public ConstitutionSubjectEditDto()
+        {
+            this.Options = new List<ConstitutionSubjectOptionListDto>();
+        }
     }
 }

@@ -15,7 +15,7 @@
                 <label>
                     标题*
                 </label>
-                <input type="text" class="form-control" name="SubjectTitle" ng-class="{'edited':vm.subject.displayName}" ng-model="vm.subject.displayName" required maxlength="@ConstitutionSubject.MaxTitleLength">
+                <input type="text" class="form-control" name="SubjectTitle" ng-class="{'edited':vm.subject.title}" ng-model="vm.subject.title" required maxlength="@ConstitutionSubject.MaxTitleLength">
                 <span class="errorSty" ng-hide="subjectCreateOrEditForm.SubjectTitle.$pristine || subjectCreateOrEditForm.SubjectTitle.$valid" ng-show="subjectCreateOrEditForm.SubjectTitle.$invalid">
                     <span ng-show="subjectCreateOrEditForm.SubjectTitle.$error.required">*请输入标题</span>
                     <span ng-show="subjectCreateOrEditForm.SubjectTitle.$error.maxlength">*名称不多于200位</span>
@@ -27,7 +27,90 @@
                 </label>
                 <constitution-combo name="SubjectGroup" selected-group="vm.subject.groupId"></constitution-combo>
             </div>
-            
+            <div class="form-group">
+                <label>
+                    性别限定*
+                </label>
+                <div class="md-checkbox-list">
+                    <div class="md-checkbox">
+                        <label style="font-weight: normal;" class="m-checkbox">
+                            <input name="SpecifyGebder" value="0" ng-model="vm.subject.specifyGebder" type="radio">
+                            不限<span></span>
+                        </label>
+                    </div>
+                    <div class="md-checkbox">
+                        <label style="font-weight: normal;" class="m-checkbox">
+                            <input name="SpecifyGebder" value="1" ng-model="vm.subject.specifyGebder" type="radio">
+                            仅限男性<span></span>
+                        </label>
+                    </div>
+                    <div class="md-checkbox">
+                        <label style="font-weight: normal;" class="m-checkbox">
+                            <input name="SpecifyGebder" value="2" ng-model="vm.subject.specifyGebder" type="radio">
+                            仅限女性<span></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="m-portlet">
+                    <div class="m-portlet__head" style="height: 3rem;padding: 0 0.75rem;">
+                        <div class="m-portlet__head-caption">
+                            <div class="m-portlet__head-title">
+                                <h3 class="m-portlet__head-text">
+                                    选项*
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="m-portlet__head-tools">
+                            <a href="#" ng-click="vm.create()" class="m-portlet__nav-link m-portlet__nav-link--icon m-portlet__nav-link--icon-xl">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="m-portlet__body">
+                        <div busy-if="vm.loading">
+                            <div class="m-datatable m-datatable--default m-datatable--brand m-datatable--loaded">
+                                <table class="m-datatable__table" width="100%" ng-class="{'datatable_warning':(vm.subject.options.length==0||vm.subject.options == null)}">
+                                    <thead class="m-datatable__head">
+                                        <tr class="m-datatable__row">
+                                            <th width="30%" class="m-datatable__cell">
+                                                名称
+                                            </th>
+                                            <th width="30%" class="m-datatable__cell">
+                                                分数
+                                            </th>
+                                            <th width="40%" class="m-datatable__cell">
+                                                操作
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody ui-sortable="sortableOptions" ng-model="vm.subject.options" class="m-datatable__body">
+                                        <tr ng-class="$index%2!=0?'datatable__row m-datatable__row--even':'datatable__row'" ng-repeat="item in vm.subject.options" class="m-datatable__row">
+                                            <td width="30%" class="m-datatable__cell" style="padding: 10px !important;">
+                                                <input style="padding: 0.3rem;" type="text" class="form-control" name="optionTitle" ng-model="item.displayName" required maxlength="100">
+                                            </td>
+                                            <td width="30%" class="m-datatable__cell" style="padding: 10px !important;">
+                                                <input style="padding: 0.3rem;" type="number" class="form-control" name="optionScore" ng-model="item.score" required>
+                                            </td>
+                                            <td width="40%" class="m-datatable__cell" style="padding: 10px !important;">
+                                                <span>
+                                                    <a href="#" ng-click="vm.remove($index)" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="View ">
+                                                        <i class="la la-remove"></i>
+                                                    </a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p style="margin-top:5px;">
+                                * 拖拽可以排序
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="modal-footer">
             <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">取消</button>

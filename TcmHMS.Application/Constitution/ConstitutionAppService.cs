@@ -79,6 +79,7 @@ namespace TcmHMS.Constitution
             };
         }
 
+        [AbpAuthorize(PermissionNames.Pages_Constitutions_Subjects_Create, PermissionNames.Pages_Constitutions_Subjects_Edit)]
         public async Task CreateOrUpdateConstitutionSubject(ConstitutionSubjectEditDto subject)
         {
             await this._constitutionSubjectRepository.InsertOrUpdateAsync(this._objectMapper.Map(subject, subject.Id.HasValue
@@ -86,6 +87,7 @@ namespace TcmHMS.Constitution
                 : new ConstitutionSubject()));
         }
 
+        [AbpAuthorize(PermissionNames.Pages_Constitutions_Subjects_Delete)]
         public async Task DeleteConstitutionSubject(EntityDto input)
         {
             var subject = await _constitutionSubjectRepository.GetAsync(input.Id);

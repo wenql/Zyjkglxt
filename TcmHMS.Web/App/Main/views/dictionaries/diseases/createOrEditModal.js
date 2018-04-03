@@ -28,7 +28,6 @@
                     id: diseaseId
                 }).then(function (result) {
                     vm.disease = result.data;
-                    console.log(vm.disease)
                     if (vm.disease.id == null && departmentId > 0)
                         vm.disease.departmentId = departmentId;
                 });

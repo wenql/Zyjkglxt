@@ -35,7 +35,7 @@
                                 </tr>
                             </thead>
                             <tbody ui-sortable="sortableOptions" ng-model="data" class="m-datatable__body">
-                                <tr ng-class="$index/2!=0?'datatable__row m-datatable__row--even':'datatable__row'" ng-repeat="item in data" class="m-datatable__row">
+                                <tr ng-class="$index%2!=0?'datatable__row m-datatable__row--even':'datatable__row'" ng-repeat="item in data" class="m-datatable__row">
                                     <td width="25%" class="m-datatable__cell">
                                         {{item.displayName}}
                                     </td>

@@ -27,3 +27,6 @@
 .m-aside-menu .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item > .m-menu__heading, .m-aside-menu .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item > .m-menu__link {
     height: 30px !important;
 }
+table.datatable_warning {
+    border: 1px dotted red;
+}
