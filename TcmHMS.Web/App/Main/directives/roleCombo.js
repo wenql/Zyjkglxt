@@ -15,6 +15,9 @@
                     roleService.getRoles({}).then(function (result) {
                         result.data.items.unshift({ id: 0, displayName: $scope.emptyText });
                         $scope.roles = result.data.items;
+
+                        $(element).selectpicker('val', $scope.selectedRole);
+
                         //refresh combo
                         $timeout(function () {
                             $(element).selectpicker('refresh');

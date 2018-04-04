@@ -7,6 +7,7 @@ namespace TcmHMS.Constitution.Dto
     [AutoMapFrom(typeof(ConstitutionSubjectOption))]
     public class ConstitutionSubjectOptionListDto : EntityDto
     {
+        public int SubjectId { get; set; }
         public string DisplayName { get; set; }
 
         public int DisplayOrder { get; set; }

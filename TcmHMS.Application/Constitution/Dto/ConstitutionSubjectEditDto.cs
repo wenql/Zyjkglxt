@@ -25,11 +25,11 @@ namespace TcmHMS.Constitution.Dto
         /// </summary>
         public int SpecifyGebder { get; set; }
 
-        public List<ConstitutionSubjectOptionListDto> Options { get; set; }
+        public List<ConstitutionSubjectOptionEditDto> Options { get; set; }
 
         public ConstitutionSubjectEditDto()
         {
-            this.Options = new List<ConstitutionSubjectOptionListDto>();
+            this.Options = new List<ConstitutionSubjectOptionEditDto>();
         }
     }
 }

@@ -19,8 +19,9 @@
 
                         //refresh combo
                         $timeout(function () {
+                            //$(element).selectpicker('val', $scope.selectedDepartment);
                             $(element).selectpicker('refresh');
-                        });
+                        }, 500);
                     });
                 }
             };

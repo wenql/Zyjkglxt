@@ -17,12 +17,11 @@
                             result.data.items.unshift({ groupId: 0, groupName: $scope.emptyText });
                         }
                         $scope.groups = result.data.items;
-                        console.log($scope.groups)
-
+                        //$(element).selectpicker('val', $scope.selectedGroup);
                         //refresh combo
                         $timeout(function () {
                             $(element).selectpicker('refresh');
-                        });
+                        }, 500);
                     });
                 }
             };

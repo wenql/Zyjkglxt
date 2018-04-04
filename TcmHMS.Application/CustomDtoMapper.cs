@@ -51,7 +51,9 @@ namespace TcmHMS.Application
                 .ForMember(user => user.CreationTime, options => options.Ignore());
 
             mapper.CreateMap<ConstitutionSubjectEditDto, ConstitutionSubject>()
-                .ForMember(user => user.CreationTime, options => options.Ignore());
+                .ForMember(user => user.CreationTime, options => options.Ignore())
+                .ForMember(x=>x.Options,options=>options.Ignore());
+
         }
     }
 }

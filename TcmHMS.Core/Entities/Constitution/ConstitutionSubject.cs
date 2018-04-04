@@ -35,9 +35,7 @@ namespace TcmHMS.Entities.Constitution
         /// </summary>
         public DateTime CreationTime { get; set; }
 
-        private ICollection<ConstitutionSubjectOption> _options;
-
-        public virtual ICollection<ConstitutionSubjectOption> Options => _options ?? (_options = new List<ConstitutionSubjectOption>());
+        public virtual ICollection<ConstitutionSubjectOption> Options { get; set; }
 
         public ConstitutionSubject()
         {

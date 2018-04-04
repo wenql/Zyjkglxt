@@ -19,7 +19,5 @@ namespace TcmHMS.Constitution.Dto
         public DateTime CreationTime { get; set; }
 
         public ConstitutionGroupListDto Group => new ConstitutionGroupListDto { GroupId = this.GroupId };
-
-        public List<ConstitutionSubjectOptionListDto> Options { get; set; }
     }
 }

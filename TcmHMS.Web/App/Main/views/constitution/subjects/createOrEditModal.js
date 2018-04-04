@@ -57,7 +57,6 @@
                 constitutionService.getConstitutionSubjectForEdit({
                     id: subjectId
                 }).then(function (result) {
-                    result.data.groupId = parseInt(result.data.groupId)
                     vm.subject = result.data;
                     vm.subject.specifyGebder = vm.subject.specifyGebder.toString();
 
