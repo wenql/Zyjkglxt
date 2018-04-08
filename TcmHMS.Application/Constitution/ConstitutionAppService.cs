@@ -16,7 +16,6 @@ using TcmHMS.Authorization;
 using TcmHMS.Constitution.Dto;
 using TcmHMS.Entities.Constitution;
 
-
 namespace TcmHMS.Constitution
 {
     [AbpAuthorize(PermissionNames.Pages_Constitutions)]
@@ -24,13 +23,15 @@ namespace TcmHMS.Constitution
     {
         private readonly IRepository<ConstitutionSubject> _constitutionSubjectRepository;
         private readonly IRepository<ConstitutionSubjectOption> _constitutionSubjectOptionRepository;
+        private readonly IRepository<ConstitutionSuggest> _constitutionSuggestRepository;
         private readonly IObjectMapper _objectMapper;
 
-        public ConstitutionAppService(IRepository<ConstitutionSubject> constitutionSubjectRepository, IRepository<ConstitutionSubjectOption> constitutionSubjectOptionRepository,
+        public ConstitutionAppService(IRepository<ConstitutionSubject> constitutionSubjectRepository, IRepository<ConstitutionSubjectOption> constitutionSubjectOptionRepository, IRepository<ConstitutionSuggest> constitutionSuggestRepository,
             IObjectMapper objectMapper)
         {
             this._constitutionSubjectRepository = constitutionSubjectRepository;
             this._constitutionSubjectOptionRepository = constitutionSubjectOptionRepository;
+            this._constitutionSuggestRepository = constitutionSuggestRepository;
             this._objectMapper = objectMapper;
         }
 
@@ -46,6 +47,15 @@ namespace TcmHMS.Constitution
                 });
             }
             return new ListResultDto<ConstitutionGroupListDto>(selectList);
+        }
+
+        public async Task<ConstitutionSuggesEditDto> GetConstitutionSuggestForEdit(NullableIdDto input)
+        {
+            if (!input.Id.HasValue)
+                throw new UserFriendlyException("记录不存在");
+
+            throw new UserFriendlyException("记录不存在");
+
         }
 
         public async Task<ListResultDto<ConstitutionSubjectListDto>> GetConstitutionSubjects(GetConstitutionSubjectsInput input)
@@ -73,7 +83,9 @@ namespace TcmHMS.Constitution
             if (input.Id.HasValue)
             {
                 var subject = await this._constitutionSubjectRepository.GetAsync(input.Id.Value);
-                return subject.MapTo<ConstitutionSubjectEditDto>();
+                var dto = subject.MapTo<ConstitutionSubjectEditDto>();
+                dto.Options = dto.Options.OrderBy(x => x.DisplayOrder).ToList();
+                return dto;
             }
             return new ConstitutionSubjectEditDto()
             {
@@ -90,18 +102,23 @@ namespace TcmHMS.Constitution
 
             var oldOptions = new HashSet<int?>(subject.Options.Where(x => x.id > 0).Select(x => x.id));
             model.Options.Where(x => !oldOptions.Contains(x.Id)).ToList().ForEach(x => this._constitutionSubjectOptionRepository.Delete(x));
-
-            subject.Options.FindAll(x => x.id == 0).ForEach(x => model.Options.Add(x.MapTo<ConstitutionSubjectOption>()));
-            subject.Options.FindAll(x => x.id > 0).ForEach(x =>
+            var index = 0;
+            subject.Options.ForEach(x =>
             {
-                var o = model.Options.FirstOrDefault(d => d.Id == x.id);
-                if (o != null)
+                x.DisplayOrder = index++;
+                if (x.id == 0)
                 {
-                    o = this._objectMapper.Map(x, o);
+                    model.Options.Add(x.MapTo<ConstitutionSubjectOption>());
+                }
+                else
+                {
+                    var option = model.Options.FirstOrDefault(d => d.Id == x.id);
+                    if (option != null)
+                    {
+                        option = this._objectMapper.Map(x, option);
+                    }
                 }
             });
-
-
             await this._constitutionSubjectRepository.InsertOrUpdateAsync(model);
         }
 

@@ -231,7 +231,7 @@
     <Compile Include="Constitution\Dto\ConstitutionSubjectListDto.cs" />
     <Compile Include="Constitution\Dto\ConstitutionSubjectOptionEditDto.cs" />
     <Compile Include="Constitution\Dto\ConstitutionSubjectOptionListDto.cs" />
-    <Compile Include="Constitution\Dto\ConstitutionSuggesEditDtocs.cs" />
+    <Compile Include="Constitution\Dto\ConstitutionSuggesEditDto.cs" />
     <Compile Include="Constitution\Dto\ConstitutionSuggestListDto.cs" />
     <Compile Include="Constitution\Dto\GetConstitutionSubjectsInput.cs" />
     <Compile Include="Constitution\IConstitutionAppService.cs" />

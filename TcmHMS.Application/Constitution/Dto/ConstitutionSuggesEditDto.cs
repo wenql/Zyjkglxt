@@ -5,7 +5,7 @@ using TcmHMS.Entities.Constitution;
 namespace TcmHMS.Constitution.Dto
 {
     [AutoMapFrom(typeof(ConstitutionSuggest))]
-    public class ConstitutionSuggesEditDtocs
+    public class ConstitutionSuggesEditDto
     {
         public int? Id { get; set; }
         public int GroupId { get; set; }

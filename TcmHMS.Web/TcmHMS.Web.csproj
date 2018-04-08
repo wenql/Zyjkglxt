@@ -464,6 +464,7 @@
     <Content Include="App\Main\views\constitution\groups\index.js" />
     <Content Include="App\Main\views\constitution\subjects\createOrEditModal.js" />
     <Content Include="App\Main\views\constitution\subjects\index.js" />
+    <Content Include="App\Main\views\constitution\suggests\createOrEditModal.js" />
     <Content Include="App\Main\views\dictionaries\departments\createOrEditModal.js" />
     <Content Include="App\Main\views\dictionaries\departments\index.js" />
     <Content Include="App\Main\views\dictionaries\diseases\createOrEditModal.js" />
@@ -2749,6 +2750,7 @@
     <Content Include="App\Main\views\constitution\subjects\index.cshtml" />
     <Content Include="App\Main\directives\constitutionCombo.cshtml" />
     <Content Include="App\Main\views\constitution\subjects\createOrEditModal.cshtml" />
+    <Content Include="App\Main\views\constitution\suggests\createOrEditModal.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">

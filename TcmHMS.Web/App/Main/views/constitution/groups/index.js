@@ -61,7 +61,18 @@
             }
 
             vm.suggests = function (group) {
+                var modalInstance = $uibModal.open({
+                    templateUrl: '~/App/main/views/constitution/suggests/createOrEditModal.cshtml',
+                    controller: 'main.views.constitutions.suggests.createOrEditModal as vm',
+                    backdrop: 'static',
+                    resolve: {
+                        groupId: function () {
+                            return group.groupId;
+                        }
+                    }
+                });
 
+                modalInstance.result.then(function (result) {});
             }
 
             vm.getConstitutionGroups = function () {

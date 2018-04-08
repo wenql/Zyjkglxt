@@ -14,6 +14,13 @@ namespace TcmHMS.Constitution
         Task<ListResultDto<ConstitutionGroupListDto>> GetConstitutionGroups();
 
         /// <summary>
+        /// 获取健康建议
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<ConstitutionSuggesEditDto> GetConstitutionSuggestForEdit(NullableIdDto input);
+
+        /// <summary>
         /// 获取体质问卷
         /// </summary>
         /// <param name="input"></param>
