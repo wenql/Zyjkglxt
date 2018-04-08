@@ -54,7 +54,12 @@ namespace TcmHMS.Constitution
             if (!input.Id.HasValue)
                 throw new UserFriendlyException("记录不存在");
 
-            throw new UserFriendlyException("记录不存在");
+            var defaultSuggest = await this._constitutionSuggestRepository.GetAll().FirstOrDefaultAsync(x => x.GroupId == input.Id);
+            if (defaultSuggest == null)
+                defaultSuggest = new ConstitutionSuggest { GroupId = Convert.ToInt32(input.Id) };
+
+            return defaultSuggest.MapTo<ConstitutionSuggesEditDto>();
+
 
         }
 

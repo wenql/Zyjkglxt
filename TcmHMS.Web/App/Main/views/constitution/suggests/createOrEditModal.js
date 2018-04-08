@@ -28,7 +28,6 @@
                     vm.loading = false;
                 });
             }
-
             init();
         }
     ]);
