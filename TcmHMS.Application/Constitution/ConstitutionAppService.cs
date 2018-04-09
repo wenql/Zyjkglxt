@@ -12,6 +12,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Dynamic;
 using System.Threading.Tasks;
+using Abp.Domain.Uow;
 using TcmHMS.Authorization;
 using TcmHMS.Constitution.Dto;
 using TcmHMS.Entities.Constitution;
@@ -49,7 +50,7 @@ namespace TcmHMS.Constitution
             return new ListResultDto<ConstitutionGroupListDto>(selectList);
         }
 
-        public async Task<ConstitutionSuggesEditDto> GetConstitutionSuggestForEdit(NullableIdDto input)
+        public async Task<ConstitutionSuggestEditDto> GetConstitutionSuggestForEdit(NullableIdDto input)
         {
             if (!input.Id.HasValue)
                 throw new UserFriendlyException("记录不存在");
@@ -58,7 +59,7 @@ namespace TcmHMS.Constitution
             if (defaultSuggest == null)
                 defaultSuggest = new ConstitutionSuggest { GroupId = Convert.ToInt32(input.Id) };
 
-            return defaultSuggest.MapTo<ConstitutionSuggesEditDto>();
+            return defaultSuggest.MapTo<ConstitutionSuggestEditDto>();
 
 
         }
@@ -98,6 +99,7 @@ namespace TcmHMS.Constitution
             };
         }
 
+        [UnitOfWork]
         [AbpAuthorize(PermissionNames.Pages_Constitutions_Subjects_Create, PermissionNames.Pages_Constitutions_Subjects_Edit)]
         public async Task CreateOrUpdateConstitutionSubject(ConstitutionSubjectEditDto subject)
         {

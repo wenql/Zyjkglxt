@@ -132,7 +132,7 @@
 }
 
 
-.form-group .form-control.ng-touched.ng-invalid {
+.form-group .form-control.ng-touched.ng-invalid, .form-group .form-control.input-validation-error {
     border-style: dotted;
     border-color: red;
 }
@@ -145,7 +145,7 @@
     background-color: #e6e6e6 !important;
 }
 
-.form-group span.errorSty {
+.form-group span.errorSty, .field-validation-error {
     color: #f4516c;
     margin-top: 0.2rem;
     font-size: 0.85rem;

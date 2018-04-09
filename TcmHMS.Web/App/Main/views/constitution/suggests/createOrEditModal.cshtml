@@ -1,1 +1,99 @@
-﻿
+﻿@using System.Web.Optimization
+@using TcmHMS.Entities.Constitution
+@model TcmHMS.Constitution.Dto.ConstitutionSuggestEditDto
+<div>
+    <form name="suggestCreateOrEditForm" id="myform" role="form" novalidate>
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span ng-if="vm.suggest.id">修改问卷: {{vm.suggest.title}}</span>
+                <span ng-if="!vm.suggest.id">添加问卷</span>
+            </h4>
+            <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="m-portlet">
+                <div class="m-portlet__head" style="height: 3rem;padding: 0 0.75rem;">
+                    <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                            <h3 class="m-portlet__head-text">
+                                体质描述
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-portlet__body">
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.GeneralFeature)
+                        @Html.NkTextAreaFor(x => x.GeneralFeature, "vm.suggest.generalFeature")
+                        @Html.ValidationMessageFor(x => x.GeneralFeature)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.ShapeFeature)
+                        @Html.NkTextAreaFor(x => x.ShapeFeature, "vm.suggest.shapeFeature")
+                        @Html.ValidationMessageFor(x => x.ShapeFeature)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.CommonPerformance)
+                        @Html.NkTextAreaFor(x => x.CommonPerformance, "vm.suggest.commonPerformance")
+                        @Html.ValidationMessageFor(x => x.CommonPerformance)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.PsychologyFeature)
+                        @Html.NkTextAreaFor(x => x.PsychologyFeature, "vm.suggest.psychologyFeature")
+                        @Html.ValidationMessageFor(x => x.PsychologyFeature)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.DiseaseTendency)
+                        @Html.NkTextAreaFor(x => x.DiseaseTendency, "vm.suggest.diseaseTendency")
+                        @Html.ValidationMessageFor(x => x.DiseaseTendency)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.Adaptability)
+                        @Html.NkTextAreaFor(x => x.Adaptability, "vm.suggest.adaptability")
+                        @Html.ValidationMessageFor(x => x.Adaptability)
+                    </div>
+                </div>
+            </div>
+            <div class="m-portlet">
+                <div class="m-portlet__head" style="height: 3rem;padding: 0 0.75rem;">
+                    <div class="m-portlet__head-caption">
+                        <div class="m-portlet__head-title">
+                            <h3 class="m-portlet__head-text">
+                                建议分析
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-portlet__body">
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.ExerciseNurse)
+                        @Html.NkTextAreaFor(x => x.ExerciseNurse, "vm.suggest.exerciseNurse")
+                        @Html.ValidationMessageFor(x => x.ExerciseNurse)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.MedicineNurse)
+                        @Html.NkTextAreaFor(x => x.MedicineNurse, "vm.suggest.medicineNurse")
+                        @Html.ValidationMessageFor(x => x.MedicineNurse)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.NurseMethod)
+                        @Html.NkTextAreaFor(x => x.NurseMethod, "vm.suggest.nurseMethod")
+                        @Html.ValidationMessageFor(x => x.NurseMethod)
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(x => x.HealthyRecipes)
+                        @Html.NkTextAreaFor(x => x.HealthyRecipes, "vm.suggest.healthyRecipes")
+                        @Html.ValidationMessageFor(x => x.HealthyRecipes)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button ng-disabled="vm.saving" type="button" class="btn btn-default" ng-click="vm.cancel()">取消</button>
+            <button type="submit" button-busy="vm.saving" busy-text="保存中" class="btn btn-primary blue" ng-click="vm.save()"><i class="fa fa-save"></i> <span>保存</span></button>
+        </div>
+    </form>
+</div>
+@Scripts.Render("~/Bundles/Validation/js")

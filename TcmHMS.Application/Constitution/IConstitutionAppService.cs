@@ -18,7 +18,7 @@ namespace TcmHMS.Constitution
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<ConstitutionSuggesEditDto> GetConstitutionSuggestForEdit(NullableIdDto input);
+        Task<ConstitutionSuggestEditDto> GetConstitutionSuggestForEdit(NullableIdDto input);
 
         /// <summary>
         /// 获取体质问卷

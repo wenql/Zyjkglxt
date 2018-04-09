@@ -1337,6 +1337,7 @@
     <Content Include="libs\jquery-validation\dist\additional-methods.min.js" />
     <Content Include="libs\jquery-validation\dist\jquery.validate.js" />
     <Content Include="libs\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="libs\jquery-validation\dist\jquery.validate.unobtrusive.min.js" />
     <Content Include="libs\jquery-validation\Gruntfile.js" />
     <Content Include="libs\jquery-validation\js\additional-methods.js" />
     <Content Include="libs\jquery-validation\js\additional-methods.min.js" />
@@ -3556,6 +3557,7 @@
     <Compile Include="App_Start\Bundling\BundleConfig.cs" />
     <Compile Include="App_Start\Bundling\BundleExtensions.cs" />
     <Compile Include="App_Start\Bundling\CssRewriteUrlWithVirtualDirectoryTransform.cs" />
+    <Compile Include="App_Start\RazorExtensions.cs" />
     <Compile Include="App_Start\TcmHMSNavigationProvider.cs" />
     <Compile Include="App_Start\TcmHMSWebModule.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />

@@ -10,6 +10,9 @@
                 $uibModalInstance.dismiss();
             };
             vm.save = function () {
+                if (!$("form").valid()) {
+                    return;
+                }
                 vm.saving = true;
                 constitutionService.createOrUpdateConstitutionSuggest(vm.suggest).then(function () {
                     abp.notify.info('保存成功');

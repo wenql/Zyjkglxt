@@ -10,7 +10,7 @@ using TcmHMS.MultiTenancy;
 namespace TcmHMS.EntityFramework
 {
     public class TcmHMSDbContext : AbpZeroDbContext<Tenant, Role, User>
-    {
+    {    
         public IDbSet<Department> Departments { get; set; }
 
         public IDbSet<Disease> Diseases { get; set; }

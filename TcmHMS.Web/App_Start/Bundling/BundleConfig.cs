@@ -30,6 +30,13 @@ namespace TcmHMS.Web.Bundling
                     .IncludeDirectory("~/App", "*.js", true)
                     .ForceOrdered()
                 );
+
+            bundles.Add(
+                new ScriptBundle("~/Bundles/Validation/js")
+                    .Include("~/libs/jquery-validation/dist/jquery.validate.js")
+                    .Include("~/libs/jquery-validation/dist/jquery.validate.unobtrusive.min.js")
+                    .ForceOrdered()
+            );
         }
 
         private static void AddLoginFiles(BundleCollection bundles)
@@ -108,6 +115,7 @@ namespace TcmHMS.Web.Bundling
                new ScriptBundle("~/Bundles/Main/libs/js").Include(
                     "~/libs/json2/json2.min.js",
                     "~/Content/metronic/assets/vendors/base/vendors.bundle.js",
+                    //"~/libs/jquery/jquery-3.2.1.js",
                     "~/libs/jquery/jquery-migrate.min.js",
                     "~/libs/jquery-ui/jquery-ui.min.js",
                     //"~/libs/bootstrap/js/bootstrap.js",
@@ -115,7 +123,8 @@ namespace TcmHMS.Web.Bundling
                     "~/libs/jquery-slimscroll/jquery.slimscroll.min.js",
                     "~/libs/jquery-blockui/jquery.blockui.min.js",
                     "~/libs/js-cookie/js.cookie.min.js",
-                    "~/libs/jquery-validation/dist/jquery.validate.js",
+                    //"~/libs/jquery-validation/dist/jquery.validate.js",
+                    //"~/libs/jquery-validation/dist/jquery.validate.unobtrusive.min.js",
                     "~/libs/jquery-uniform/jquery.uniform.min.js",
                     "~/libs/jquery.signalR/jquery.signalR-2.2.2.min.js",
                     "~/libs/localforage/localforage.min.js",
