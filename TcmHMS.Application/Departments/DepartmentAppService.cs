@@ -54,7 +54,7 @@ namespace TcmHMS.Departments
                 throw new UserFriendlyException("代码已存在");
             }
             await this._departmentRepository.InsertOrUpdateAsync(this._objectMapper.Map(department,
-                department.Id.HasValue
+                department.Id.HasValue && department.Id > 0
                     ? await this._departmentRepository.GetAsync(department.Id.Value)
                     : new Department()));
 

@@ -21,6 +21,13 @@ namespace TcmHMS.Constitution
         Task<ConstitutionSuggestEditDto> GetConstitutionSuggestForEdit(NullableIdDto input);
 
         /// <summary>
+        /// 保存健康建议
+        /// </summary>
+        /// <param name="suggest"></param>
+        /// <returns></returns>
+        Task CreateOrUpdateConstitutionSuggest(ConstitutionSuggestEditDto suggest);
+
+        /// <summary>
         /// 获取体质问卷
         /// </summary>
         /// <param name="input"></param>

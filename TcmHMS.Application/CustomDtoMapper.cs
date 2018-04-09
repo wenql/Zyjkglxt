@@ -52,7 +52,10 @@ namespace TcmHMS.Application
 
             mapper.CreateMap<ConstitutionSubjectEditDto, ConstitutionSubject>()
                 .ForMember(user => user.CreationTime, options => options.Ignore())
-                .ForMember(x=>x.Options,options=>options.Ignore());
+                .ForMember(x => x.Options, options => options.Ignore());
+
+            mapper.CreateMap<ConstitutionSuggestEditDto, ConstitutionSuggest>()
+    .ForMember(user => user.CreationTime, options => options.Ignore());
 
         }
     }
