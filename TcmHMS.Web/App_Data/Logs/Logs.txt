@@ -10879,3 +10879,383 @@ DEBUG 2018-04-09 23:01:10,560 [1    ] Abp.Logging.LogHelper                    -
 DEBUG 2018-04-09 23:01:10,561 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Users.IUserAppService' with service name 'app/user'.
 DEBUG 2018-04-09 23:01:10,566 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Roles.IRoleAppService' with service name 'app/role'.
 DEBUG 2018-04-09 23:01:10,567 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Permissions.IPermissionAppService' with service name 'app/permission'.
+DEBUG 2018-04-10 09:17:48,683 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-10 09:17:48,698 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-10 09:17:48,703 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Web.TcmHMSWebModule, TcmHMS.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSDataModule, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,705 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSCoreModule, TcmHMS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSApplicationModule, TcmHMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Api.TcmHMSWebApiModule, TcmHMS.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:48,713 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-10 09:17:48,961 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 09:17:48,961 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 09:17:48,961 [1    ] o.Configuration.LanguageManagementConfig - Converted TcmHMS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 09:17:48,961 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 09:17:49,322 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: TcmHMS.EntityFramework.TcmHMSDbContext, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:17:51,209 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-10 09:17:51,231 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-10 09:17:51,237 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-10 09:17:51,238 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TcmHMS
+DEBUG 2018-04-10 09:17:51,239 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-10 09:17:51,313 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 09:17:51,365 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 25 classes define auto mapping attributes
+DEBUG 2018-04-10 09:17:51,366 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Friendships.Cache.FriendCacheItem
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Ranks.Dto.RankListDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Medicines.Dto.MedicineListDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Diseases.Dto.DiseaseEditDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Diseases.Dto.DiseaseListDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Departments.Dto.DepartmentEditDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Departments.Dto.DepartmentListDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectEditDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectListDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectOptionEditDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectOptionListDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSuggestEditDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSuggestListDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto
+DEBUG 2018-04-10 09:17:51,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2018-04-10 09:17:51,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2018-04-10 09:17:51,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleListDto
+DEBUG 2018-04-10 09:17:51,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-10 09:17:51,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.PermissionDto
+DEBUG 2018-04-10 09:17:51,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleDto
+DEBUG 2018-04-10 09:17:51,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionDto
+DEBUG 2018-04-10 09:17:51,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionWithLevelDto
+DEBUG 2018-04-10 09:17:51,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2018-04-10 09:17:52,385 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-10 09:17:52,386 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Ranks.IRankAppService' with service name 'app/rank'.
+DEBUG 2018-04-10 09:17:52,387 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Medicines.IMedicineAppService' with service name 'app/medicine'.
+DEBUG 2018-04-10 09:17:52,388 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Diseases.IDiseaseAppService' with service name 'app/disease'.
+DEBUG 2018-04-10 09:17:52,389 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Departments.IDepartmentAppService' with service name 'app/department'.
+DEBUG 2018-04-10 09:17:52,390 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Constitution.IConstitutionAppService' with service name 'app/constitution'.
+DEBUG 2018-04-10 09:17:52,391 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-10 09:17:52,392 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-10 09:17:52,393 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-10 09:17:52,394 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Permissions.IPermissionAppService' with service name 'app/permission'.
+WARN  2018-04-10 09:17:57,150 [5    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2018-04-10 09:23:51,636 [41   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-04-10 09:23:51,637 [41   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 09:23:51,638 [41   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 09:23:51,638 [41   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-04-10 09:24:04,094 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-10 09:24:04,109 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-10 09:24:04,114 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Web.TcmHMSWebModule, TcmHMS.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,117 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSDataModule, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,117 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,117 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,117 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,118 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,118 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,118 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,118 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSCoreModule, TcmHMS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,118 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSApplicationModule, TcmHMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,119 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,119 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Api.TcmHMSWebApiModule, TcmHMS.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,119 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,119 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,119 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,119 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,120 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:04,124 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-10 09:24:04,343 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 09:24:04,343 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 09:24:04,343 [1    ] o.Configuration.LanguageManagementConfig - Converted TcmHMS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 09:24:04,343 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 09:24:04,718 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: TcmHMS.EntityFramework.TcmHMSDbContext, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 09:24:06,709 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-10 09:24:06,718 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-10 09:24:06,729 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-10 09:24:06,731 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TcmHMS
+DEBUG 2018-04-10 09:24:06,734 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-10 09:24:06,838 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 09:24:06,916 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 25 classes define auto mapping attributes
+DEBUG 2018-04-10 09:24:06,916 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Friendships.Cache.FriendCacheItem
+DEBUG 2018-04-10 09:24:06,920 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-10 09:24:06,920 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-10 09:24:06,920 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Ranks.Dto.RankListDto
+DEBUG 2018-04-10 09:24:06,920 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Medicines.Dto.MedicineListDto
+DEBUG 2018-04-10 09:24:06,920 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Diseases.Dto.DiseaseEditDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Diseases.Dto.DiseaseListDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Departments.Dto.DepartmentEditDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Departments.Dto.DepartmentListDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectEditDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectListDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectOptionEditDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectOptionListDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSuggestEditDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSuggestListDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleListDto
+DEBUG 2018-04-10 09:24:06,921 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-10 09:24:06,922 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.PermissionDto
+DEBUG 2018-04-10 09:24:06,922 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleDto
+DEBUG 2018-04-10 09:24:06,922 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionDto
+DEBUG 2018-04-10 09:24:06,922 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionWithLevelDto
+DEBUG 2018-04-10 09:24:06,922 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2018-04-10 09:24:08,262 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-10 09:24:08,264 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Ranks.IRankAppService' with service name 'app/rank'.
+DEBUG 2018-04-10 09:24:08,265 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Medicines.IMedicineAppService' with service name 'app/medicine'.
+DEBUG 2018-04-10 09:24:08,267 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Diseases.IDiseaseAppService' with service name 'app/disease'.
+DEBUG 2018-04-10 09:24:08,268 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Departments.IDepartmentAppService' with service name 'app/department'.
+DEBUG 2018-04-10 09:24:08,269 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Constitution.IConstitutionAppService' with service name 'app/constitution'.
+DEBUG 2018-04-10 09:24:08,270 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-10 09:24:08,273 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-10 09:24:08,274 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-10 09:24:08,275 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Permissions.IPermissionAppService' with service name 'app/permission'.
+DEBUG 2018-04-10 10:03:51,705 [124  ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-04-10 10:03:51,707 [124  ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 10:03:51,708 [124  ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 10:03:51,708 [124  ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-04-10 16:50:37,373 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-10 16:50:37,388 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-10 16:50:37,394 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Web.TcmHMSWebModule, TcmHMS.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSDataModule, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSCoreModule, TcmHMS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSApplicationModule, TcmHMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Api.TcmHMSWebApiModule, TcmHMS.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:37,402 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-10 16:50:37,589 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 16:50:37,589 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 16:50:37,589 [1    ] o.Configuration.LanguageManagementConfig - Converted TcmHMS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 16:50:37,589 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 16:50:37,918 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: TcmHMS.EntityFramework.TcmHMSDbContext, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:50:39,693 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-10 16:50:39,700 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-10 16:50:39,707 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-10 16:50:39,708 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TcmHMS
+DEBUG 2018-04-10 16:50:39,709 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-10 16:50:39,759 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 16:50:39,823 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 27 classes define auto mapping attributes
+DEBUG 2018-04-10 16:50:39,823 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Friendships.Cache.FriendCacheItem
+DEBUG 2018-04-10 16:50:39,826 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Ranks.Dto.RankListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Medicines.Dto.MedicineListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Doctors.Dto.DoctorEditDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Doctors.Dto.DoctorListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Diseases.Dto.DiseaseEditDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Diseases.Dto.DiseaseListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Departments.Dto.DepartmentEditDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Departments.Dto.DepartmentListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectEditDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectOptionEditDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectOptionListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSuggestEditDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSuggestListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2018-04-10 16:50:39,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2018-04-10 16:50:39,828 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleListDto
+DEBUG 2018-04-10 16:50:39,828 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-10 16:50:39,828 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.PermissionDto
+DEBUG 2018-04-10 16:50:39,828 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleDto
+DEBUG 2018-04-10 16:50:39,828 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionDto
+DEBUG 2018-04-10 16:50:39,828 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionWithLevelDto
+DEBUG 2018-04-10 16:50:39,828 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2018-04-10 16:50:40,987 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-10 16:50:40,989 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Ranks.IRankAppService' with service name 'app/rank'.
+DEBUG 2018-04-10 16:50:40,990 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Medicines.IMedicineAppService' with service name 'app/medicine'.
+DEBUG 2018-04-10 16:50:40,993 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Diseases.IDiseaseAppService' with service name 'app/disease'.
+DEBUG 2018-04-10 16:50:40,994 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Departments.IDepartmentAppService' with service name 'app/department'.
+DEBUG 2018-04-10 16:50:40,996 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Constitution.IConstitutionAppService' with service name 'app/constitution'.
+DEBUG 2018-04-10 16:50:40,998 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-10 16:50:40,999 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-10 16:50:41,000 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-10 16:50:41,002 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Permissions.IPermissionAppService' with service name 'app/permission'.
+WARN  2018-04-10 16:50:48,465 [67   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: 当前用户没有登录到系统！
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   在 System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   在 Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   在 Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   在 Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+DEBUG 2018-04-10 16:53:14,328 [26   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-04-10 16:53:14,329 [26   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 16:53:14,329 [26   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 16:53:14,329 [26   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-04-10 16:53:25,946 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-10 16:53:25,961 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-04-10 16:53:25,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Web.TcmHMSWebModule, TcmHMS.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSDataModule, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSCoreModule, TcmHMS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.TcmHMSApplicationModule, TcmHMS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TcmHMS.Api.TcmHMSWebApiModule, TcmHMS.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,973 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:25,976 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-04-10 16:53:26,176 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 16:53:26,176 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 16:53:26,176 [1    ] o.Configuration.LanguageManagementConfig - Converted TcmHMS (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 16:53:26,176 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-10 16:53:26,605 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: TcmHMS.EntityFramework.TcmHMSDbContext, TcmHMS.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-10 16:53:28,588 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-10 16:53:28,593 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-10 16:53:28,605 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-10 16:53:28,606 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TcmHMS
+DEBUG 2018-04-10 16:53:28,607 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-10 16:53:28,689 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-10 16:53:28,754 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 27 classes define auto mapping attributes
+DEBUG 2018-04-10 16:53:28,754 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Friendships.Cache.FriendCacheItem
+DEBUG 2018-04-10 16:53:28,763 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-10 16:53:28,763 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-10 16:53:28,763 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Ranks.Dto.RankListDto
+DEBUG 2018-04-10 16:53:28,763 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Medicines.Dto.MedicineListDto
+DEBUG 2018-04-10 16:53:28,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Doctors.Dto.DoctorEditDto
+DEBUG 2018-04-10 16:53:28,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Doctors.Dto.DoctorListDto
+DEBUG 2018-04-10 16:53:28,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Diseases.Dto.DiseaseEditDto
+DEBUG 2018-04-10 16:53:28,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Diseases.Dto.DiseaseListDto
+DEBUG 2018-04-10 16:53:28,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Departments.Dto.DepartmentEditDto
+DEBUG 2018-04-10 16:53:28,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Departments.Dto.DepartmentListDto
+DEBUG 2018-04-10 16:53:28,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectEditDto
+DEBUG 2018-04-10 16:53:28,764 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectListDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectOptionEditDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSubjectOptionListDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSuggestEditDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Constitution.Dto.ConstitutionSuggestListDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserLoginAttemptDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleEditDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleListDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.PermissionDto
+DEBUG 2018-04-10 16:53:28,765 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Roles.Dto.RoleDto
+DEBUG 2018-04-10 16:53:28,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionDto
+DEBUG 2018-04-10 16:53:28,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Permissions.Dto.FlatPermissionWithLevelDto
+DEBUG 2018-04-10 16:53:28,766 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TcmHMS.Authorization.Users.Dto.UserListDto+UserListRoleDto
+DEBUG 2018-04-10 16:53:30,264 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-04-10 16:53:30,265 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Ranks.IRankAppService' with service name 'app/rank'.
+DEBUG 2018-04-10 16:53:30,266 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Medicines.IMedicineAppService' with service name 'app/medicine'.
+DEBUG 2018-04-10 16:53:30,267 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Diseases.IDiseaseAppService' with service name 'app/disease'.
+DEBUG 2018-04-10 16:53:30,268 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Departments.IDepartmentAppService' with service name 'app/department'.
+DEBUG 2018-04-10 16:53:30,270 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Constitution.IConstitutionAppService' with service name 'app/constitution'.
+DEBUG 2018-04-10 16:53:30,272 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-04-10 16:53:30,273 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-04-10 16:53:30,274 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-04-10 16:53:30,275 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TcmHMS.Authorization.Permissions.IPermissionAppService' with service name 'app/permission'.

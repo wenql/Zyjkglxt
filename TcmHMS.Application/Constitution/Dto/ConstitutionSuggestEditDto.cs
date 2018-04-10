@@ -85,5 +85,7 @@ namespace TcmHMS.Constitution.Dto
         /// 是否默认
         /// </summary>
         public bool IsDefault { get; set; }
+
+        public ConstitutionGroupListDto Group => new ConstitutionGroupListDto { GroupId = this.GroupId };
     }
 }

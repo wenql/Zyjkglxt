@@ -64,7 +64,7 @@ namespace TcmHMS.Authorization.Users
         {
             var query = UserManager.Users
                 .Include(u => u.Roles)
-                .WhereIf(input.Role.HasValue, u => u.Roles.Any(r => r.RoleId == input.Role.Value))
+                .WhereIf(input.Role.HasValue && input.Role > 0, u => u.Roles.Any(r => r.RoleId == input.Role.Value))
                 .WhereIf(
                     !input.Filter.IsNullOrWhiteSpace(),
                     u =>

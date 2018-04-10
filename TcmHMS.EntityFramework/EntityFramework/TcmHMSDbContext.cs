@@ -10,7 +10,7 @@ using TcmHMS.MultiTenancy;
 namespace TcmHMS.EntityFramework
 {
     public class TcmHMSDbContext : AbpZeroDbContext<Tenant, Role, User>
-    {    
+    {
         public IDbSet<Department> Departments { get; set; }
 
         public IDbSet<Disease> Diseases { get; set; }
@@ -43,6 +43,16 @@ namespace TcmHMS.EntityFramework
 
             modelBuilder.Entity<Medicine>().ToTable("TcmMedicine")
                 .HasKey(t => t.Id);
+
+            modelBuilder.Entity<Doctor>().ToTable("TcmDoctor")
+                .HasKey(t => t.Id);
+            modelBuilder.Entity<Doctor>().HasRequired(t => t.Rank)
+                .WithMany()
+                .HasForeignKey(t => t.RankId).WillCascadeOnDelete(false);
+            modelBuilder.Entity<Doctor>().HasRequired(t => t.Department)
+                .WithMany()
+                .HasForeignKey(t => t.DepartmentId).WillCascadeOnDelete(false);
+
 
             modelBuilder.Entity<ConstitutionSuggest>().ToTable("TcmConstitutionSuggest")
                 .HasKey(t => t.Id);

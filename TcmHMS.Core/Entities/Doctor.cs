@@ -43,6 +43,11 @@ namespace TcmHMS.Entities
         public int RankId { get; set; }
 
         /// <summary>
+        /// 部门
+        /// </summary>
+        public int DepartmentId { get; set; }
+
+        /// <summary>
         /// 姓名
         /// </summary>
         [StringLength(MaxPasswordLength)]
@@ -103,5 +108,10 @@ namespace TcmHMS.Entities
         /// 职称
         /// </summary>
         public virtual Rank Rank { get; set; }
+
+        /// <summary>
+        /// 部门
+        /// </summary>
+        public virtual Department Department { get; set; }
     }
 }

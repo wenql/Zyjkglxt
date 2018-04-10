@@ -5,14 +5,13 @@
     <form name="suggestCreateOrEditForm" id="myform" role="form" novalidate>
         <div class="modal-header">
             <h4 class="modal-title">
-                <span ng-if="vm.suggest.id">修改问卷: {{vm.suggest.title}}</span>
-                <span ng-if="!vm.suggest.id">添加问卷</span>
+                <span>健康建议：{{vm.suggest.group.groupName}}</span>
             </h4>
             <button ng-click="vm.cancel()" aria-label="Close" class="close" type="button">
                 <span aria-hidden="true">×</span>
             </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="height: 600px; overflow-y: auto;">
             <div class="m-portlet">
                 <div class="m-portlet__head" style="height: 3rem;padding: 0 0.75rem;">
                     <div class="m-portlet__head-caption">
