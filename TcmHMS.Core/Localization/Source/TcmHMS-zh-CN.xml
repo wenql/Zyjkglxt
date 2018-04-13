@@ -70,5 +70,6 @@
     <text name="ConstitutionGroups" value="体质分类" />
     <text name="ConstitutionSubjects" value="体质问卷" />
     <text name="ConstitutionSuggests" value="健康建议" />
+    <text name="Doctors" value="医生管理" />
   </texts>
 </localizationDictionary>

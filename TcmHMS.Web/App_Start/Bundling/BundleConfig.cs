@@ -6,6 +6,7 @@ namespace TcmHMS.Web.Bundling
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
+            BundleTable.EnableOptimizations = false;
             bundles.IgnoreList.Clear();
             AddLoginFiles(bundles);
             AddMainLibCss(bundles);

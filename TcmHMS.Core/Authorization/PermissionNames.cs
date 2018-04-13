@@ -6,6 +6,11 @@
 
         public const string Pages_Dictionaries = "Pages.Dictionaries";
 
+        public const string Pages_Doctors = "Pages.Doctors";
+        public const string Pages_Doctors_Create = "Pages.Doctors.Create";
+        public const string Pages_Doctors_Edit = "Pages.Doctors.Edit";
+        public const string Pages_Doctors_Delete = "Pages.Doctors.Delete";
+
         public const string Pages_Dictionaries_Departments = "Pages.Dictionaries.Departments";
         public const string Pages_Dictionaries_Departments_Create = "Pages.Dictionaries.Departments.Create";
         public const string Pages_Dictionaries_Departments_Edit = "Pages.Dictionaries.Departments.Edit";

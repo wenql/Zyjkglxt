@@ -4,6 +4,7 @@ using TcmHMS.Authorization.Users.Dto;
 using TcmHMS.Constitution.Dto;
 using TcmHMS.Departments.Dto;
 using TcmHMS.Diseases.Dto;
+using TcmHMS.Doctors.Dto;
 using TcmHMS.Entities;
 using TcmHMS.Entities.Constitution;
 using TcmHMS.Medicines.Dto;
@@ -36,27 +37,32 @@ namespace TcmHMS.Application
             mapper.CreateMap<User, UserEditDto>()
                 .ForMember(dto => dto.Password, options => options.Ignore())
                 .ReverseMap()
-                .ForMember(user => user.Password, options => options.Ignore());
+                .ForMember(x => x.Password, options => options.Ignore());
 
             mapper.CreateMap<RankEditDto, Rank>()
-                .ForMember(user => user.CreationTime, options => options.Ignore());
+                .ForMember(x => x.CreationTime, options => options.Ignore());
 
             mapper.CreateMap<DepartmentEditDto, Department>()
-                .ForMember(user => user.CreationTime, options => options.Ignore());
+                .ForMember(x => x.CreationTime, options => options.Ignore());
 
             mapper.CreateMap<DiseaseEditDto, Disease>()
-                .ForMember(user => user.CreationTime, options => options.Ignore());
+                .ForMember(x => x.CreationTime, options => options.Ignore());
 
             mapper.CreateMap<MedicineEditDto, Medicine>()
-                .ForMember(user => user.CreationTime, options => options.Ignore());
+                .ForMember(x => x.CreationTime, options => options.Ignore());
 
             mapper.CreateMap<ConstitutionSubjectEditDto, ConstitutionSubject>()
-                .ForMember(user => user.CreationTime, options => options.Ignore())
+                .ForMember(x => x.CreationTime, options => options.Ignore())
                 .ForMember(x => x.Options, options => options.Ignore());
 
             mapper.CreateMap<ConstitutionSuggestEditDto, ConstitutionSuggest>()
-    .ForMember(user => user.CreationTime, options => options.Ignore());
+                .ForMember(x => x.CreationTime, options => options.Ignore());
 
+            mapper.CreateMap<DoctorEditDto, Doctor>()
+                .ForMember(x => x.CreationTime, options => options.Ignore())
+                .ForMember(x => x.Password, options => options.Ignore())
+                .ReverseMap()
+                .ForMember(x => x.Password, options => options.Ignore());
         }
     }
 }

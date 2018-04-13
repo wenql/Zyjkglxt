@@ -2,6 +2,7 @@
 using Abp.Domain.Entities.Auditing;
 using System;
 using System.ComponentModel.DataAnnotations;
+using Abp.Extensions;
 
 namespace TcmHMS.Entities
 {
@@ -113,5 +114,10 @@ namespace TcmHMS.Entities
         /// 部门
         /// </summary>
         public virtual Department Department { get; set; }
+
+        public static string CreateRandomPassword()
+        {
+            return Guid.NewGuid().ToString("N").Truncate(16);
+        }
     }
 }

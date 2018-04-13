@@ -26,6 +26,15 @@ appModule.config([
                 templateUrl: '/App/Main/views/dashboard/index.cshtml'
             });
 
+
+        if (abp.auth.hasPermission('Pages.Doctors'))
+            $stateProvider.state('doctors',
+                {
+                    url: '/doctors',
+                    templateUrl: '/App/Main/views/doctors/index.cshtml'
+                });
+
+
         if (abp.auth.hasPermission('Pages.Administration.Roles'))
             $stateProvider.state('roles',
                 {

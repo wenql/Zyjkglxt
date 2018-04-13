@@ -246,8 +246,11 @@
     <Compile Include="Diseases\Dto\DiseaseListDto.cs" />
     <Compile Include="Diseases\Dto\GetDiseasesInput.cs" />
     <Compile Include="Diseases\IDiseaseAppService.cs" />
+    <Compile Include="Doctors\DoctorAppService.cs" />
+    <Compile Include="Doctors\Dto\CreateOrUpdateDoctorInput.cs" />
     <Compile Include="Doctors\Dto\DoctorEditDto.cs" />
     <Compile Include="Doctors\Dto\DoctorListDto.cs" />
+    <Compile Include="Doctors\Dto\GetDoctorsInput.cs" />
     <Compile Include="Doctors\IDoctorAppService.cs" />
     <Compile Include="Dto\FileDto.cs" />
     <Compile Include="Dto\GetEntitiesInput.cs" />

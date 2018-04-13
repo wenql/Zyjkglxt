@@ -475,6 +475,7 @@
     <Content Include="App\Main\views\dictionaries\ranks\createOrEditModal.js" />
     <Content Include="App\Main\views\dictionaries\ranks\index.css" />
     <Content Include="App\Main\views\dictionaries\ranks\index.js" />
+    <Content Include="App\Main\views\doctors\index.js" />
     <Content Include="App\Main\views\layout\header.css" />
     <Content Include="App\Main\views\layout\header.js" />
     <Content Include="App\Main\views\layout\layout.css" />
@@ -2752,6 +2753,7 @@
     <Content Include="App\Main\directives\constitutionCombo.cshtml" />
     <Content Include="App\Main\views\constitution\subjects\createOrEditModal.cshtml" />
     <Content Include="App\Main\views\constitution\suggests\createOrEditModal.cshtml" />
+    <Content Include="App\Main\views\doctors\index.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">

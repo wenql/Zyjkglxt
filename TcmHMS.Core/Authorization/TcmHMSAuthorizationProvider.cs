@@ -9,6 +9,12 @@ namespace TcmHMS.Authorization
         {
             var pages = context.GetPermissionOrNull(PermissionNames.Pages) ?? context.CreatePermission(PermissionNames.Pages, L("页面"));
 
+            var doctors = pages.CreateChildPermission(PermissionNames.Pages_Doctors, L("医生管理"));
+            doctors.CreateChildPermission(PermissionNames.Pages_Doctors_Create, L("添加医生"));
+            doctors.CreateChildPermission(PermissionNames.Pages_Doctors_Edit, L("修改医生"));
+            doctors.CreateChildPermission(PermissionNames.Pages_Doctors_Delete, L("删除医生"));
+
+
             var constitution = pages.CreateChildPermission(PermissionNames.Pages_Constitutions, L("体质辨识"));
 
             constitution.CreateChildPermission(PermissionNames.Pages_Constitutions_Groups, L("体质分类"));

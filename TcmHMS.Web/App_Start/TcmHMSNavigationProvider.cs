@@ -23,6 +23,13 @@ namespace TcmHMS.Web
                         requiresAuthentication: true)
                 )
                 .AddItem(new MenuItemDefinition(
+                        "Doctors",
+                        L("Doctors"),
+                        url: "doctors",
+                        icon: "m-menu__link-icon fa fa-user-md",
+                        requiredPermissionName: PermissionNames.Pages_Doctors)
+                )
+                .AddItem(new MenuItemDefinition(
                         "Constitution",
                         L("Constitution"),
                         icon: "m-menu__link-icon flaticon-list-1"
@@ -41,13 +48,13 @@ namespace TcmHMS.Web
                         icon: "m-menu__link-icon fa fa-circle-o",
                         requiredPermissionName: PermissionNames.Pages_Constitutions_Subjects)
                     )
-                    //.AddItem(new MenuItemDefinition(
-                    //    "ConstitutionSuggests",
-                    //    L("ConstitutionSuggests"),
-                    //    url: "constitutionSuggests",
-                    //    icon: "m-menu__link-icon fa fa-circle-o",
-                    //    requiredPermissionName: PermissionNames.Pages_Constitutions_Suggests)
-                    //)
+                //.AddItem(new MenuItemDefinition(
+                //    "ConstitutionSuggests",
+                //    L("ConstitutionSuggests"),
+                //    url: "constitutionSuggests",
+                //    icon: "m-menu__link-icon fa fa-circle-o",
+                //    requiredPermissionName: PermissionNames.Pages_Constitutions_Suggests)
+                //)
                 )
                 .AddItem(new MenuItemDefinition(
                         "Dictionaries",
